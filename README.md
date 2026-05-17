@@ -3,12 +3,12 @@ The goal is simple: stay accountable, sharp and avoid getting rusty in R, Python
 
 I’m treating this year as a chance to practise the full analytical workflow:
 
--Finding or scraping data
--Cleaning and validating it
--Understanding the schema
--Analysing and visualising
--Writing up insights
--Experimenting with new tools, packages, and techniques
+- Finding or scraping data
+- Cleaning and validating it
+- Understanding the schema
+- Analysing and visualising
+- Writing up insights
+- Experimenting with new tools, packages, and techniques
 
 These projects range from small exploratory analyses to building pipelines or learning new libraries.
 
