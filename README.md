@@ -1,5 +1,6 @@
 This repository documents my weekly “for fun” coding projects during my sabbatical year.
-The goal is simple: stay accountable, sharp and avoid getting rusty in R, Python, and wider data technologies.
+The goal is simple: stay accountable, sharp and avoid getting rusty in R, Python, and wider data technologies. 
+This repository is my public record. 
 
 I’m treating this year as a chance to practise the full analytical workflow:
 
@@ -30,8 +31,3 @@ Analysed the scraped dataset: top countries, commodity drivers, time‑series tr
 (Will update as the project progresses.)
 
 
-build a portfolio of small, meaningful projects
-
-stay employable and ready to return to data work stronger than before
-
-This repository is my public record. 
