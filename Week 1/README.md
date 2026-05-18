@@ -1,4 +1,5 @@
-Overview
+**Overview**
+
 This project automates the process of downloading annual Preference Utilisation of UK Trade in Goods database files from GOV.UK.
 Each year’s dataset is published on its own page, and historically the process of retrieving these files has required manual navigation, clicking, and downloading.
 
@@ -16,7 +17,7 @@ By running a single function, the script:
 
 This ensures that future updates (e.g., when new years are added, data schema changes) require minimal manual intervention.
 
-Comment:
+***Comment:***
 
 I first learnt web‑scraping in R long before COVID — back when I was scraping Wikipedia pages for football stats (Spurs) and UK public spending figures just for fun (my sad life). Having access to LLMs now makes it much quicker to generate code, which is great, but I’m glad I learnt the fundamentals the slow way. Understanding how HTML works, how to inspect a webpage’s “under the hood” structure, and how to debug scraping errors so I'm confident to challenge AI‑generated code rather than blindly trusting it. 
 
