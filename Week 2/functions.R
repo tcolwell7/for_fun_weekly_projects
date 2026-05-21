@@ -1,0 +1,341 @@
+# Set up and load data ----------
+
+# I write at the beginning of every script:
+
+# rm(list = ls()) # remove items from global environment
+
+options(scipen=999) # turn off scientific numerical notation
+
+`%notin%` <- Negate(`%in%`) # custom function for filtering data
+
+# Specify packages
+packages <-
+  c("tidyverse","janitor","stringr","data.table",# general data wrangling
+    "readxl","readr","openxlsx", "readODS", # reading/writing excel
+    "rvest",# r web-scraping
+    "tictoc" # helpful package for timing code speed
+  ) 
+
+# Install packages if not already installed
+install.packages(setdiff(packages, rownames(installed.packages())))
+
+# Load packages
+sapply(packages, require, character.only = TRUE)
+
+setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
+
+
+tic()
+
+# load data and inspect
+
+imp <- read_csv("data/pur_imports_data.csv")
+exp <- read_csv("data/pur_exports_data.csv")
+
+
+# eu27 country list
+
+eu27.iso <-c("AT","BE","BG","CY","CZ","DE","DK","EE","ES","FI",
+             "FR","GR","HR","HU","IE","IT","LT","LU","LV","MT",
+             "NL","PL","PT","RO","SE","SI","SK")
+
+
+# function script
+# functionise analysis script to make more reproduciable and reduce the need to write out multiple years. 
+
+get_pur_high_level <- function(.yr, .rank){
+  
+  # two inuputs: year and rank of countries i.e. top 5, 10, 20 etc. 
+  
+  .yr = as.character(.yr) 
+  
+  imp.pur <- imp %>%
+    filter(year == .yr) %>%
+    summarise(
+      total_imports = sum(total_imports, na.rm = T),
+      pref_elig_imp = sum(pref_eligible_imports, na.rm = T),
+      pref_usage = sum(pref_usage_imports, na.rm = T)
+    ) %>%
+    mutate(pur_pct = round(pref_usage / pref_elig_imp,3)*100) %>%
+    select(pur_pct) %>%
+    pull()
+  
+  
+  
+  imp.10.noneu <- imp %>%
+    filter(partner_iso %notin% eu27.iso & agreement %notin% c("No FTA", "No Agreement")) %>%
+    filter(year == .yr) %>%
+    group_by(partner_iso, partner_name) %>%
+    summarise(
+      total_imports = sum(total_imports, na.rm = T),
+      pref_elig_imp = sum(pref_eligible_imports, na.rm = T),
+      pref_usage = sum(pref_usage_imports, na.rm = T)
+    ) %>%
+    mutate(across(c(total_imports:pref_usage), ~ round(.x/1000000,0))) %>%
+    mutate(pur_pct = pref_usage / pref_elig_imp) %>%
+    ungroup() %>%
+    mutate(rank = rank(desc(pref_elig_imp))) %>% 
+    filter(rank <= .rank) %>%
+    arrange(rank)
+  
+  
+  imp.10.eu <- imp %>%
+    filter(partner_iso %in% eu27.iso) %>%
+    filter(year == .yr) %>%
+    group_by(partner_iso, partner_name) %>%
+    summarise(
+      total_imports = sum(total_imports, na.rm = T),
+      pref_elig_imp = sum(pref_eligible_imports, na.rm = T),
+      pref_usage = sum(pref_usage_imports, na.rm = T)
+    ) %>%
+    mutate(across(c(total_imports:pref_usage), ~ round(.x/1000000,0))) %>%
+    mutate(pur_pct = pref_usage / pref_elig_imp) %>%
+    ungroup() %>%
+    mutate(rank = rank(desc(pref_elig_imp))) %>% 
+    filter(rank <= .rank) %>%
+    arrange(rank)
+  
+  
+  
+  
+  ## exports -------------------------
+  
+  
+  exp.pur <- exp %>%
+    filter(year == .yr) %>%
+    summarise(
+      total_exports = sum(total_exports, na.rm = T),
+      pref_elig_exp = sum(pref_eligible_exports, na.rm = T),
+      pref_usage = sum(pref_usage_exports, na.rm = T)
+    ) %>%
+    mutate(pur_pct = pref_usage / pref_elig_exp) %>%
+    select(pur_pct) %>%
+    pull()
+  
+  
+  exp.10.eu <- exp %>%
+    filter(year == .yr) %>%
+    group_by(partner_iso, partner_name) %>%
+    summarise(
+      total_imports = sum(total_exports, na.rm = T),
+      pref_elig_exp = sum(pref_eligible_exports, na.rm = T),
+      pref_usage = sum(pref_usage_exports, na.rm = T)
+    ) %>%
+    mutate(across(c(total_imports:pref_usage), ~ round(.x/1000000,0))) %>%
+    mutate(pur_pct = pref_usage / pref_elig_exp) %>%
+    ungroup() %>%
+    mutate(rank = rank(desc(pref_elig_exp))) %>% 
+    filter(rank <= .rank)
+  
+  
+  
+  exp.10.noneu <- exp %>%
+    filter(partner_iso %notin% eu27.iso) %>%
+    filter(year == as.character(.yr)) %>%
+    group_by(partner_iso, partner_name) %>%
+    summarise(
+      total_imports = sum(total_exports, na.rm = T),
+      pref_elig_exp = sum(pref_eligible_exports, na.rm = T),
+      pref_usage = sum(pref_usage_exports, na.rm = T)
+    ) %>%
+    mutate(across(c(total_imports:pref_usage), ~ round(.x/1000000,0))) %>%
+    mutate(pur_pct = pref_usage / pref_elig_exp) %>%
+    ungroup() %>%
+    mutate(rank = rank(desc(pref_elig_exp))) %>% 
+    filter(rank <= .rank)
+  
+  
+  exp.10.eu <- exp %>%
+    filter(partner_iso %in% eu27.iso) %>%
+    filter(year == .yr) %>%
+    group_by(partner_iso, partner_name) %>%
+    summarise(
+      total_imports = sum(total_exports, na.rm = T),
+      pref_elig_exp = sum(pref_eligible_exports, na.rm = T),
+      pref_usage = sum(pref_usage_exports, na.rm = T)
+    ) %>%
+    mutate(across(c(total_imports:pref_usage), ~ round(.x/1000000,0))) %>%
+    mutate(pur_pct = pref_usage / pref_elig_exp) %>%
+    ungroup() %>%
+    mutate(rank = rank(desc(pref_elig_exp))) %>% 
+    filter(rank <= .rank)
+  
+  
+  # Pur overtime --------------
+  
+  ## imports --------
+  
+  imp.pur.ts <- imp %>%
+    group_by(year) %>%
+    summarise(
+      total_imports = sum(total_imports, na.rm = T),
+      pref_elig_imp = sum(pref_eligible_imports, na.rm = T),
+      pref_usage = sum(pref_usage_imports, na.rm = T)
+    ) %>%
+    mutate(pur_pct = round(pref_usage / pref_elig_imp,3)*100) %>%
+    select(year,pur_pct) 
+  
+  
+  imp.noneu.ts = imp %>%
+    group_by(partner_iso, partner_name, year) %>%
+    summarise(
+      total_imports = sum(total_imports, na.rm = T),
+      pref_elig_imp = sum(pref_eligible_imports, na.rm = T),
+      pref_usage = sum(pref_usage_imports, na.rm = T)
+    ) %>%
+    mutate(across(c(total_imports:pref_usage), ~ round(.x/1000000,0))) %>%
+    mutate(pur_pct = pref_usage / pref_elig_imp) %>%
+    ungroup() %>%
+    filter(partner_iso %in% imp.10.noneu$partner_iso) # filter on top countries
+  
+  
+  imp.eu.ts = imp %>%
+    group_by(partner_iso, partner_name, year) %>%
+    summarise(
+      total_imports = sum(total_imports, na.rm = T),
+      pref_elig_imp = sum(pref_eligible_imports, na.rm = T),
+      pref_usage = sum(pref_usage_imports, na.rm = T)
+    ) %>%
+    mutate(across(c(total_imports:pref_usage), ~ round(.x/1000000,0))) %>%
+    mutate(pur_pct = pref_usage / pref_elig_imp) %>%
+    ungroup() %>%
+    filter(partner_iso %in% imp.10.eu$partner_iso) # filter on top countries
+  
+  
+  ## exports ------
+  
+  
+  exp.pur.ts <- exp %>%
+    group_by(year) %>%
+    summarise(
+      total_exports = sum(total_exports, na.rm = T),
+      pref_elig_exp = sum(pref_eligible_exports, na.rm = T),
+      pref_usage = sum(pref_usage_exports, na.rm = T)
+    ) %>%
+    mutate(pur_pct = round(pref_usage / pref_elig_exp,3)*100) %>%
+    select(year,pur_pct) 
+  
+  
+  exp.noneu.ts = exp %>%
+    group_by(partner_iso, partner_name, year) %>%
+    summarise(
+      total_exports = sum(total_exports, na.rm = T),
+      pref_elig_exp = sum(pref_eligible_exports, na.rm = T),
+      pref_usage = sum(pref_usage_exports, na.rm = T)
+    ) %>%
+    mutate(across(c(total_exports:pref_usage), ~ round(.x/1000000,1))) %>%
+    mutate(pur_pct = pref_usage / pref_elig_exp) %>%
+    ungroup() %>%
+    filter(partner_iso %in% exp.10.noneu$partner_iso)
+  
+  
+  exp.eu.ts = exp %>%
+    group_by(partner_iso, partner_name, year) %>%
+    summarise(
+      total_exports = sum(total_exports, na.rm = T),
+      pref_elig_exp = sum(pref_eligible_exports, na.rm = T),
+      pref_usage = sum(pref_usage_exports, na.rm = T)
+    ) %>%
+    mutate(across(c(total_exports:pref_usage), ~ round(.x/1000000,1))) %>%
+    mutate(pur_pct = pref_usage / pref_elig_exp) %>%
+    ungroup() %>%
+    filter(partner_iso %in% exp.10.eu$partner_iso)
+  
+  # return a list of all dfs
+  # renamed for wider use
+  
+  output_data <- list(
+    
+    imp_pur = imp.pur,
+    imp_top10_eu = imp.10.eu,
+    imp_top10_noneu = imp.10.noneu,
+    imp_pur_ts = imp.pur.ts,
+    imp_top10_eu_ts = imp.eu.ts,
+    imp_top10_noneu_ts = imp.noneu.ts,
+    
+    exp_pur = exp.pur,
+    exp_top10_eu = exp.10.eu,
+    exp_top10_noneu = exp.10.noneu,
+    exp_pur_ts = exp.pur.ts,
+    exp_top10_eu_ts = exp.eu.ts,
+    exp_top10_noneu_ts = exp.noneu.ts
+    
+  )
+  
+  
+  
+  # imports = list(
+  #   pur = imp.pur,
+  #   top10_eu = imp.10.eu,
+  #   top10_noneu = imp.10.noneu,
+  #   pur_ts = imp.pur.ts,
+  #   top10_eu_ts = imp.eu.ts,
+  #   top10_noneu_ts = imp.noneu.ts
+  # ),
+  # exports = list(
+  #   pur = exp.pur,
+  #   top10_eu = exp.10.eu,
+  #   top10_noneu = exp.10.noneu,
+  #   pur_ts = exp.pur.ts,
+  #   top10_eu_ts = exp.eu.ts,
+  #   top10_noneu_ts = exp.noneu.ts
+  # )
+  
+  
+  return(output_data)
+  
+}
+
+
+get_pur_drivers <- function(.yr, .rank, .partner_iso, .flow = NULL){
+  
+  .yr = as.character(.yr)
+  
+  imp_filt = imp %>% filter(partner_iso == .partner_iso, year == .yr)
+  
+  top_hs <- imp_filt %>%
+    select(partner_iso, partner_name, year, hs_section, hs_section_description, hs2, total_imports, pref_eligible_imports, pref_usage_imports) %>%
+    group_by(hs_section, hs_section_description) %>%
+    summarise(
+      pref_elig = sum(pref_eligible_imports, na.rm = T),
+      pref_use = sum(pref_usage_imports, na.rm = T)
+    ) %>%
+    mutate(pur_pct = pref_use / pref_elig) %>%
+    arrange(desc(pref_elig)) %>%
+    head(.rank)
+  
+  # create ordering for final df
+  ordered_sections <- top_hs$hs_section
+  
+  
+  total_pref_elig = imp_filt %>%
+    summarise(pref_elig = sum(pref_eligible_imports, na.rm = T)) %>%
+    pull()
+  
+  total_pref_use = imp_filt %>%
+    summarise(pref_use = sum(pref_usage_imports, na.rm = T)) %>%
+    pull()
+  
+  
+  imp.util <- imp_filt %>%
+    select(partner_iso, partner_name, year, hs_section, hs_section_description, hs2, total_imports, pref_eligible_imports, pref_usage_imports) %>%
+    filter(hs_section%in% top_hs$hs_section) %>%
+    group_by(hs_section, hs_section_description) %>%
+    arrange(hs_section,desc(pref_eligible_imports)) %>%
+    mutate(sector_pref_elig = sum(pref_eligible_imports, na.rm = T)) %>%
+    mutate(sector_pref_elig_pc = pref_eligible_imports / sector_pref_elig) %>%
+    mutate(sector_pref_use = sum(pref_usage_imports, na.rm = T)) %>%
+    mutate(sector_pref_use_pc = pref_usage_imports / sector_pref_use) %>%
+    ungroup() %>%
+    mutate(total_pref_elig_pc = pref_eligible_imports / total_pref_elig) %>%
+    mutate(total_pref_use_pc = pref_usage_imports / total_pref_use) %>%
+    mutate(hs_section = factor(hs_section, levels = ordered_sections)) %>%
+    arrange(hs_section)
+  
+  
+  return(imp.util)
+   
+}
+
+
+xx = get_pur_drivers(2023, 3, "NZ")
