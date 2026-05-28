@@ -22,7 +22,7 @@ Below is a high‑level summary of each week’s project.
 Scraped multi‑year trade preference utilisation data, cleaned and structured it, and built a repeatable pipeline for future updates.
 
 2. R data analysis of utilisation trade data  
-Analysed the scraped dataset: top countries, commodity drivers, time‑series trends, and utilisation patterns. Produced a structured analytical report.
+Analysed the scraped dataset: top countries, commodity drivers, time‑series trends, and utilisation patterns. Basic but foundational R data wrangling. 
 
 3. TBC  
 (Will update as the project progresses.)
