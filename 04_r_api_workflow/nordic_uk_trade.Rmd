@@ -1,0 +1,58 @@
+---
+title: "Nordic trade with the UK"
+output: html_document
+date: "2026-06-05"
+---
+
+
+
+```{r include = FALSE}
+knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
+options(scipen=999) # turn off scientific numerical notation
+# initial set up
+# load in packages/API functions/data
+
+library(tidyverse)
+library(httr)
+library(jsonlite)
+library(furrr)
+library(lubridate)
+# Load API functions
+source("api_functions.R")
+source("data_processing.R")
+
+
+```
+
+
+## Overall UK-Nordic imports
+
+In 2025 the UK imported £`r nordic_import_total.25`m from all Nordic countries. This is up in nominal terms since 2019 by £`r nordic_import_total.25 - nordic_import_total.19`M. Overall Nordic share of UK imports is relatively small at `r nordic_import_share_uk.25`% in 2025 which is flat since 2019 however peaking in 2022 at `r nordic_import_share_uk.22`. Norway is the largest exporter into the UK of all Nordic countries, with X£m in 2025, which is up X% since 2019 but also down X% form the 2022 peak of X% due to Russian Sanctions and importation of fuels. 
+
+
+
+
+
+
+
+
+
+## R Markdown
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r cars}
+summary(cars)
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.

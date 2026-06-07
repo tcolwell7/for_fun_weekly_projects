@@ -24,10 +24,14 @@ Scraped multi‑year trade preference utilisation data, cleaned and structured i
 2. R data analysis of utilisation trade data  
 Analysed the scraped dataset: top countries, commodity drivers, time‑series trends, and utilisation patterns. Basic but foundational R data wrangling. 
 
-3. TBC  
+3. APIs in R (basic)  
+Tried, failed and succeeded in creating multi-dimensional API calls to extract real-world trade data in R. 
+
+4. API workflow for UK-Nordic trade analysis in R 
 (Will update as the project progresses.)
 
-4. TBC  
-(Will update as the project progresses.)
+5. Python web-scrape for UK preference utilisation data (tbc.)
+
+
 
 
