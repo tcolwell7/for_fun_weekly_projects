@@ -157,3 +157,130 @@ uk_share_yr <- data_yr %>%
 
 
 
+# custom formatting
+custom_palette <- c( "#12436D" , "#0965A0" , "#2493D9" , "#7BC7F8", "#bdd7e7","#777d96")
+
+
+# DBT theme (your defaults)
+
+font <- "sans"
+
+grid_y <- element_line(color = "grey90", linewidth = 0.2)
+grid_x <- element_blank()
+
+update_geom_defaults("line", list(linewidth = 0.8))
+update_geom_defaults("bar", list(fill = "#00285f"))
+
+theme_default <-
+  theme_minimal() +
+  theme(
+    plot.margin = margin(t = 15, r = 5.5, b = 5.5, l = 5.5, "pt"),
+    plot.title.position = "plot",
+    plot.caption.position = "plot",
+    
+    plot.title = element_text(
+      family = font, size = 14, face = "bold",
+      hjust = 0, vjust = 5
+    ),
+    plot.subtitle = element_text(
+      family = font, size = 12,
+      hjust = 0, vjust = 6
+    ),
+    plot.caption = element_text(
+      family = font, size = 8, hjust = 0
+    ),
+    
+    legend.position = "bottom",
+    
+    panel.grid.major.y = grid_y,
+    panel.grid.major.x = grid_x,
+    panel.grid.minor = element_blank(),
+    
+    axis.ticks = element_blank(),
+    
+    axis.title = element_text(family = font, size = 12),
+    axis.text = element_text(family = font, size = 10),
+    
+    axis.text.x = element_text(margin = margin(b = 6)),
+    axis.text.y = element_text(margin = margin(l = 6))
+  )
+
+
+# custom factor for plot:
+
+
+df <-  uk_share_yr %>% ungroup()
+
+ordered_levels <- df %>%
+  arrange(-share_of_nordic) %>%
+  pull(country) %>%
+  unique()
+
+df$country <- factor(df$country, levels = ordered_levels)
+
+
+
+
+# stacked area plot for nordic share:
+
+plot <- df %>%
+  ggplot(
+    aes(
+      x=year, 
+      y=share_of_nordic, 
+      group = country,
+      fill = country
+     )
+    )+
+  geom_area(alpha = 0.5) + 
+  theme_default +
+  scale_fill_manual(
+    values = c( "#12436D" , "#0965A0" , "#2493D9" , "#7BC7F8" , "#777d96"),
+    #values = c( "#00285f" , "#a90083" , "#12436D" , "#777d96" , "#a3abcc"), #"#d9ddea"),
+    #values = c( "#00285f" , "#a90083" , "#2493D9" , "#777d96" , "#d9ddea"), #"#d9ddea"),
+    labels = c('Norway','Sweden','Denmark', 'Finland','Iceland')
+  ) +
+  labs(x="",  y="")+
+  scale_y_continuous(labels = scales::percent)+
+  theme(legend.title = element_blank())
+
+
+
+df %>%
+  ggplot(
+    aes(
+      x=year, 
+      y=total_imports, 
+      group = country,
+      color = country
+    )
+  )+
+  geom_line(alpha = 0.8) + 
+  theme_default +
+  scale_color_manual(
+    #values = c( "#12436D" , "#0965A0" , "#2493D9" , "#7BC7F8" , "#777d96"),
+    #values = c( "#00285f" , "#a90083" , "#12436D" , "#777d96" , "#a3abcc"), #"#d9ddea"),
+    values = c( "#00285f" , "#a90083" , "#2493D9" , "#777d96" , "#d9ddea"), #"#d9ddea"),
+    labels = c('Norway','Sweden','Denmark', 'Finland','Iceland')
+  ) +
+  labs(x="",  y="")+
+  #scale_y_continuous(labels = scales::percent)+
+  theme(legend.title = element_blank())
+
+# due to import size different plotting on same plot looks off
+# so testing a facet plot:
+
+uk_share_yr %>%
+  mutate(year = as.integer(year)) %>%
+  ggplot(aes(year, total_imports)) +
+  geom_line(colour = "#1f78b4", linewidth = 1) +
+  #facet_wrap(~ country, scales = "free_y") +
+  scale_x_continuous(breaks = 2019:2025) +
+  facet_wrap(~ country, scales = "free")+
+  theme_default+
+  theme(
+    axis.text.x = element_text(angle = 45, vjust = 1, hjust = 1),
+    axis.ticks.x = element_line(colour = "black", linewidth = 0.3),
+    )
+  
+

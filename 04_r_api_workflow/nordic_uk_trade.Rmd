@@ -27,32 +27,97 @@ source("data_processing.R")
 
 ## Overall UK-Nordic imports
 
-In 2025 the UK imported £`r nordic_import_total.25`m from all Nordic countries. This is up in nominal terms since 2019 by £`r nordic_import_total.25 - nordic_import_total.19`M. Overall Nordic share of UK imports is relatively small at `r nordic_import_share_uk.25`% in 2025 which is flat since 2019 however peaking in 2022 at `r nordic_import_share_uk.22`. Norway is the largest exporter into the UK of all Nordic countries, with X£m in 2025, which is up X% since 2019 but also down X% form the 2022 peak of X% due to Russian Sanctions and importation of fuels. 
+In 2025 the UK imported £`r uk_totals[["2025"]]`M from around the world and £`r nordic_import_totals[["2025"]]`m from all Nordic countries combined. This is up in nominal terms since 2019 by £`r nordic_import_totals[["2025"]] - nordic_import_totals[["2019"]]`M. Overall Nordic share of UK imports is relatively small at `r nordic_import_share_uk.25`% in 2025 which is flat since 2019 however peaking in 2022 at `r nordic_import_share_uk.22`. Norway is the largest exporter into the UK of all Nordic countries, with £`r no_import_totals[["2025"]]`m in 2025, which is up `r no_import_totals[["2025"]] / no_import_totals[["2019"]] - 1`% since 2019 but also down X% form the 2022 peak of X% due to Russian Sanctions and importation of fuels.
+
+## Share of Nordic imports. 
+
+Table 1 summarises each Nordics nations overall goods imports with the UK in 2025. Norway is the largest share of all Nordic imports into the UK of `r no_nordic_share[["2025"]]`%, followed by Sweden (`r se_nordic_share[["2025"]]`%), Denmark (`r dk_nordic_share[["2025"]]`%), Finland (`r fi_nordic_share[["2025"]]`%) and then Iceland of (`r is_nordic_share[["2025"]]`%). These proportions while the scales have remained siilar have changed to varying degrees. Denmarks share has decreased by `r dk_nordic_share[["2025"]] - dk_nordic_share[["2019"]] ` percentage points while Norways has increased by `r no_nordic_share[["2025"]] - no_nordic_share[["2019"]]` percentage points since 2019. As Chart 1 shows Norways significance to Nordic imports with the UK has only increased since 2019 with an average share of `r round(mean(no_nordic_share),2)`%. 
 
 
+#### Table 1: UK-Nordic imports in 2025
+```{r}
+library(knitr)
+library(kableExtra)
 
+uk_share_yr %>%
+  filter(year == "2025") %>%
+  arrange(-total_imports) %>%
+  rename(
+    Year = year,
+    Country = country,
+    `Total Imports (£m)` = total_imports
+  ) %>%
+  kable() %>%
+  kable_styling() 
 
-
-
-
-
-
-## R Markdown
-
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
-
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
-
-```{r cars}
-summary(cars)
 ```
 
-## Including Plots
 
-You can also embed plots, for example:
 
-```{r pressure, echo=FALSE}
-plot(pressure)
+### Chart1: Share of overall UK-Nordic imports (%)
+
+```{r, fig.width=12}
+
+
+df <-  uk_share_yr %>% ungroup()
+
+ordered_levels <- df %>%
+  arrange(share_of_nordic) %>%
+  pull(country) %>%
+  unique()
+
+df$country <- factor(df$country, levels = ordered_levels)
+
+
+
+
+# stacked area plot for nordic share:
+
+plot <- df %>%
+  ggplot(
+    aes(
+      x=year, 
+      y=share_of_nordic, 
+      group = country,
+      fill = country
+     )
+    )+
+  geom_area(alpha = 0.5) + 
+  theme_default +
+  scale_fill_manual(
+    #values = c( "#12436D" , "#0965A0" , "#2493D9" , "#7BC7F8" , "#777d96"),
+    values = c( "#777d96" , "#7BC7F8" , "#2493D9" , "#0965A0" , "#12436D"),
+    labels = c('Iceland', 'Finland','Denmark','Sweden','Norway')
+  ) +
+  labs(x="",  y="")+
+  scale_y_continuous(labels = scales::percent)+
+  theme(legend.title = element_blank())
+
+plot
+
 ```
 
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+
+## Nordic time-series trend
+In nominal terms, trade across Norway, Sweden and Iceland have increased while Denmark and Finland have both slightly decreased since 2019 as shown in Table 2. The average rate increase of X% per year across the block, with Norway the highest of X% and Finland the lowest with x%. 
+
+
+```{r, fig.width=12}
+
+uk_share_yr %>%
+  mutate(year = as.integer(year)) %>%
+  ggplot(aes(year, total_imports)) +
+  geom_line(colour = "#1f78b4", linewidth = 1) +
+  #facet_wrap(~ country, scales = "free_y") +
+  scale_x_continuous(breaks = 2019:2025) +
+  facet_wrap(~ country, scales = "free")+
+  theme_default+
+  theme(
+    axis.text.x = element_text(angle = 45, vjust = 1, hjust = 1),
+    axis.ticks.x = element_line(colour = "black", linewidth = 0.3),
+    )
+
+
+```
+
+

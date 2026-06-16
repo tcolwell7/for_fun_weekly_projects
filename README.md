@@ -30,6 +30,11 @@ Tried, failed and succeeded in creating multi-dimensional API calls to extract r
 4. API workflow for UK-Nordic trade analysis in R 
 (Will update as the project progresses.)
 
+5. R markdown automation workflow
+
+6. R EU trade deficit automation and fun ggploting
+(note for future - see since BREXIT which countries trade deficit has flipped to surplus, auto detect and plot said countries for fun)
+
 5. Python web-scrape for UK preference utilisation data (tbc.)
 
 
