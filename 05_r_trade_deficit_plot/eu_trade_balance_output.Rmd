@@ -1,0 +1,81 @@
+---
+title: "EU trade deficit"
+output: html_document
+date: "2026-06-21"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
+
+library(tidyverse)
+library(gt)
+library(gtExtras)
+
+# theme_default and flag_cols defined here or sourced
+
+
+
+# functions defined or sourced
+source("eu_trade_def_function.R")
+
+df_overall  <- build_trade_df("overall")
+df_goods    <- build_trade_df("goods")
+df_services <- build_trade_df("services")
+
+
+```
+
+## Overall trade surplus
+
+dissemninating all outputs in a single document for ease and fun to look throguh and visualise the data
+
+This is not fit for consumption but was created so Ic ould look at all the fun charts in one place and play around with gt tables. 
+
+#### Overall trade
+
+```{r, echo=FALSE}
+plot_eu_trade_surplus(df_overall, surplus_year = 2025)
+
+```
+
+
+```{r}
+
+make_trade_gt_table(df_overall, surplus_year = 2025)
+
+```
+
+
+
+#### Overall goods trade
+
+```{r}
+
+plot_eu_trade_surplus(df_goods, surplus_year = 2025)
+
+
+```
+
+```{r}
+
+make_trade_gt_table(df_goods, surplus_year = 2025)
+
+```
+
+
+
+#### Overall services trade
+
+```{r, fig.height=10, fig.align='left'}
+
+plot_eu_trade_surplus(df_services, surplus_year = 2025)
+
+
+```
+
+
+```{r, table.align = "left"}
+
+make_trade_gt_table(df_services, surplus_year = 2025)
+
+```
