@@ -28,14 +28,15 @@ Analysed the scraped dataset: top countries, commodity drivers, time‑series tr
 Tried, failed and succeeded in creating multi-dimensional API calls to extract real-world trade data in R. 
 
 4. API workflow for UK-Nordic trade analysis in R 
-(Will update as the project progresses.)
+Created workflow to extract API trade data, process, transform and disseminate via a markdown doc. 
 
-5. R markdown automation workflow
+5. R EU trade deficit automation and fun ggploting
+R ggplot practice and exploration of a data point (UK-EU trade deficits) I was interested in. 
 
-6. R EU trade deficit automation and fun ggploting
-(note for future - see since BREXIT which countries trade deficit has flipped to surplus, auto detect and plot said countries for fun)
+6. Python basic notebook practice
+Project was set up for basic python, plots and setting up VS code.
 
-5. Python web-scrape for UK preference utilisation data (tbc.)
+7. Python web-scrape for UK preference utilisation data (tbc.)
 
 
 
