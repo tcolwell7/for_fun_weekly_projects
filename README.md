@@ -36,7 +36,16 @@ R ggplot practice and exploration of a data point (UK-EU trade deficits) I was i
 6. Python basic notebook practice
 Project was set up for basic python, plots and setting up VS code.
 
-7. Python web-scrape for UK preference utilisation data (tbc.)
+7. Python web-scrape for UK preference utilisation data.
+Project to create a full ETL style pipeline and workflow for extracting and transforming trade data to create new data for analysis.
+
+8. Premier League Top Scorers Wiki-Scrape and Data Wrangle
+Useful web-scrape using Python to extract for fun football data and then basic wrangling and plots using pandas/seaborn/matplotlib
+
+9. Premier League Top Scorers R plotting
+   
+ 
+
 
 
 
