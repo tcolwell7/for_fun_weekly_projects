@@ -1,0 +1,15 @@
+# Project 8
+
+## Overview
+This project started as a fun way to explore Premier League statistics in more detail. The original idea was to manually copy top-scorer data from Wikipedia into a CSV, but building a Python web scraper turned out to be a faster and more useful approach.
+
+Once the dataset was created, the project moved into some light analysis and visualisation. Even with fairly simple wrangling and plotting, the data produced a few patterns and outputs that were more interesting than expected.
+
+## What this project covers
+- Python web scraping with BeautifulSoup to collect Premier League top-scorer data from Wikipedia into a single CSV.
+- Basic data wrangling and cleaning with Pandas.
+- Exploratory plots using Seaborn and Matplotlib.
+- A small end-to-end workflow: collect data, tidy it, analyse it, and visualise the results.
+
+## Notes
+This was mainly a practical and enjoyable project rather than a heavily structured analysis piece. The focus was on building a usable dataset, experimenting with the data, and turning a casual interest into a small Python project.
