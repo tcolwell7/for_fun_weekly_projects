@@ -1,12 +1,12 @@
 ﻿Rank,Player,Club,Goals,Nationality,Season
-1,Teddy Sheringham,Nottingham Forest / Tottenham Hotspur,22,England,1992/93
+1,Teddy Sheringham,Tottenham Hotspur,22,England,1992/93
 2,Les Ferdinand,Queens Park Rangers,20,England,1992/93
 3,Dean Holdsworth,Wimbledon F.C.,19,England,1992/93
 4,Micky Quinn,Coventry City,17,England,1992/93
 5,Alan Shearer,Blackburn Rovers,16,England,1992/93
 5,David White,Manchester City,16,England,1992/93
 7,Chris Armstrong,Crystal Palace,15,England,1992/93
-7,Eric Cantona,Leeds United / Manchester United,15,France,1992/93
+7,Eric Cantona,Manchester United,15,France,1992/93
 7,Brian Deane,Sheffield United,15,England,1992/93
 7,Mark Hughes,Manchester United,15,Wales,1992/93
 7,Matt Le Tissier,Southampton,15,England,1992/93
@@ -28,7 +28,7 @@
 2,Robbie Fowler,Liverpool,25,England,1994/95
 3,Les Ferdinand,Queens Park Rangers,24,England,1994/95
 4,Stan Collymore,Nottingham Forest,22,England,1994/95
-5,Andy Cole,Newcastle United / Manchester United,21,England,1994/95
+5,Andy Cole,Manchester United,21,England,1994/95
 5,Jürgen Klinsmann,Tottenham Hotspur,21,Germany,1994/95
 7,Matt Le Tissier,Southampton,19,England,1994/95
 8,Teddy Sheringham,Tottenham Hotspur,18,England,1994/95
@@ -110,10 +110,10 @@
 2,Alan Shearer,Newcastle United,23,England,2001/02
 5,Michael Owen,Liverpool,19,England,2001/02
 6,Ole Gunnar Solskjær,Manchester United,17,Norway,2001/02
-7,Robbie Fowler,Liverpool / Leeds United,15,England,2001/02
+7,Robbie Fowler,Liverpool,15,England,2001/02
 8,Eiður Guðjohnsen,Chelsea,14,Iceland,2001/02
 8,Marians Pahars,Southampton,14,Latvia,2001/02
-10,Andy Cole,Manchester United / Blackburn Rovers,13,England,2001/02
+10,Andy Cole,Blackburn Rovers,13,England,2001/02
 1,Ruud van Nistelrooy,Manchester United,25,Netherlands,2002/03
 2,Thierry Henry,Arsenal,24,France,2002/03
 3,James Beattie,Southampton,23,England,2002/03
@@ -127,7 +127,7 @@
 8,Gianfranco Zola,Chelsea,14,Italy,2002/03
 1,Thierry Henry,Arsenal,30,France,2003/04
 2,Alan Shearer,Newcastle United,22,England,2003/04
-3,Louis Saha,Manchester United / Fulham,20,France,2003/04
+3,Louis Saha,Manchester United,20,France,2003/04
 3,Ruud van Nistelrooy,Manchester United,20,Netherlands,2003/04
 5,Mikael Forssell,Birmingham City,17,Finland,2003/04
 6,Nicolas Anelka,Manchester City,16,France,2003/04
@@ -170,7 +170,7 @@
 2,Emmanuel Adebayor,Arsenal,24,Togo,2007/08
 2,Fernando Torres,Liverpool,24,Spain,2007/08
 4,Roque Santa Cruz,Blackburn Rovers,19,Paraguay,2007/08
-5,Benjani,Portsmouth / Manchester City,15,Zimbabwe,2007/08
+5,Benjani,Portsmouth,15,Zimbabwe,2007/08
 5,Dimitar Berbatov,Tottenham Hotspur,15,Bulgaria,2007/08
 5,Robbie Keane,Tottenham Hotspur,15,Republic of Ireland,2007/08
 5,Yakubu,Everton,15,Nigeria,2007/08
@@ -201,10 +201,10 @@
 1,Dimitar Berbatov,Manchester United,20,Bulgaria,2010/11
 1,Carlos Tevez,Manchester City,20,Argentina,2010/11
 3,Robin van Persie,Arsenal,18,Netherlands,2010/11
-4,Darren Bent,Sunderland / Aston Villa,17,England,2010/11
+4,Darren Bent,Aston Villa,17,England,2010/11
 5,Peter Odemwingie,West Bromwich Albion,15,Nigeria,2010/11
 6,DJ Campbell,Blackpool,13,England,2010/11
-6,Andy Carroll,Newcastle United / Liverpool,13,England,2010/11
+6,Andy Carroll,Newcastle United,13,England,2010/11
 6,Javier Hernández,Manchester United,13,Mexico,2010/11
 6,Dirk Kuyt,Liverpool,13,Netherlands,2010/11
 6,Florent Malouda,Chelsea,13,France,2010/11
@@ -226,7 +226,7 @@
 4,Christian Benteke,Aston Villa,19,Belgium,2012/13
 5,Michu,Swansea City,18,Spain,2012/13
 6,Romelu Lukaku,West Bromwich Albion,17,Belgium,2012/13
-7,Demba Ba,Chelsea / Newcastle United,15,Senegal,2012/13
+7,Demba Ba,Newcastle United,15,Senegal,2012/13
 7,Dimitar Berbatov,Fulham,15,Bulgaria,2012/13
 7,Rickie Lambert,Southampton,15,England,2012/13
 7,Frank Lampard,Chelsea,15,England,2012/13
@@ -359,7 +359,7 @@
 3,Erling Haaland,Manchester City,22,Norway,2024/25
 4,Bryan Mbeumo,Brentford,20,Cameroon,2024/25
 4,Chris Wood,Nottingham Forest,20,New Zealand,2024/25
-6,Yoane Wissa,Brentford,19,,2024/25
+6,Yoane Wissa,Brentford,19,DR Congo,2024/25
 7,Ollie Watkins,Aston Villa,16,England,2024/25
 8,Matheus Cunha,Wolverhampton Wanderers,15,Brazil,2024/25
 8,Cole Palmer,Chelsea,15,England,2024/25
@@ -367,7 +367,7 @@
 10,Jean-Philippe Mateta,Crystal Palace,14,France,2024/25
 1,Erling Haaland,Manchester City,27,Norway,2025/26
 2,Igor Thiago,Brentford,22,Brazil,2025/26
-3,Antoine Semenyo,Bournemouth / Manchester City,17,Ghana,2025/26
+3,Antoine Semenyo,Bournemouth,17,Ghana,2025/26
 4,Ollie Watkins,Aston Villa,16,England,2025/26
 5,Morgan Gibbs-White,Nottingham Forest,15,England,2025/26
 5,João Pedro,Chelsea,15,Brazil,2025/26
