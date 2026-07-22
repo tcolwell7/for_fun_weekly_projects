@@ -3,7 +3,7 @@ tournament,match_date,stage,team1,team2,goals1,goals2,result_note,iso1,iso2
 2026 FIFA World Cup,04/07/2026,Round of 16,Paraguay,France,0,1,France won in regular time,PR,FR
 2026 FIFA World Cup,05/07/2026,Round of 16,Brazil,Norway,1,2,Norway won in regular time,BR,NO
 2026 FIFA World Cup,06/07/2026,Round of 16,Mexico,England,2,3,England won in regular time,MX,GB
-2026 FIFA World Cup,06/07/2026,Round of 16,Spain,Portugal,0,1,Portugal won in regular time,ES,PT
+2026 FIFA World Cup,06/07/2026,Round of 16,Spain,Portugal,1,0,Portugal won in regular time,ES,PT
 2026 FIFA World Cup,07/07/2026,Round of 16,USA,Belgium,1,4,Belgium won in regular time,US,BE
 2026 FIFA World Cup,07/07/2026,Round of 16,Argentina,Egypt,3,2,Argentina won in regular time,AR,EG
 2026 FIFA World Cup,07/07/2026,Round of 16,Switzerland,Colombia,0,0,Switzerland/Colombia pending at source time of capture,CH,CO

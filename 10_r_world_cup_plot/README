@@ -1,0 +1,10 @@
+# Project 10
+
+## Overview:
+This is a simple project using World Cup results, basic data processing, and IMF economic data to create custom R plots with layered ggplot visualizations.
+
+There is nothing especially complex here. The main goal was to explore custom chart building and look at a few simple statistics for countries in the knockout stages. Because layering in ggplot involved a lot of trial and error and re-running code, this felt like a good point to wrap up the project and move on to something more substantial. The next project will look at World Cup results alongside wider statistics in more depth.
+
+## What this project covers
+- Basic Data wrangling in R
+- Custom plotting using ggplot and ggflags

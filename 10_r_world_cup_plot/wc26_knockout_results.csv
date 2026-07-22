@@ -1,0 +1,33 @@
+﻿match_date,stage,team1,team2,goals1,goals2,result_note,iso1,iso2
+28/06/2026,R32,South Africa,Canada,0,1,Reg,ZA,CA
+29/06/2026,R32,Brazil,Japan,2,1,Reg,BR,JP
+29/06/2026,R32,Germany,Paraguay,1,1,Penalties,DE,PR
+30/06/2026,R32,Netherlands,Morocco,1,1,Penalties,NL,MA
+30/06/2026,R32,Ivory Coast,Norway,1,2,Reg,IC,NO
+30/06/2026,R32,France,Sweden,3,0,Reg,FR,NO
+01/07/2026,R32,Mexico,Ecuador,2,0,Reg,MX,EC
+01/07/2026,R32,England,Congo DR,2,1,Reg,GB,
+01/07/2026,R32,Belgium,Senegal,3,2,AET,BE,
+02/07/2026,R32,USA,Bosnia-Herzagovina,2,0,Reg,US,
+02/07/2026,R32,Spain,Austria,3,0,Reg,ES,AT
+03/07/2026,R32,Portugal,Croatia,2,1,Reg,PS,CR
+03/07/2026,R32,Switzerland,Algeria,2,0,Reg,CH,
+03/07/2026,R32,Australia,Egypt,1,1,Penalties,AU,EG
+03/07/2026,R32,Argentina,Cape Verde,3,2,AET,AR,
+04/07/2026,R32,Colombia,Ghana,1,0,Reg,CO,
+04/07/2026,R16,Canada,Morocco,0,3,Morocco won in regular time,CA,MA
+04/07/2026,R16,Paraguay,France,0,1,France won in regular time,PR,FR
+05/07/2026,R16,Brazil,Norway,1,2,Norway won in regular time,BR,NO
+06/07/2026,R16,Mexico,England,2,3,England won in regular time,MX,GB
+06/07/2026,R16,Spain,Portugal,1,0,Portugal won in regular time,ES,PT
+07/07/2026,R16,USA,Belgium,1,4,Belgium won in regular time,US,BE
+07/07/2026,R16,Argentina,Egypt,3,2,Argentina won in regular time,AR,EG
+07/07/2026,R16,Switzerland,Colombia,0,0,Switzerland/Colombia pending at source time of capture,CH,CO
+09/06/2026,QF,France,Morocco,2,0,Reg,FR,MA
+10/06/2026,QF,Spain,Belgium,2,1,Reg,ES,BE
+11/06/2026,QF,Norway,England,1,2,AET,NO,GB
+12/06/2026,QF,Argentina,Switzerland,3,1,AET,AR,CH
+14/07/2026,SF,France,Spain,0,2,Reg,FR,ES
+15/07/2026,SF,Argentina,England,2,1,Reg,AR,GB
+18/07/2026,F3,France,England,4,6,Reg,FR,GB
+19/07/2026,F,Argentina,Spain,0,1,AET,AR,ES

@@ -43,6 +43,13 @@ Project to create a full ETL style pipeline and workflow for extracting and tran
 Useful web-scrape using Python to extract for fun football data and then basic wrangling and plots using pandas/seaborn/matplotlib
 
 9. Premier League Top Scorers R plotting
+tbc
+
+10. World Cup Results plotting in R
+Using ggflags package and some IMF data to combine making a ok-ish looking chart with some statistics
+
+11. World Cup Results Statistic plotting in R
+tbc
    
  
 
