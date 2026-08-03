@@ -1,0 +1,16 @@
+## Project 11 overview
+
+In the advent of the world cup, I decided to try and combine two pass times I enjoy, football and economic stats (yes, I know) combine them together to see what I could play around with. I wanted to see and test a hypothesis: that the more economically well off countries perform better in the world cup, this being done by proxy via goals scored which correlated very close to results, points and win ratios so landed on goals scored. 
+
+Once combining the data I wanted to see if these basic correlations existed across the fields and try and make sense of it, which resulted in something a bit more interesting and more fun to plot. 
+
+The results were somewhat surprising. There does appear to be a small positive relationship in general, but it is weak and noisy, with substantial variance across countries. In the raw data, correlations were low, and while log transformation made the relationship clearer for some indicators, it remained modest overall.
+
+This project was limited to a single World Cup dataset, so the sample size is relatively small. A useful next step would be to expand the dataset across multiple tournaments to see whether the same pattern holds over time.
+
+## Covered in this project:
+
+- Basic data processing in R combining datasets ready for analysis and plotting
+- Simple regression analysis using economic indicators.
+- Facet plotting in R
+- Interesting (?) finding a link between economic and world cup performance. 

@@ -147,6 +147,20 @@ wc = bind_rows(wc1, wc2) %>%
 
 # match wc data --
 
+# plot indicator short names:
+
+indicator_lookup <- tibble::tribble(
+  ~indicator_id,   ~indicator_short,
+  "NGDPD",         "GDP (current USD)",
+  "NGDPRPPPPC",    "GDP pc (PPP)",
+  "NGDPDPC",       "GDP pc (USD)",
+  "LUR",           "Unemployment",
+  "LP",            "Population",
+  "GGX_NGDP",      "Govt exp (% GDP)",
+  "BCA",           "CA balance (USD)",
+  "BCA_NGDPD",     "CA balance (% GDP)",
+  "LE",            "Employment"
+)
 
 
 df <- wc %>%
@@ -158,7 +172,7 @@ df <- wc %>%
 
 # r2 value per indc
 r2 <- df %>%
-  group_by(indicator_id, indicator_short) %>%
+  group_by(indicator_id, indicator) %>%
   summarise(
     model = list(lm(x2025 ~ goals_scored, data = cur_data())),
     r2 = summary(model[[1]])$r.squared,
@@ -181,20 +195,7 @@ r2_df <- df %>%
     r2 = summary(model[[1]])$r.squared
   )
 
-# plot indicator short names:
 
-indicator_lookup <- tibble::tribble(
-  ~indicator_id,   ~indicator_short,
-  "NGDPD",         "GDP (current USD)",
-  "NGDPRPPPPC",    "GDP pc (PPP)",
-  "NGDPDPC",       "GDP pc (USD)",
-  "LUR",           "Unemployment",
-  "LP",            "Population",
-  "GGX_NGDP",      "Govt exp (% GDP)",
-  "BCA",           "CA balance (USD)",
-  "BCA_NGDPD",     "CA balance (% GDP)",
-  "LE",            "Employment"
-)
 
 df <- df %>%
   left_join(indicator_lookup, by = "indicator_id") %>%
@@ -216,7 +217,7 @@ fc_plot <-
   labs(y="")
 
 
-fc_plot <- 
+fc_plot2 <- 
   ggplot(df,
        aes(
          x = points,
@@ -231,7 +232,7 @@ fc_plot <-
 
 
 
-fc_plot <- 
+fc_plot3 <- 
   ggplot(df,
        aes(
          x = win_ratio,
@@ -253,4 +254,40 @@ ggsave("fc_plot.png", fc_plot, width = 8, height = 12, dpi = 300)
 # quick check on transformed gdp/pop values
 # so countries are more comparable given large difference in pop sizes
 
+df2 <- df %>%
+  filter(indicator_id %in% c("NGDPD","NGDPDPC", "NGDPRPPPPC", "LP"))
 
+fc_plot_log <- 
+  ggplot(df2,
+         aes(
+           x = goals_scored,
+           y = x2025
+         )
+  )+
+  geom_point() +
+  facet_wrap(~ indicator_short, scales = "free_y", ncol = 2) +
+  scale_y_log10() +
+  geom_smooth(method = "lm", se = FALSE) +
+  theme_minimal(base_size = 12) +
+  labs(y="")
+
+
+# r2 value compared:
+
+df2 <- df2 %>%
+  mutate(log_x2025 = log10(x2025))
+
+r2. <- df2 %>%
+  group_by(indicator_id, indicator) %>%
+  summarise(
+    model = list(lm(log_x2025 ~ goals_scored, data = cur_data())),
+    r2 = summary(model[[1]])$r.squared,
+    .groups = "drop"
+  )
+
+print(r2.)
+
+print(r2)
+
+
+# end
