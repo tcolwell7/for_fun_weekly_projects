@@ -37,12 +37,12 @@ unique(data$nationality)
 
 # stats and plots of interest:
 # 1. Goals scored per season
-# 2. Cumulative goals over time
+# 2. Cumulative goals over time (doens't work - not plotting in the end)
 # 3. Total goals scored by club/how many entries
 # 4. Goals scored by non-eng players
 
 
-# 1. Goals scored per season ------
+# Goals scored per season ------
 
 ## simple bar chart
 
@@ -57,15 +57,6 @@ df <- data %>%
   ) %>%
   mutate(season_start = as.integer(substr(season, 1, 4)))
 
-
-df %>%
-  ggplot(
-    aes(
-      x=season,
-      y=total_top_10
-    )
-  )+
-  geom_col()
 
 
 plot <- ggplot(df, aes(x = season, y = top_scorer)) +
@@ -129,16 +120,16 @@ plot
 
 
 # hex colours to toggle:
-"#2E4057"
-"#577590"
-"#4D908E"
-"#277DA1"
-"#1B263B"
-"#5E4B56"
-"#6A5D7B"
-"#8D6A9F"
-"#4A4E69"
-"#2C2C34"
+# "#2E4057"
+# "#577590"
+# "#4D908E"
+# "#277DA1"
+# "#1B263B"
+# "#5E4B56"
+# "#6A5D7B"
+# "#8D6A9F"
+# "#4A4E69"
+# "#2C2C34"
 
 
 
@@ -282,3 +273,55 @@ pw_plot <- plot / plot2 / plot3
 
 
 ggsave("img/top_scorers_patchwork_plot.png", pw_plot, width = 8, height = 16, dpi = 300)
+
+
+## Cumulative top scorer chart ------
+
+# reorder data, so low scoers at the start of the dataset per group (season)
+
+df3 <- data %>%
+  group_by(season) %>%
+  arrange(goals, .by_group = TRUE) %>%
+  ungroup() %>%
+  mutate(cum_goals = cumsum(goals)) %>%
+  mutate(row_id = row_number())
+
+season_positions <- df3 %>%
+  group_by(season) %>%
+  summarise(pos = min(row_id))
+
+
+df3_agg <- data %>%
+  group_by(season) %>%
+  summarise(total_goals = sum(goals)) %>%
+  ungroup() %>%
+  mutate(cum_goals = cumsum(total_goals)) %>%
+  mutate(season_index = row_number())
+
+
+
+
+ggplot(df3_agg, aes(x = season_index, y = cum_goals)) +
+  geom_area(fill = "#1D3557", alpha = 0.8) +
+  geom_line(colour = "#CC6F4A", linewidth = 0.8) +
+  scale_x_continuous(
+    breaks = df3_agg$season_index,
+    labels = df3_agg$season
+  ) +
+  labs(
+    title = "Cumulative Premier League Goals",
+    subtitle = "Season-level cumulative sum",
+    x = "Season",
+    y = "Cumulative goals"
+  ) +
+  theme_minimal(base_family = "sans") +
+  theme(
+    axis.text.x = element_text(angle = 45, hjust = 1)
+  )
+
+
+# hmm after consideration cumsum plot looks rubbish and adds nothing so moving on. 
+
+# end
+
+
