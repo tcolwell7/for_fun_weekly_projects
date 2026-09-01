@@ -1,0 +1,1201 @@
+event_id,delivery_id,store_name,scooter_id,event_timestamp,distance_km,event_type,status
+1,1,Downtown Hub,SC001,2026-09-03 12:15:00,0.0,order_received,operational
+2,1,Downtown Hub,SC001,2026-09-03 12:24:00,0.23,arrived_restaurant,operational
+3,1,Downtown Hub,SC001,2026-09-03 12:28:00,0.0,pickup_complete,operational
+4,1,Downtown Hub,SC001,2026-09-03 12:29:00,1.22,in_transit,operational
+5,1,Downtown Hub,SC001,2026-09-03 12:35:00,0.0,waiting_traffic,operational
+6,1,Downtown Hub,SC001,2026-09-03 12:39:00,0.86,in_transit,operational
+7,1,Downtown Hub,SC001,2026-09-03 12:48:00,0.1,arrived_customer,operational
+8,1,Downtown Hub,SC001,2026-09-03 12:51:00,0.0,delivery_complete,operational
+9,2,Downtown Hub,SC018,2026-09-01 19:41:00,0.0,order_received,operational
+10,2,Downtown Hub,SC018,2026-09-01 19:47:00,0.16,arrived_restaurant,operational
+11,2,Downtown Hub,SC018,2026-09-01 19:52:00,0.0,pickup_complete,operational
+12,2,Downtown Hub,SC018,2026-09-01 19:53:00,1.18,in_transit,operational
+13,2,Downtown Hub,SC018,2026-09-01 20:00:00,0.0,waiting_traffic,operational
+14,2,Downtown Hub,SC018,2026-09-01 20:01:00,2.03,in_transit,operational
+15,2,Downtown Hub,SC018,2026-09-01 20:05:00,0.25,arrived_customer,operational
+16,2,Downtown Hub,SC018,2026-09-01 20:06:00,0.0,delivery_complete,operational
+17,3,Eastgate Food Court,SC005,2026-09-01 20:21:00,0.0,order_received,operational
+18,3,Eastgate Food Court,SC005,2026-09-01 20:29:00,0.2,arrived_restaurant,operational
+19,3,Eastgate Food Court,SC005,2026-09-01 20:31:00,0.0,pickup_complete,operational
+20,3,Eastgate Food Court,SC005,2026-09-01 20:32:00,1.26,in_transit,operational
+21,3,Eastgate Food Court,SC005,2026-09-01 20:36:00,0.0,waiting_traffic,operational
+22,3,Eastgate Food Court,SC005,2026-09-01 20:38:00,2.65,in_transit,operational
+23,3,Eastgate Food Court,SC005,2026-09-01 20:44:00,0.17,arrived_customer,operational
+24,3,Eastgate Food Court,SC005,2026-09-01 20:46:00,0.0,delivery_complete,operational
+25,4,North Plaza,SC003,2026-09-03 12:53:00,0.0,order_received,operational
+26,4,North Plaza,SC003,2026-09-03 13:00:00,0.13,arrived_restaurant,operational
+27,4,North Plaza,SC003,2026-09-03 13:06:00,0.0,pickup_complete,operational
+28,4,North Plaza,SC003,2026-09-03 13:07:00,1.3,in_transit,operational
+29,4,North Plaza,SC003,2026-09-03 13:19:00,0.0,waiting_traffic,operational
+30,4,North Plaza,SC003,2026-09-03 13:23:00,1.04,in_transit,operational
+31,4,North Plaza,SC003,2026-09-03 13:32:00,0.1,arrived_customer,operational
+32,4,North Plaza,SC003,2026-09-03 13:36:00,0.0,delivery_complete,minor_delay
+33,5,Westside Kitchen,SC004,2026-09-02 12:29:00,0.0,order_received,operational
+34,5,Westside Kitchen,SC004,2026-09-02 12:36:00,0.15,arrived_restaurant,operational
+35,5,Westside Kitchen,SC004,2026-09-02 12:40:00,0.0,pickup_complete,operational
+36,5,Westside Kitchen,SC004,2026-09-02 12:41:00,1.76,in_transit,operational
+37,5,Westside Kitchen,SC004,2026-09-02 12:45:00,0.0,waiting_traffic,operational
+38,5,Westside Kitchen,SC004,2026-09-02 12:48:00,1.18,in_transit,operational
+39,5,Westside Kitchen,SC004,2026-09-02 12:50:00,0.23,arrived_customer,operational
+40,5,Westside Kitchen,SC004,2026-09-02 12:54:00,0.0,delivery_complete,operational
+41,6,Westside Kitchen,SC018,2026-09-03 11:10:00,0.0,order_received,operational
+42,6,Westside Kitchen,SC018,2026-09-03 11:20:00,0.27,arrived_restaurant,operational
+43,6,Westside Kitchen,SC018,2026-09-03 11:23:00,0.0,pickup_complete,operational
+44,6,Westside Kitchen,SC018,2026-09-03 11:24:00,0.97,in_transit,operational
+45,6,Westside Kitchen,SC018,2026-09-03 11:26:00,0.0,waiting_traffic,operational
+46,6,Westside Kitchen,SC018,2026-09-03 11:30:00,2.77,in_transit,operational
+47,6,Westside Kitchen,SC018,2026-09-03 11:33:00,0.21,arrived_customer,operational
+48,6,Westside Kitchen,SC018,2026-09-03 11:35:00,0.0,delivery_complete,operational
+49,7,Downtown Hub,SC011,2026-09-02 12:04:00,0.0,order_received,operational
+50,7,Downtown Hub,SC011,2026-09-02 12:11:00,0.08,arrived_restaurant,operational
+51,7,Downtown Hub,SC011,2026-09-02 12:18:00,0.0,pickup_complete,operational
+52,7,Downtown Hub,SC011,2026-09-02 12:19:00,2.32,in_transit,operational
+53,7,Downtown Hub,SC011,2026-09-02 12:26:00,0.0,waiting_traffic,operational
+54,7,Downtown Hub,SC011,2026-09-02 12:28:00,2.21,in_transit,operational
+55,7,Downtown Hub,SC011,2026-09-02 12:39:00,0.08,arrived_customer,operational
+56,7,Downtown Hub,SC011,2026-09-02 12:42:00,0.0,delivery_complete,operational
+57,8,Eastgate Food Court,SC005,2026-09-01 19:35:00,0.0,order_received,operational
+58,8,Eastgate Food Court,SC005,2026-09-01 19:42:00,0.13,arrived_restaurant,operational
+59,8,Eastgate Food Court,SC005,2026-09-01 19:47:00,0.0,pickup_complete,operational
+60,8,Eastgate Food Court,SC005,2026-09-01 19:48:00,1.47,in_transit,operational
+61,8,Eastgate Food Court,SC005,2026-09-01 19:56:00,0.0,waiting_traffic,operational
+62,8,Eastgate Food Court,SC005,2026-09-01 19:59:00,1.42,in_transit,minor_delay
+63,8,Eastgate Food Court,SC005,2026-09-01 20:10:00,0.07,arrived_customer,operational
+64,8,Eastgate Food Court,SC005,2026-09-01 20:13:00,0.0,delivery_complete,operational
+65,9,Downtown Hub,SC004,2026-09-01 18:10:00,0.0,order_received,operational
+66,9,Downtown Hub,SC004,2026-09-01 18:15:00,0.28,arrived_restaurant,operational
+67,9,Downtown Hub,SC004,2026-09-01 18:18:00,0.0,pickup_complete,operational
+68,9,Downtown Hub,SC004,2026-09-01 18:19:00,3.15,in_transit,operational
+69,9,Downtown Hub,SC004,2026-09-01 18:27:00,0.0,waiting_traffic,minor_delay
+70,9,Downtown Hub,SC004,2026-09-01 18:29:00,3.21,in_transit,operational
+71,9,Downtown Hub,SC004,2026-09-01 18:37:00,0.27,arrived_customer,minor_delay
+72,9,Downtown Hub,SC004,2026-09-01 18:43:00,0.0,delivery_complete,operational
+73,10,Downtown Hub,SC004,2026-09-03 22:34:00,0.0,order_received,operational
+74,10,Downtown Hub,SC004,2026-09-03 22:42:00,0.11,arrived_restaurant,operational
+75,10,Downtown Hub,SC004,2026-09-03 22:45:00,0.0,pickup_complete,operational
+76,10,Downtown Hub,SC004,2026-09-03 22:46:00,3.12,in_transit,operational
+77,10,Downtown Hub,SC004,2026-09-03 22:55:00,0.0,waiting_traffic,operational
+78,10,Downtown Hub,SC004,2026-09-03 22:57:00,1.93,in_transit,operational
+79,10,Downtown Hub,SC004,2026-09-03 23:04:00,0.11,arrived_customer,operational
+80,10,Downtown Hub,SC004,2026-09-03 23:07:00,0.0,delivery_complete,operational
+81,11,Westside Kitchen,SC017,2026-09-01 21:40:00,0.0,order_received,operational
+82,11,Westside Kitchen,SC017,2026-09-01 21:46:00,0.29,arrived_restaurant,operational
+83,11,Westside Kitchen,SC017,2026-09-01 21:49:00,0.0,pickup_complete,operational
+84,11,Westside Kitchen,SC017,2026-09-01 21:50:00,2.7,in_transit,operational
+85,11,Westside Kitchen,SC017,2026-09-01 21:51:00,0.0,waiting_traffic,operational
+86,11,Westside Kitchen,SC017,2026-09-01 21:54:00,3.4,in_transit,operational
+87,11,Westside Kitchen,SC017,2026-09-01 22:00:00,0.13,arrived_customer,operational
+88,11,Westside Kitchen,SC017,2026-09-01 22:03:00,0.0,delivery_complete,operational
+89,12,Downtown Hub,SC020,2026-09-02 15:01:00,0.0,order_received,operational
+90,12,Downtown Hub,SC020,2026-09-02 15:03:00,0.06,arrived_restaurant,operational
+91,12,Downtown Hub,SC020,2026-09-02 15:08:00,0.0,pickup_complete,minor_delay
+92,12,Downtown Hub,SC020,2026-09-02 15:09:00,1.45,in_transit,operational
+93,12,Downtown Hub,SC020,2026-09-02 15:16:00,0.0,waiting_traffic,operational
+94,12,Downtown Hub,SC020,2026-09-02 15:18:00,3.46,in_transit,operational
+95,12,Downtown Hub,SC020,2026-09-02 15:24:00,0.11,arrived_customer,operational
+96,12,Downtown Hub,SC020,2026-09-02 15:26:00,0.0,delivery_complete,operational
+97,13,North Plaza,SC003,2026-09-03 20:08:00,0.0,order_received,operational
+98,13,North Plaza,SC003,2026-09-03 20:19:00,0.11,arrived_restaurant,operational
+99,13,North Plaza,SC003,2026-09-03 20:25:00,0.0,pickup_complete,operational
+100,13,North Plaza,SC003,2026-09-03 20:26:00,2.51,in_transit,operational
+101,13,North Plaza,SC003,2026-09-03 20:35:00,0.0,waiting_traffic,operational
+102,13,North Plaza,SC003,2026-09-03 20:38:00,1.04,in_transit,operational
+103,13,North Plaza,SC003,2026-09-03 20:51:00,0.1,arrived_customer,operational
+104,13,North Plaza,SC003,2026-09-03 20:54:00,0.0,delivery_complete,operational
+105,14,Westside Kitchen,SC010,2026-09-02 18:41:00,0.0,order_received,operational
+106,14,Westside Kitchen,SC010,2026-09-02 18:51:00,0.22,arrived_restaurant,operational
+107,14,Westside Kitchen,SC010,2026-09-02 18:56:00,0.0,pickup_complete,operational
+108,14,Westside Kitchen,SC010,2026-09-02 18:57:00,1.41,in_transit,operational
+109,14,Westside Kitchen,SC010,2026-09-02 19:03:00,0.0,waiting_traffic,operational
+110,14,Westside Kitchen,SC010,2026-09-02 19:05:00,2.67,in_transit,operational
+111,14,Westside Kitchen,SC010,2026-09-02 19:09:00,0.15,arrived_customer,operational
+112,14,Westside Kitchen,SC010,2026-09-02 19:13:00,0.0,delivery_complete,operational
+113,15,Downtown Hub,SC003,2026-09-03 18:03:00,0.0,order_received,operational
+114,15,Downtown Hub,SC003,2026-09-03 18:08:00,0.28,arrived_restaurant,operational
+115,15,Downtown Hub,SC003,2026-09-03 18:12:00,0.0,pickup_complete,operational
+116,15,Downtown Hub,SC003,2026-09-03 18:13:00,2.58,in_transit,operational
+117,15,Downtown Hub,SC003,2026-09-03 18:20:00,0.0,waiting_traffic,operational
+118,15,Downtown Hub,SC003,2026-09-03 18:23:00,2.23,in_transit,operational
+119,15,Downtown Hub,SC003,2026-09-03 18:33:00,0.27,arrived_customer,operational
+120,15,Downtown Hub,SC003,2026-09-03 18:36:00,0.0,delivery_complete,operational
+121,16,North Plaza,SC008,2026-09-02 20:26:00,0.0,order_received,operational
+122,16,North Plaza,SC008,2026-09-02 20:33:00,0.13,arrived_restaurant,operational
+123,16,North Plaza,SC008,2026-09-02 20:38:00,0.0,pickup_complete,operational
+124,16,North Plaza,SC008,2026-09-02 20:39:00,3.22,in_transit,operational
+125,16,North Plaza,SC008,2026-09-02 20:48:00,0.0,waiting_traffic,operational
+126,16,North Plaza,SC008,2026-09-02 20:49:00,2.53,in_transit,operational
+127,16,North Plaza,SC008,2026-09-02 20:56:00,0.07,arrived_customer,operational
+128,16,North Plaza,SC008,2026-09-02 21:00:00,0.0,delivery_complete,minor_delay
+129,17,Downtown Hub,SC002,2026-09-02 19:21:00,0.0,order_received,operational
+130,17,Downtown Hub,SC002,2026-09-02 19:29:00,0.05,arrived_restaurant,operational
+131,17,Downtown Hub,SC002,2026-09-02 19:32:00,0.0,pickup_complete,operational
+132,17,Downtown Hub,SC002,2026-09-02 19:33:00,2.67,in_transit,operational
+133,17,Downtown Hub,SC002,2026-09-02 19:36:00,0.0,waiting_traffic,operational
+134,17,Downtown Hub,SC002,2026-09-02 19:37:00,2.72,in_transit,operational
+135,17,Downtown Hub,SC002,2026-09-02 19:45:00,0.24,arrived_customer,operational
+136,17,Downtown Hub,SC002,2026-09-02 19:47:00,0.0,delivery_complete,operational
+137,18,Downtown Hub,SC015,2026-09-03 09:03:00,0.0,order_received,operational
+138,18,Downtown Hub,SC015,2026-09-03 09:07:00,0.21,arrived_restaurant,operational
+139,18,Downtown Hub,SC015,2026-09-03 09:13:00,0.0,pickup_complete,operational
+140,18,Downtown Hub,SC015,2026-09-03 09:14:00,1.79,in_transit,operational
+141,18,Downtown Hub,SC015,2026-09-03 09:17:00,0.0,waiting_traffic,operational
+142,18,Downtown Hub,SC015,2026-09-03 09:20:00,3.43,in_transit,operational
+143,18,Downtown Hub,SC015,2026-09-03 09:24:00,0.15,arrived_customer,operational
+144,18,Downtown Hub,SC015,2026-09-03 09:26:00,0.0,delivery_complete,operational
+145,19,North Plaza,SC002,2026-09-01 14:00:00,0.0,order_received,minor_delay
+146,19,North Plaza,SC002,2026-09-01 14:08:00,0.25,arrived_restaurant,operational
+147,19,North Plaza,SC002,2026-09-01 14:14:00,0.0,pickup_complete,operational
+148,19,North Plaza,SC002,2026-09-01 14:16:00,2.13,in_transit,operational
+149,19,North Plaza,SC002,2026-09-01 14:22:00,0.0,waiting_traffic,operational
+150,19,North Plaza,SC002,2026-09-01 14:25:00,1.56,in_transit,minor_delay
+151,19,North Plaza,SC002,2026-09-01 14:29:00,0.09,arrived_customer,minor_delay
+152,19,North Plaza,SC002,2026-09-01 14:33:00,0.0,delivery_complete,operational
+153,20,North Plaza,SC005,2026-09-01 12:13:00,0.0,order_received,minor_delay
+154,20,North Plaza,SC005,2026-09-01 12:20:00,0.05,arrived_restaurant,operational
+155,20,North Plaza,SC005,2026-09-01 12:24:00,0.0,pickup_complete,operational
+156,20,North Plaza,SC005,2026-09-01 12:25:00,3.41,in_transit,operational
+157,20,North Plaza,SC005,2026-09-01 12:30:00,0.0,waiting_traffic,operational
+158,20,North Plaza,SC005,2026-09-01 12:33:00,3.1,in_transit,operational
+159,20,North Plaza,SC005,2026-09-01 12:37:00,0.13,arrived_customer,operational
+160,20,North Plaza,SC005,2026-09-01 12:38:00,0.0,delivery_complete,operational
+161,21,Westside Kitchen,SC002,2026-09-03 09:54:00,0.0,order_received,operational
+162,21,Westside Kitchen,SC002,2026-09-03 10:02:00,0.28,arrived_restaurant,operational
+163,21,Westside Kitchen,SC002,2026-09-03 10:04:00,0.0,pickup_complete,operational
+164,21,Westside Kitchen,SC002,2026-09-03 10:05:00,1.06,in_transit,operational
+165,21,Westside Kitchen,SC002,2026-09-03 10:15:00,0.0,waiting_traffic,operational
+166,21,Westside Kitchen,SC002,2026-09-03 10:18:00,3.17,in_transit,operational
+167,21,Westside Kitchen,SC002,2026-09-03 10:21:00,0.23,arrived_customer,operational
+168,21,Westside Kitchen,SC002,2026-09-03 10:26:00,0.0,delivery_complete,operational
+169,22,Downtown Hub,SC014,2026-09-03 17:36:00,0.0,order_received,operational
+170,22,Downtown Hub,SC014,2026-09-03 17:47:00,0.25,arrived_restaurant,operational
+171,22,Downtown Hub,SC014,2026-09-03 17:49:00,0.0,pickup_complete,operational
+172,22,Downtown Hub,SC014,2026-09-03 17:50:00,3.27,in_transit,operational
+173,22,Downtown Hub,SC014,2026-09-03 17:56:00,0.0,waiting_traffic,operational
+174,22,Downtown Hub,SC014,2026-09-03 17:59:00,2.96,in_transit,operational
+175,22,Downtown Hub,SC014,2026-09-03 18:07:00,0.21,arrived_customer,operational
+176,22,Downtown Hub,SC014,2026-09-03 18:17:00,0.0,delivery_complete,operational
+177,23,Eastgate Food Court,SC003,2026-09-01 15:39:00,0.0,order_received,minor_delay
+178,23,Eastgate Food Court,SC003,2026-09-01 15:50:00,0.27,arrived_restaurant,minor_delay
+179,23,Eastgate Food Court,SC003,2026-09-01 15:56:00,0.0,pickup_complete,operational
+180,23,Eastgate Food Court,SC003,2026-09-01 15:57:00,1.05,in_transit,operational
+181,23,Eastgate Food Court,SC003,2026-09-01 15:59:00,0.0,waiting_traffic,operational
+182,23,Eastgate Food Court,SC003,2026-09-01 16:01:00,2.06,in_transit,operational
+183,23,Eastgate Food Court,SC003,2026-09-01 16:08:00,0.2,arrived_customer,operational
+184,23,Eastgate Food Court,SC003,2026-09-01 16:09:00,0.0,delivery_complete,operational
+185,24,Eastgate Food Court,SC010,2026-09-01 15:53:00,0.0,order_received,operational
+186,24,Eastgate Food Court,SC010,2026-09-01 16:02:00,0.08,arrived_restaurant,operational
+187,24,Eastgate Food Court,SC010,2026-09-01 16:06:00,0.0,pickup_complete,minor_delay
+188,24,Eastgate Food Court,SC010,2026-09-01 16:07:00,1.38,in_transit,operational
+189,24,Eastgate Food Court,SC010,2026-09-01 16:16:00,0.0,waiting_traffic,operational
+190,24,Eastgate Food Court,SC010,2026-09-01 16:19:00,0.94,in_transit,operational
+191,24,Eastgate Food Court,SC010,2026-09-01 16:23:00,0.18,arrived_customer,operational
+192,24,Eastgate Food Court,SC010,2026-09-01 16:27:00,0.0,delivery_complete,operational
+193,25,Downtown Hub,SC005,2026-09-02 09:56:00,0.0,order_received,operational
+194,25,Downtown Hub,SC005,2026-09-02 10:10:00,0.23,arrived_restaurant,operational
+195,25,Downtown Hub,SC005,2026-09-02 10:16:00,0.0,pickup_complete,operational
+196,25,Downtown Hub,SC005,2026-09-02 10:17:00,1.67,in_transit,operational
+197,25,Downtown Hub,SC005,2026-09-02 10:24:00,0.0,waiting_traffic,operational
+198,25,Downtown Hub,SC005,2026-09-02 10:26:00,1.99,in_transit,operational
+199,25,Downtown Hub,SC005,2026-09-02 10:35:00,0.09,arrived_customer,operational
+200,25,Downtown Hub,SC005,2026-09-02 10:37:00,0.0,delivery_complete,operational
+201,26,North Plaza,SC009,2026-09-01 09:40:00,0.0,order_received,operational
+202,26,North Plaza,SC009,2026-09-01 09:53:00,0.19,arrived_restaurant,operational
+203,26,North Plaza,SC009,2026-09-01 09:57:00,0.0,pickup_complete,operational
+204,26,North Plaza,SC009,2026-09-01 09:58:00,1.56,in_transit,operational
+205,26,North Plaza,SC009,2026-09-01 10:06:00,0.0,waiting_traffic,operational
+206,26,North Plaza,SC009,2026-09-01 10:10:00,1.93,in_transit,operational
+207,26,North Plaza,SC009,2026-09-01 10:22:00,0.11,arrived_customer,operational
+208,26,North Plaza,SC009,2026-09-01 10:27:00,0.0,delivery_complete,operational
+209,27,North Plaza,SC018,2026-09-01 09:04:00,0.0,order_received,operational
+210,27,North Plaza,SC018,2026-09-01 09:16:00,0.05,arrived_restaurant,operational
+211,27,North Plaza,SC018,2026-09-01 09:19:00,0.0,pickup_complete,operational
+212,27,North Plaza,SC018,2026-09-01 09:20:00,1.06,in_transit,operational
+213,27,North Plaza,SC018,2026-09-01 09:30:00,0.0,waiting_traffic,operational
+214,27,North Plaza,SC018,2026-09-01 09:31:00,1.27,in_transit,operational
+215,27,North Plaza,SC018,2026-09-01 09:35:00,0.2,arrived_customer,operational
+216,27,North Plaza,SC018,2026-09-01 09:36:00,0.0,delivery_complete,operational
+217,28,Eastgate Food Court,SC002,2026-09-02 11:43:00,0.0,order_received,operational
+218,28,Eastgate Food Court,SC002,2026-09-02 11:46:00,0.14,arrived_restaurant,operational
+219,28,Eastgate Food Court,SC002,2026-09-02 11:50:00,0.0,pickup_complete,operational
+220,28,Eastgate Food Court,SC002,2026-09-02 11:51:00,3.11,in_transit,operational
+221,28,Eastgate Food Court,SC002,2026-09-02 11:57:00,0.0,waiting_traffic,operational
+222,28,Eastgate Food Court,SC002,2026-09-02 12:02:00,0.99,in_transit,operational
+223,28,Eastgate Food Court,SC002,2026-09-02 12:06:00,0.21,arrived_customer,operational
+224,28,Eastgate Food Court,SC002,2026-09-02 12:10:00,0.0,delivery_complete,operational
+225,29,Westside Kitchen,SC006,2026-09-02 08:11:00,0.0,order_received,operational
+226,29,Westside Kitchen,SC006,2026-09-02 08:19:00,0.29,arrived_restaurant,operational
+227,29,Westside Kitchen,SC006,2026-09-02 08:23:00,0.0,pickup_complete,operational
+228,29,Westside Kitchen,SC006,2026-09-02 08:24:00,2.54,in_transit,operational
+229,29,Westside Kitchen,SC006,2026-09-02 08:33:00,0.0,waiting_traffic,operational
+230,29,Westside Kitchen,SC006,2026-09-02 08:38:00,3.34,in_transit,operational
+231,29,Westside Kitchen,SC006,2026-09-02 08:39:00,0.28,arrived_customer,operational
+232,29,Westside Kitchen,SC006,2026-09-02 08:43:00,0.0,delivery_complete,operational
+233,30,Downtown Hub,SC013,2026-09-01 21:30:00,0.0,order_received,operational
+234,30,Downtown Hub,SC013,2026-09-01 21:37:00,0.07,arrived_restaurant,operational
+235,30,Downtown Hub,SC013,2026-09-01 21:42:00,0.0,pickup_complete,operational
+236,30,Downtown Hub,SC013,2026-09-01 21:43:00,0.86,in_transit,operational
+237,30,Downtown Hub,SC013,2026-09-01 21:51:00,0.0,waiting_traffic,operational
+238,30,Downtown Hub,SC013,2026-09-01 21:53:00,1.12,in_transit,operational
+239,30,Downtown Hub,SC013,2026-09-01 21:58:00,0.22,arrived_customer,operational
+240,30,Downtown Hub,SC013,2026-09-01 22:03:00,0.0,delivery_complete,operational
+241,31,Eastgate Food Court,SC009,2026-09-01 20:17:00,0.0,order_received,operational
+242,31,Eastgate Food Court,SC009,2026-09-01 20:27:00,0.23,arrived_restaurant,operational
+243,31,Eastgate Food Court,SC009,2026-09-01 20:32:00,0.0,pickup_complete,operational
+244,31,Eastgate Food Court,SC009,2026-09-01 20:33:00,1.28,in_transit,operational
+245,31,Eastgate Food Court,SC009,2026-09-01 20:41:00,0.0,waiting_traffic,operational
+246,31,Eastgate Food Court,SC009,2026-09-01 20:44:00,3.47,in_transit,operational
+247,31,Eastgate Food Court,SC009,2026-09-01 20:52:00,0.24,arrived_customer,operational
+248,31,Eastgate Food Court,SC009,2026-09-01 20:53:00,0.0,delivery_complete,operational
+249,32,Eastgate Food Court,SC002,2026-09-01 17:27:00,0.0,order_received,operational
+250,32,Eastgate Food Court,SC002,2026-09-01 17:31:00,0.26,arrived_restaurant,operational
+251,32,Eastgate Food Court,SC002,2026-09-01 17:37:00,0.0,pickup_complete,operational
+252,32,Eastgate Food Court,SC002,2026-09-01 17:38:00,2.84,in_transit,minor_delay
+253,32,Eastgate Food Court,SC002,2026-09-01 17:47:00,0.0,waiting_traffic,operational
+254,32,Eastgate Food Court,SC002,2026-09-01 17:49:00,1.66,in_transit,operational
+255,32,Eastgate Food Court,SC002,2026-09-01 17:59:00,0.27,arrived_customer,operational
+256,32,Eastgate Food Court,SC002,2026-09-01 18:03:00,0.0,delivery_complete,operational
+257,33,North Plaza,SC001,2026-09-03 22:51:00,0.0,order_received,operational
+258,33,North Plaza,SC001,2026-09-03 23:00:00,0.29,arrived_restaurant,operational
+259,33,North Plaza,SC001,2026-09-03 23:04:00,0.0,pickup_complete,operational
+260,33,North Plaza,SC001,2026-09-03 23:05:00,2.01,in_transit,operational
+261,33,North Plaza,SC001,2026-09-03 23:13:00,0.0,waiting_traffic,operational
+262,33,North Plaza,SC001,2026-09-03 23:14:00,2.62,in_transit,operational
+263,33,North Plaza,SC001,2026-09-03 23:17:00,0.25,arrived_customer,operational
+264,33,North Plaza,SC001,2026-09-03 23:22:00,0.0,delivery_complete,operational
+265,34,Eastgate Food Court,SC004,2026-09-03 22:19:00,0.0,order_received,operational
+266,34,Eastgate Food Court,SC004,2026-09-03 22:29:00,0.06,arrived_restaurant,operational
+267,34,Eastgate Food Court,SC004,2026-09-03 22:33:00,0.0,pickup_complete,operational
+268,34,Eastgate Food Court,SC004,2026-09-03 22:34:00,3.2,in_transit,operational
+269,34,Eastgate Food Court,SC004,2026-09-03 22:35:00,0.0,waiting_traffic,operational
+270,34,Eastgate Food Court,SC004,2026-09-03 22:40:00,1.19,in_transit,operational
+271,34,Eastgate Food Court,SC004,2026-09-03 22:44:00,0.24,arrived_customer,operational
+272,34,Eastgate Food Court,SC004,2026-09-03 22:47:00,0.0,delivery_complete,operational
+273,35,Westside Kitchen,SC020,2026-09-03 12:25:00,0.0,order_received,operational
+274,35,Westside Kitchen,SC020,2026-09-03 12:30:00,0.07,arrived_restaurant,operational
+275,35,Westside Kitchen,SC020,2026-09-03 12:35:00,0.0,pickup_complete,operational
+276,35,Westside Kitchen,SC020,2026-09-03 12:36:00,3.02,in_transit,operational
+277,35,Westside Kitchen,SC020,2026-09-03 12:42:00,0.0,waiting_traffic,operational
+278,35,Westside Kitchen,SC020,2026-09-03 12:44:00,1.03,in_transit,operational
+279,35,Westside Kitchen,SC020,2026-09-03 12:51:00,0.29,arrived_customer,operational
+280,35,Westside Kitchen,SC020,2026-09-03 12:56:00,0.0,delivery_complete,operational
+281,36,Westside Kitchen,SC017,2026-09-02 20:57:00,0.0,order_received,minor_delay
+282,36,Westside Kitchen,SC017,2026-09-02 21:03:00,0.24,arrived_restaurant,operational
+283,36,Westside Kitchen,SC017,2026-09-02 21:06:00,0.0,pickup_complete,operational
+284,36,Westside Kitchen,SC017,2026-09-02 21:07:00,3.25,in_transit,operational
+285,36,Westside Kitchen,SC017,2026-09-02 21:08:00,0.0,waiting_traffic,operational
+286,36,Westside Kitchen,SC017,2026-09-02 21:12:00,0.83,in_transit,operational
+287,36,Westside Kitchen,SC017,2026-09-02 21:18:00,0.17,arrived_customer,operational
+288,36,Westside Kitchen,SC017,2026-09-02 21:20:00,0.0,delivery_complete,minor_delay
+289,37,Westside Kitchen,SC010,2026-09-01 20:12:00,0.0,order_received,operational
+290,37,Westside Kitchen,SC010,2026-09-01 20:21:00,0.24,arrived_restaurant,operational
+291,37,Westside Kitchen,SC010,2026-09-01 20:24:00,0.0,pickup_complete,minor_delay
+292,37,Westside Kitchen,SC010,2026-09-01 20:25:00,1.81,in_transit,operational
+293,37,Westside Kitchen,SC010,2026-09-01 20:31:00,0.0,waiting_traffic,operational
+294,37,Westside Kitchen,SC010,2026-09-01 20:34:00,1.4,in_transit,operational
+295,37,Westside Kitchen,SC010,2026-09-01 20:39:00,0.3,arrived_customer,operational
+296,37,Westside Kitchen,SC010,2026-09-01 20:43:00,0.0,delivery_complete,operational
+297,38,North Plaza,SC016,2026-09-02 11:09:00,0.0,order_received,operational
+298,38,North Plaza,SC016,2026-09-02 11:20:00,0.29,arrived_restaurant,operational
+299,38,North Plaza,SC016,2026-09-02 11:25:00,0.0,pickup_complete,operational
+300,38,North Plaza,SC016,2026-09-02 11:26:00,2.68,in_transit,operational
+301,38,North Plaza,SC016,2026-09-02 11:37:00,0.0,waiting_traffic,operational
+302,38,North Plaza,SC016,2026-09-02 11:40:00,2.38,in_transit,operational
+303,38,North Plaza,SC016,2026-09-02 11:53:00,0.28,arrived_customer,operational
+304,38,North Plaza,SC016,2026-09-02 11:55:00,0.0,delivery_complete,minor_delay
+305,39,North Plaza,SC002,2026-09-03 11:58:00,0.0,order_received,operational
+306,39,North Plaza,SC002,2026-09-03 12:13:00,0.12,arrived_restaurant,operational
+307,39,North Plaza,SC002,2026-09-03 12:16:00,0.0,pickup_complete,operational
+308,39,North Plaza,SC002,2026-09-03 12:17:00,1.75,in_transit,operational
+309,39,North Plaza,SC002,2026-09-03 12:19:00,0.0,waiting_traffic,minor_delay
+310,39,North Plaza,SC002,2026-09-03 12:21:00,3.43,in_transit,operational
+311,39,North Plaza,SC002,2026-09-03 12:28:00,0.25,arrived_customer,minor_delay
+312,39,North Plaza,SC002,2026-09-03 12:29:00,0.0,delivery_complete,operational
+313,40,North Plaza,SC018,2026-09-02 22:10:00,0.0,order_received,operational
+314,40,North Plaza,SC018,2026-09-02 22:19:00,0.28,arrived_restaurant,operational
+315,40,North Plaza,SC018,2026-09-02 22:22:00,0.0,pickup_complete,operational
+316,40,North Plaza,SC018,2026-09-02 22:23:00,1.93,in_transit,operational
+317,40,North Plaza,SC018,2026-09-02 22:30:00,0.0,waiting_traffic,operational
+318,40,North Plaza,SC018,2026-09-02 22:34:00,3.47,in_transit,operational
+319,40,North Plaza,SC018,2026-09-02 22:44:00,0.09,arrived_customer,operational
+320,40,North Plaza,SC018,2026-09-02 22:47:00,0.0,delivery_complete,operational
+321,41,Eastgate Food Court,SC015,2026-09-01 19:18:00,0.0,order_received,operational
+322,41,Eastgate Food Court,SC015,2026-09-01 19:20:00,0.29,arrived_restaurant,operational
+323,41,Eastgate Food Court,SC015,2026-09-01 19:27:00,0.0,pickup_complete,operational
+324,41,Eastgate Food Court,SC015,2026-09-01 19:28:00,2.07,in_transit,operational
+325,41,Eastgate Food Court,SC015,2026-09-01 19:34:00,0.0,waiting_traffic,operational
+326,41,Eastgate Food Court,SC015,2026-09-01 19:35:00,0.95,in_transit,operational
+327,41,Eastgate Food Court,SC015,2026-09-01 19:40:00,0.3,arrived_customer,operational
+328,41,Eastgate Food Court,SC015,2026-09-01 19:44:00,0.0,delivery_complete,operational
+329,42,North Plaza,SC014,2026-09-02 16:29:00,0.0,order_received,operational
+330,42,North Plaza,SC014,2026-09-02 16:37:00,0.24,arrived_restaurant,operational
+331,42,North Plaza,SC014,2026-09-02 16:42:00,0.0,pickup_complete,operational
+332,42,North Plaza,SC014,2026-09-02 16:43:00,1.15,in_transit,operational
+333,42,North Plaza,SC014,2026-09-02 16:48:00,0.0,waiting_traffic,operational
+334,42,North Plaza,SC014,2026-09-02 16:49:00,1.42,in_transit,operational
+335,42,North Plaza,SC014,2026-09-02 16:56:00,0.22,arrived_customer,operational
+336,42,North Plaza,SC014,2026-09-02 17:00:00,0.0,delivery_complete,operational
+337,43,North Plaza,SC016,2026-09-01 13:19:00,0.0,order_received,operational
+338,43,North Plaza,SC016,2026-09-01 13:22:00,0.08,arrived_restaurant,operational
+339,43,North Plaza,SC016,2026-09-01 13:29:00,0.0,pickup_complete,minor_delay
+340,43,North Plaza,SC016,2026-09-01 13:30:00,2.89,in_transit,operational
+341,43,North Plaza,SC016,2026-09-01 13:40:00,0.0,waiting_traffic,operational
+342,43,North Plaza,SC016,2026-09-01 13:44:00,2.29,in_transit,operational
+343,43,North Plaza,SC016,2026-09-01 13:51:00,0.15,arrived_customer,operational
+344,43,North Plaza,SC016,2026-09-01 13:56:00,0.0,delivery_complete,operational
+345,44,Westside Kitchen,SC009,2026-09-02 15:01:00,0.0,order_received,operational
+346,44,Westside Kitchen,SC009,2026-09-02 15:09:00,0.23,arrived_restaurant,operational
+347,44,Westside Kitchen,SC009,2026-09-02 15:15:00,0.0,pickup_complete,operational
+348,44,Westside Kitchen,SC009,2026-09-02 15:16:00,0.84,in_transit,operational
+349,44,Westside Kitchen,SC009,2026-09-02 15:20:00,0.0,waiting_traffic,operational
+350,44,Westside Kitchen,SC009,2026-09-02 15:22:00,1.86,in_transit,operational
+351,44,Westside Kitchen,SC009,2026-09-02 15:31:00,0.16,arrived_customer,minor_delay
+352,44,Westside Kitchen,SC009,2026-09-02 15:32:00,0.0,delivery_complete,operational
+353,45,North Plaza,SC019,2026-09-03 18:01:00,0.0,order_received,operational
+354,45,North Plaza,SC019,2026-09-03 18:08:00,0.18,arrived_restaurant,operational
+355,45,North Plaza,SC019,2026-09-03 18:14:00,0.0,pickup_complete,operational
+356,45,North Plaza,SC019,2026-09-03 18:15:00,2.48,in_transit,operational
+357,45,North Plaza,SC019,2026-09-03 18:24:00,0.0,waiting_traffic,operational
+358,45,North Plaza,SC019,2026-09-03 18:25:00,2.04,in_transit,operational
+359,45,North Plaza,SC019,2026-09-03 18:31:00,0.13,arrived_customer,operational
+360,45,North Plaza,SC019,2026-09-03 18:34:00,0.0,delivery_complete,operational
+361,46,North Plaza,SC009,2026-09-02 12:53:00,0.0,order_received,operational
+362,46,North Plaza,SC009,2026-09-02 13:02:00,0.07,arrived_restaurant,operational
+363,46,North Plaza,SC009,2026-09-02 13:04:00,0.0,pickup_complete,operational
+364,46,North Plaza,SC009,2026-09-02 13:05:00,1.73,in_transit,minor_delay
+365,46,North Plaza,SC009,2026-09-02 13:08:00,0.0,waiting_traffic,operational
+366,46,North Plaza,SC009,2026-09-02 13:11:00,2.6,in_transit,operational
+367,46,North Plaza,SC009,2026-09-02 13:17:00,0.09,arrived_customer,operational
+368,46,North Plaza,SC009,2026-09-02 13:22:00,0.0,delivery_complete,operational
+369,47,Downtown Hub,SC008,2026-09-01 21:01:00,0.0,order_received,operational
+370,47,Downtown Hub,SC008,2026-09-01 21:07:00,0.09,arrived_restaurant,operational
+371,47,Downtown Hub,SC008,2026-09-01 21:10:00,0.0,pickup_complete,operational
+372,47,Downtown Hub,SC008,2026-09-01 21:11:00,1.78,in_transit,operational
+373,47,Downtown Hub,SC008,2026-09-01 21:16:00,0.0,waiting_traffic,operational
+374,47,Downtown Hub,SC008,2026-09-01 21:21:00,0.91,in_transit,operational
+375,47,Downtown Hub,SC008,2026-09-01 21:28:00,0.07,arrived_customer,operational
+376,47,Downtown Hub,SC008,2026-09-01 21:32:00,0.0,delivery_complete,operational
+377,48,Downtown Hub,SC006,2026-09-02 09:37:00,0.0,order_received,operational
+378,48,Downtown Hub,SC006,2026-09-02 09:48:00,0.25,arrived_restaurant,operational
+379,48,Downtown Hub,SC006,2026-09-02 09:52:00,0.0,pickup_complete,operational
+380,48,Downtown Hub,SC006,2026-09-02 09:53:00,1.37,in_transit,minor_delay
+381,48,Downtown Hub,SC006,2026-09-02 09:57:00,0.0,waiting_traffic,operational
+382,48,Downtown Hub,SC006,2026-09-02 10:00:00,2.47,in_transit,operational
+383,48,Downtown Hub,SC006,2026-09-02 10:06:00,0.14,arrived_customer,operational
+384,48,Downtown Hub,SC006,2026-09-02 10:07:00,0.0,delivery_complete,operational
+385,49,Westside Kitchen,SC004,2026-09-03 20:19:00,0.0,order_received,operational
+386,49,Westside Kitchen,SC004,2026-09-03 20:32:00,0.06,arrived_restaurant,operational
+387,49,Westside Kitchen,SC004,2026-09-03 20:36:00,0.0,pickup_complete,operational
+388,49,Westside Kitchen,SC004,2026-09-03 20:37:00,3.22,in_transit,minor_delay
+389,49,Westside Kitchen,SC004,2026-09-03 20:40:00,0.0,waiting_traffic,operational
+390,49,Westside Kitchen,SC004,2026-09-03 20:46:00,1.09,in_transit,operational
+391,49,Westside Kitchen,SC004,2026-09-03 20:56:00,0.11,arrived_customer,operational
+392,49,Westside Kitchen,SC004,2026-09-03 21:02:00,0.0,delivery_complete,operational
+393,50,Eastgate Food Court,SC001,2026-09-02 21:31:00,0.0,order_received,operational
+394,50,Eastgate Food Court,SC001,2026-09-02 21:32:00,0.06,arrived_restaurant,minor_delay
+395,50,Eastgate Food Court,SC001,2026-09-02 21:35:00,0.0,pickup_complete,operational
+396,50,Eastgate Food Court,SC001,2026-09-02 21:36:00,1.68,in_transit,operational
+397,50,Eastgate Food Court,SC001,2026-09-02 21:39:00,0.0,waiting_traffic,operational
+398,50,Eastgate Food Court,SC001,2026-09-02 21:41:00,2.93,in_transit,operational
+399,50,Eastgate Food Court,SC001,2026-09-02 21:52:00,0.17,arrived_customer,operational
+400,50,Eastgate Food Court,SC001,2026-09-02 21:57:00,0.0,delivery_complete,minor_delay
+401,51,Eastgate Food Court,SC020,2026-09-03 20:30:00,0.0,order_received,operational
+402,51,Eastgate Food Court,SC020,2026-09-03 20:38:00,0.2,arrived_restaurant,operational
+403,51,Eastgate Food Court,SC020,2026-09-03 20:41:00,0.0,pickup_complete,operational
+404,51,Eastgate Food Court,SC020,2026-09-03 20:42:00,1.14,in_transit,operational
+405,51,Eastgate Food Court,SC020,2026-09-03 20:51:00,0.0,waiting_traffic,operational
+406,51,Eastgate Food Court,SC020,2026-09-03 20:52:00,2.54,in_transit,operational
+407,51,Eastgate Food Court,SC020,2026-09-03 20:55:00,0.3,arrived_customer,operational
+408,51,Eastgate Food Court,SC020,2026-09-03 20:56:00,0.0,delivery_complete,operational
+409,52,North Plaza,SC019,2026-09-03 18:24:00,0.0,order_received,operational
+410,52,North Plaza,SC019,2026-09-03 18:35:00,0.08,arrived_restaurant,operational
+411,52,North Plaza,SC019,2026-09-03 18:37:00,0.0,pickup_complete,operational
+412,52,North Plaza,SC019,2026-09-03 18:38:00,1.23,in_transit,operational
+413,52,North Plaza,SC019,2026-09-03 18:42:00,0.0,waiting_traffic,operational
+414,52,North Plaza,SC019,2026-09-03 18:44:00,1.27,in_transit,operational
+415,52,North Plaza,SC019,2026-09-03 18:49:00,0.27,arrived_customer,operational
+416,52,North Plaza,SC019,2026-09-03 18:51:00,0.0,delivery_complete,operational
+417,53,Eastgate Food Court,SC018,2026-09-01 16:12:00,0.0,order_received,operational
+418,53,Eastgate Food Court,SC018,2026-09-01 16:20:00,0.15,arrived_restaurant,operational
+419,53,Eastgate Food Court,SC018,2026-09-01 16:23:00,0.0,pickup_complete,operational
+420,53,Eastgate Food Court,SC018,2026-09-01 16:24:00,3.14,in_transit,operational
+421,53,Eastgate Food Court,SC018,2026-09-01 16:29:00,0.0,waiting_traffic,operational
+422,53,Eastgate Food Court,SC018,2026-09-01 16:31:00,1.26,in_transit,operational
+423,53,Eastgate Food Court,SC018,2026-09-01 16:40:00,0.19,arrived_customer,operational
+424,53,Eastgate Food Court,SC018,2026-09-01 16:44:00,0.0,delivery_complete,operational
+425,54,Downtown Hub,SC010,2026-09-01 14:44:00,0.0,order_received,operational
+426,54,Downtown Hub,SC010,2026-09-01 14:52:00,0.24,arrived_restaurant,operational
+427,54,Downtown Hub,SC010,2026-09-01 14:53:00,0.0,pickup_complete,operational
+428,54,Downtown Hub,SC010,2026-09-01 14:54:00,1.95,in_transit,operational
+429,54,Downtown Hub,SC010,2026-09-01 14:58:00,0.0,waiting_traffic,operational
+430,54,Downtown Hub,SC010,2026-09-01 14:59:00,1.11,in_transit,minor_delay
+431,54,Downtown Hub,SC010,2026-09-01 15:01:00,0.2,arrived_customer,operational
+432,54,Downtown Hub,SC010,2026-09-01 15:05:00,0.0,delivery_complete,operational
+433,55,North Plaza,SC009,2026-09-02 12:14:00,0.0,order_received,operational
+434,55,North Plaza,SC009,2026-09-02 12:24:00,0.09,arrived_restaurant,operational
+435,55,North Plaza,SC009,2026-09-02 12:25:00,0.0,pickup_complete,operational
+436,55,North Plaza,SC009,2026-09-02 12:27:00,0.94,in_transit,operational
+437,55,North Plaza,SC009,2026-09-02 12:29:00,0.0,waiting_traffic,operational
+438,55,North Plaza,SC009,2026-09-02 12:30:00,0.97,in_transit,operational
+439,55,North Plaza,SC009,2026-09-02 12:35:00,0.22,arrived_customer,operational
+440,55,North Plaza,SC009,2026-09-02 12:38:00,0.0,delivery_complete,operational
+441,56,Eastgate Food Court,SC004,2026-09-01 12:14:00,0.0,order_received,operational
+442,56,Eastgate Food Court,SC004,2026-09-01 12:24:00,0.17,arrived_restaurant,operational
+443,56,Eastgate Food Court,SC004,2026-09-01 12:30:00,0.0,pickup_complete,operational
+444,56,Eastgate Food Court,SC004,2026-09-01 12:31:00,3.31,in_transit,operational
+445,56,Eastgate Food Court,SC004,2026-09-01 12:32:00,0.0,waiting_traffic,operational
+446,56,Eastgate Food Court,SC004,2026-09-01 12:33:00,3.33,in_transit,operational
+447,56,Eastgate Food Court,SC004,2026-09-01 12:41:00,0.1,arrived_customer,operational
+448,56,Eastgate Food Court,SC004,2026-09-01 12:44:00,0.0,delivery_complete,operational
+449,57,North Plaza,SC004,2026-09-01 17:18:00,0.0,order_received,operational
+450,57,North Plaza,SC004,2026-09-01 17:26:00,0.19,arrived_restaurant,operational
+451,57,North Plaza,SC004,2026-09-01 17:30:00,0.0,pickup_complete,operational
+452,57,North Plaza,SC004,2026-09-01 17:31:00,2.95,in_transit,operational
+453,57,North Plaza,SC004,2026-09-01 17:37:00,0.0,waiting_traffic,operational
+454,57,North Plaza,SC004,2026-09-01 17:39:00,1.24,in_transit,operational
+455,57,North Plaza,SC004,2026-09-01 17:44:00,0.18,arrived_customer,operational
+456,57,North Plaza,SC004,2026-09-01 17:48:00,0.0,delivery_complete,operational
+457,58,Downtown Hub,SC019,2026-09-03 18:03:00,0.0,order_received,operational
+458,58,Downtown Hub,SC019,2026-09-03 18:14:00,0.15,arrived_restaurant,operational
+459,58,Downtown Hub,SC019,2026-09-03 18:20:00,0.0,pickup_complete,operational
+460,58,Downtown Hub,SC019,2026-09-03 18:21:00,1.82,in_transit,operational
+461,58,Downtown Hub,SC019,2026-09-03 18:26:00,0.0,waiting_traffic,operational
+462,58,Downtown Hub,SC019,2026-09-03 18:30:00,2.82,in_transit,operational
+463,58,Downtown Hub,SC019,2026-09-03 18:31:00,0.18,arrived_customer,operational
+464,58,Downtown Hub,SC019,2026-09-03 18:34:00,0.0,delivery_complete,operational
+465,59,Westside Kitchen,SC017,2026-09-02 15:58:00,0.0,order_received,operational
+466,59,Westside Kitchen,SC017,2026-09-02 16:07:00,0.15,arrived_restaurant,operational
+467,59,Westside Kitchen,SC017,2026-09-02 16:11:00,0.0,pickup_complete,minor_delay
+468,59,Westside Kitchen,SC017,2026-09-02 16:12:00,2.49,in_transit,operational
+469,59,Westside Kitchen,SC017,2026-09-02 16:18:00,0.0,waiting_traffic,operational
+470,59,Westside Kitchen,SC017,2026-09-02 16:19:00,1.18,in_transit,operational
+471,59,Westside Kitchen,SC017,2026-09-02 16:29:00,0.18,arrived_customer,operational
+472,59,Westside Kitchen,SC017,2026-09-02 16:33:00,0.0,delivery_complete,operational
+473,60,Westside Kitchen,SC007,2026-09-02 18:05:00,0.0,order_received,operational
+474,60,Westside Kitchen,SC007,2026-09-02 18:16:00,0.09,arrived_restaurant,operational
+475,60,Westside Kitchen,SC007,2026-09-02 18:21:00,0.0,pickup_complete,operational
+476,60,Westside Kitchen,SC007,2026-09-02 18:22:00,2.81,in_transit,operational
+477,60,Westside Kitchen,SC007,2026-09-02 18:25:00,0.0,waiting_traffic,operational
+478,60,Westside Kitchen,SC007,2026-09-02 18:27:00,2.86,in_transit,operational
+479,60,Westside Kitchen,SC007,2026-09-02 18:34:00,0.27,arrived_customer,operational
+480,60,Westside Kitchen,SC007,2026-09-02 18:37:00,0.0,delivery_complete,operational
+481,61,Eastgate Food Court,SC015,2026-09-01 18:14:00,0.0,order_received,operational
+482,61,Eastgate Food Court,SC015,2026-09-01 18:25:00,0.08,arrived_restaurant,operational
+483,61,Eastgate Food Court,SC015,2026-09-01 18:28:00,0.0,pickup_complete,operational
+484,61,Eastgate Food Court,SC015,2026-09-01 18:29:00,1.2,in_transit,operational
+485,61,Eastgate Food Court,SC015,2026-09-01 18:33:00,0.0,waiting_traffic,operational
+486,61,Eastgate Food Court,SC015,2026-09-01 18:36:00,2.74,in_transit,operational
+487,61,Eastgate Food Court,SC015,2026-09-01 18:40:00,0.19,arrived_customer,operational
+488,61,Eastgate Food Court,SC015,2026-09-01 18:46:00,0.0,delivery_complete,operational
+489,62,Eastgate Food Court,SC005,2026-09-01 08:10:00,0.0,order_received,operational
+490,62,Eastgate Food Court,SC005,2026-09-01 08:21:00,0.1,arrived_restaurant,operational
+491,62,Eastgate Food Court,SC005,2026-09-01 08:24:00,0.0,pickup_complete,operational
+492,62,Eastgate Food Court,SC005,2026-09-01 08:25:00,1.88,in_transit,operational
+493,62,Eastgate Food Court,SC005,2026-09-01 08:31:00,0.0,waiting_traffic,operational
+494,62,Eastgate Food Court,SC005,2026-09-01 08:35:00,1.21,in_transit,operational
+495,62,Eastgate Food Court,SC005,2026-09-01 08:43:00,0.2,arrived_customer,operational
+496,62,Eastgate Food Court,SC005,2026-09-01 08:46:00,0.0,delivery_complete,operational
+497,63,Eastgate Food Court,SC017,2026-09-03 15:28:00,0.0,order_received,operational
+498,63,Eastgate Food Court,SC017,2026-09-03 15:43:00,0.05,arrived_restaurant,operational
+499,63,Eastgate Food Court,SC017,2026-09-03 15:48:00,0.0,pickup_complete,operational
+500,63,Eastgate Food Court,SC017,2026-09-03 15:49:00,3.29,in_transit,operational
+501,63,Eastgate Food Court,SC017,2026-09-03 15:56:00,0.0,waiting_traffic,operational
+502,63,Eastgate Food Court,SC017,2026-09-03 15:58:00,2.36,in_transit,operational
+503,63,Eastgate Food Court,SC017,2026-09-03 16:06:00,0.23,arrived_customer,minor_delay
+504,63,Eastgate Food Court,SC017,2026-09-03 16:07:00,0.0,delivery_complete,operational
+505,64,Downtown Hub,SC009,2026-09-03 08:48:00,0.0,order_received,operational
+506,64,Downtown Hub,SC009,2026-09-03 09:02:00,0.3,arrived_restaurant,operational
+507,64,Downtown Hub,SC009,2026-09-03 09:05:00,0.0,pickup_complete,operational
+508,64,Downtown Hub,SC009,2026-09-03 09:06:00,1.88,in_transit,operational
+509,64,Downtown Hub,SC009,2026-09-03 09:18:00,0.0,waiting_traffic,operational
+510,64,Downtown Hub,SC009,2026-09-03 09:21:00,2.97,in_transit,operational
+511,64,Downtown Hub,SC009,2026-09-03 09:27:00,0.05,arrived_customer,operational
+512,64,Downtown Hub,SC009,2026-09-03 09:30:00,0.0,delivery_complete,operational
+513,65,Downtown Hub,SC016,2026-09-02 14:21:00,0.0,order_received,operational
+514,65,Downtown Hub,SC016,2026-09-02 14:25:00,0.18,arrived_restaurant,operational
+515,65,Downtown Hub,SC016,2026-09-02 14:26:00,0.0,pickup_complete,operational
+516,65,Downtown Hub,SC016,2026-09-02 14:27:00,1.74,in_transit,operational
+517,65,Downtown Hub,SC016,2026-09-02 14:34:00,0.0,waiting_traffic,operational
+518,65,Downtown Hub,SC016,2026-09-02 14:36:00,1.41,in_transit,operational
+519,65,Downtown Hub,SC016,2026-09-02 14:47:00,0.09,arrived_customer,operational
+520,65,Downtown Hub,SC016,2026-09-02 14:49:00,0.0,delivery_complete,operational
+521,66,Downtown Hub,SC015,2026-09-01 13:16:00,0.0,order_received,operational
+522,66,Downtown Hub,SC015,2026-09-01 13:23:00,0.28,arrived_restaurant,minor_delay
+523,66,Downtown Hub,SC015,2026-09-01 13:24:00,0.0,pickup_complete,operational
+524,66,Downtown Hub,SC015,2026-09-01 13:25:00,2.51,in_transit,operational
+525,66,Downtown Hub,SC015,2026-09-01 13:33:00,0.0,waiting_traffic,minor_delay
+526,66,Downtown Hub,SC015,2026-09-01 13:34:00,1.03,in_transit,operational
+527,66,Downtown Hub,SC015,2026-09-01 13:40:00,0.3,arrived_customer,operational
+528,66,Downtown Hub,SC015,2026-09-01 13:42:00,0.0,delivery_complete,operational
+529,67,Westside Kitchen,SC017,2026-09-02 17:48:00,0.0,order_received,operational
+530,67,Westside Kitchen,SC017,2026-09-02 18:04:00,0.07,arrived_restaurant,operational
+531,67,Westside Kitchen,SC017,2026-09-02 18:09:00,0.0,pickup_complete,operational
+532,67,Westside Kitchen,SC017,2026-09-02 18:10:00,3.22,in_transit,operational
+533,67,Westside Kitchen,SC017,2026-09-02 18:17:00,0.0,waiting_traffic,operational
+534,67,Westside Kitchen,SC017,2026-09-02 18:19:00,0.9,in_transit,operational
+535,67,Westside Kitchen,SC017,2026-09-02 18:24:00,0.07,arrived_customer,operational
+536,67,Westside Kitchen,SC017,2026-09-02 18:32:00,0.0,delivery_complete,operational
+537,68,Downtown Hub,SC020,2026-09-01 19:10:00,0.0,order_received,operational
+538,68,Downtown Hub,SC020,2026-09-01 19:14:00,0.18,arrived_restaurant,operational
+539,68,Downtown Hub,SC020,2026-09-01 19:18:00,0.0,pickup_complete,operational
+540,68,Downtown Hub,SC020,2026-09-01 19:19:00,2.31,in_transit,operational
+541,68,Downtown Hub,SC020,2026-09-01 19:20:00,0.0,waiting_traffic,operational
+542,68,Downtown Hub,SC020,2026-09-01 19:21:00,3.13,in_transit,operational
+543,68,Downtown Hub,SC020,2026-09-01 19:27:00,0.29,arrived_customer,operational
+544,68,Downtown Hub,SC020,2026-09-01 19:30:00,0.0,delivery_complete,operational
+545,69,Westside Kitchen,SC016,2026-09-03 12:32:00,0.0,order_received,operational
+546,69,Westside Kitchen,SC016,2026-09-03 12:35:00,0.21,arrived_restaurant,operational
+547,69,Westside Kitchen,SC016,2026-09-03 12:38:00,0.0,pickup_complete,operational
+548,69,Westside Kitchen,SC016,2026-09-03 12:39:00,1.22,in_transit,operational
+549,69,Westside Kitchen,SC016,2026-09-03 12:44:00,0.0,waiting_traffic,operational
+550,69,Westside Kitchen,SC016,2026-09-03 12:48:00,0.87,in_transit,operational
+551,69,Westside Kitchen,SC016,2026-09-03 12:58:00,0.22,arrived_customer,operational
+552,69,Westside Kitchen,SC016,2026-09-03 13:00:00,0.0,delivery_complete,operational
+553,70,Westside Kitchen,SC003,2026-09-02 20:50:00,0.0,order_received,operational
+554,70,Westside Kitchen,SC003,2026-09-02 20:55:00,0.21,arrived_restaurant,operational
+555,70,Westside Kitchen,SC003,2026-09-02 20:58:00,0.0,pickup_complete,operational
+556,70,Westside Kitchen,SC003,2026-09-02 20:59:00,1.46,in_transit,operational
+557,70,Westside Kitchen,SC003,2026-09-02 21:04:00,0.0,waiting_traffic,operational
+558,70,Westside Kitchen,SC003,2026-09-02 21:06:00,3.04,in_transit,operational
+559,70,Westside Kitchen,SC003,2026-09-02 21:14:00,0.15,arrived_customer,operational
+560,70,Westside Kitchen,SC003,2026-09-02 21:18:00,0.0,delivery_complete,operational
+561,71,North Plaza,SC005,2026-09-02 16:30:00,0.0,order_received,operational
+562,71,North Plaza,SC005,2026-09-02 16:34:00,0.12,arrived_restaurant,operational
+563,71,North Plaza,SC005,2026-09-02 16:40:00,0.0,pickup_complete,operational
+564,71,North Plaza,SC005,2026-09-02 16:41:00,3.21,in_transit,operational
+565,71,North Plaza,SC005,2026-09-02 16:51:00,0.0,waiting_traffic,operational
+566,71,North Plaza,SC005,2026-09-02 16:53:00,1.5,in_transit,operational
+567,71,North Plaza,SC005,2026-09-02 17:02:00,0.12,arrived_customer,operational
+568,71,North Plaza,SC005,2026-09-02 17:08:00,0.0,delivery_complete,operational
+569,72,Westside Kitchen,SC014,2026-09-01 13:47:00,0.0,order_received,operational
+570,72,Westside Kitchen,SC014,2026-09-01 13:49:00,0.19,arrived_restaurant,operational
+571,72,Westside Kitchen,SC014,2026-09-01 13:51:00,0.0,pickup_complete,operational
+572,72,Westside Kitchen,SC014,2026-09-01 13:52:00,3.36,in_transit,minor_delay
+573,72,Westside Kitchen,SC014,2026-09-01 13:53:00,0.0,waiting_traffic,operational
+574,72,Westside Kitchen,SC014,2026-09-01 13:55:00,3.14,in_transit,operational
+575,72,Westside Kitchen,SC014,2026-09-01 14:00:00,0.17,arrived_customer,operational
+576,72,Westside Kitchen,SC014,2026-09-01 14:04:00,0.0,delivery_complete,minor_delay
+577,73,Westside Kitchen,SC017,2026-09-03 13:55:00,0.0,order_received,operational
+578,73,Westside Kitchen,SC017,2026-09-03 14:03:00,0.16,arrived_restaurant,operational
+579,73,Westside Kitchen,SC017,2026-09-03 14:08:00,0.0,pickup_complete,operational
+580,73,Westside Kitchen,SC017,2026-09-03 14:09:00,1.5,in_transit,operational
+581,73,Westside Kitchen,SC017,2026-09-03 14:16:00,0.0,waiting_traffic,operational
+582,73,Westside Kitchen,SC017,2026-09-03 14:19:00,3.46,in_transit,operational
+583,73,Westside Kitchen,SC017,2026-09-03 14:25:00,0.12,arrived_customer,operational
+584,73,Westside Kitchen,SC017,2026-09-03 14:26:00,0.0,delivery_complete,minor_delay
+585,74,Downtown Hub,SC016,2026-09-02 13:39:00,0.0,order_received,operational
+586,74,Downtown Hub,SC016,2026-09-02 13:47:00,0.12,arrived_restaurant,operational
+587,74,Downtown Hub,SC016,2026-09-02 13:52:00,0.0,pickup_complete,operational
+588,74,Downtown Hub,SC016,2026-09-02 13:53:00,3.04,in_transit,operational
+589,74,Downtown Hub,SC016,2026-09-02 14:03:00,0.0,waiting_traffic,operational
+590,74,Downtown Hub,SC016,2026-09-02 14:06:00,2.42,in_transit,operational
+591,74,Downtown Hub,SC016,2026-09-02 14:13:00,0.22,arrived_customer,operational
+592,74,Downtown Hub,SC016,2026-09-02 14:18:00,0.0,delivery_complete,operational
+593,75,North Plaza,SC018,2026-09-01 17:04:00,0.0,order_received,operational
+594,75,North Plaza,SC018,2026-09-01 17:06:00,0.18,arrived_restaurant,operational
+595,75,North Plaza,SC018,2026-09-01 17:08:00,0.0,pickup_complete,operational
+596,75,North Plaza,SC018,2026-09-01 17:09:00,2.43,in_transit,operational
+597,75,North Plaza,SC018,2026-09-01 17:15:00,0.0,waiting_traffic,operational
+598,75,North Plaza,SC018,2026-09-01 17:17:00,1.58,in_transit,minor_delay
+599,75,North Plaza,SC018,2026-09-01 17:20:00,0.12,arrived_customer,operational
+600,75,North Plaza,SC018,2026-09-01 17:26:00,0.0,delivery_complete,operational
+601,76,Downtown Hub,SC015,2026-09-01 19:19:00,0.0,order_received,operational
+602,76,Downtown Hub,SC015,2026-09-01 19:24:00,0.22,arrived_restaurant,operational
+603,76,Downtown Hub,SC015,2026-09-01 19:27:00,0.0,pickup_complete,operational
+604,76,Downtown Hub,SC015,2026-09-01 19:29:00,1.38,in_transit,operational
+605,76,Downtown Hub,SC015,2026-09-01 19:35:00,0.0,waiting_traffic,operational
+606,76,Downtown Hub,SC015,2026-09-01 19:38:00,2.14,in_transit,operational
+607,76,Downtown Hub,SC015,2026-09-01 19:43:00,0.2,arrived_customer,operational
+608,76,Downtown Hub,SC015,2026-09-01 19:47:00,0.0,delivery_complete,operational
+609,77,Westside Kitchen,SC006,2026-09-01 09:39:00,0.0,order_received,operational
+610,77,Westside Kitchen,SC006,2026-09-01 09:50:00,0.08,arrived_restaurant,operational
+611,77,Westside Kitchen,SC006,2026-09-01 09:53:00,0.0,pickup_complete,operational
+612,77,Westside Kitchen,SC006,2026-09-01 09:54:00,2.14,in_transit,operational
+613,77,Westside Kitchen,SC006,2026-09-01 09:59:00,0.0,waiting_traffic,operational
+614,77,Westside Kitchen,SC006,2026-09-01 10:01:00,1.47,in_transit,operational
+615,77,Westside Kitchen,SC006,2026-09-01 10:13:00,0.22,arrived_customer,operational
+616,77,Westside Kitchen,SC006,2026-09-01 10:17:00,0.0,delivery_complete,operational
+617,78,Downtown Hub,SC015,2026-09-02 18:34:00,0.0,order_received,operational
+618,78,Downtown Hub,SC015,2026-09-02 18:43:00,0.14,arrived_restaurant,operational
+619,78,Downtown Hub,SC015,2026-09-02 18:49:00,0.0,pickup_complete,operational
+620,78,Downtown Hub,SC015,2026-09-02 18:50:00,2.26,in_transit,operational
+621,78,Downtown Hub,SC015,2026-09-02 18:52:00,0.0,waiting_traffic,operational
+622,78,Downtown Hub,SC015,2026-09-02 18:54:00,2.98,in_transit,operational
+623,78,Downtown Hub,SC015,2026-09-02 19:02:00,0.21,arrived_customer,operational
+624,78,Downtown Hub,SC015,2026-09-02 19:06:00,0.0,delivery_complete,operational
+625,79,Westside Kitchen,SC013,2026-09-02 09:15:00,0.0,order_received,operational
+626,79,Westside Kitchen,SC013,2026-09-02 09:25:00,0.11,arrived_restaurant,operational
+627,79,Westside Kitchen,SC013,2026-09-02 09:30:00,0.0,pickup_complete,operational
+628,79,Westside Kitchen,SC013,2026-09-02 09:31:00,3.47,in_transit,operational
+629,79,Westside Kitchen,SC013,2026-09-02 09:36:00,0.0,waiting_traffic,operational
+630,79,Westside Kitchen,SC013,2026-09-02 09:39:00,1.29,in_transit,operational
+631,79,Westside Kitchen,SC013,2026-09-02 09:46:00,0.06,arrived_customer,operational
+632,79,Westside Kitchen,SC013,2026-09-02 09:51:00,0.0,delivery_complete,operational
+633,80,Downtown Hub,SC020,2026-09-03 15:53:00,0.0,order_received,operational
+634,80,Downtown Hub,SC020,2026-09-03 16:01:00,0.28,arrived_restaurant,operational
+635,80,Downtown Hub,SC020,2026-09-03 16:03:00,0.0,pickup_complete,operational
+636,80,Downtown Hub,SC020,2026-09-03 16:04:00,3.08,in_transit,operational
+637,80,Downtown Hub,SC020,2026-09-03 16:12:00,0.0,waiting_traffic,operational
+638,80,Downtown Hub,SC020,2026-09-03 16:14:00,0.9,in_transit,operational
+639,80,Downtown Hub,SC020,2026-09-03 16:23:00,0.2,arrived_customer,operational
+640,80,Downtown Hub,SC020,2026-09-03 16:26:00,0.0,delivery_complete,operational
+641,81,Westside Kitchen,SC004,2026-09-03 18:02:00,0.0,order_received,operational
+642,81,Westside Kitchen,SC004,2026-09-03 18:08:00,0.07,arrived_restaurant,operational
+643,81,Westside Kitchen,SC004,2026-09-03 18:12:00,0.0,pickup_complete,operational
+644,81,Westside Kitchen,SC004,2026-09-03 18:13:00,2.76,in_transit,operational
+645,81,Westside Kitchen,SC004,2026-09-03 18:22:00,0.0,waiting_traffic,operational
+646,81,Westside Kitchen,SC004,2026-09-03 18:24:00,2.26,in_transit,operational
+647,81,Westside Kitchen,SC004,2026-09-03 18:29:00,0.21,arrived_customer,operational
+648,81,Westside Kitchen,SC004,2026-09-03 18:31:00,0.0,delivery_complete,operational
+649,82,Westside Kitchen,SC018,2026-09-02 16:32:00,0.0,order_received,operational
+650,82,Westside Kitchen,SC018,2026-09-02 16:43:00,0.11,arrived_restaurant,operational
+651,82,Westside Kitchen,SC018,2026-09-02 16:48:00,0.0,pickup_complete,operational
+652,82,Westside Kitchen,SC018,2026-09-02 16:49:00,2.96,in_transit,operational
+653,82,Westside Kitchen,SC018,2026-09-02 16:56:00,0.0,waiting_traffic,operational
+654,82,Westside Kitchen,SC018,2026-09-02 16:59:00,2.1,in_transit,operational
+655,82,Westside Kitchen,SC018,2026-09-02 17:04:00,0.21,arrived_customer,operational
+656,82,Westside Kitchen,SC018,2026-09-02 17:10:00,0.0,delivery_complete,operational
+657,83,Downtown Hub,SC015,2026-09-01 10:48:00,0.0,order_received,minor_delay
+658,83,Downtown Hub,SC015,2026-09-01 10:54:00,0.16,arrived_restaurant,operational
+659,83,Downtown Hub,SC015,2026-09-01 11:01:00,0.0,pickup_complete,operational
+660,83,Downtown Hub,SC015,2026-09-01 11:02:00,1.1,in_transit,minor_delay
+661,83,Downtown Hub,SC015,2026-09-01 11:09:00,0.0,waiting_traffic,minor_delay
+662,83,Downtown Hub,SC015,2026-09-01 11:10:00,1.6,in_transit,operational
+663,83,Downtown Hub,SC015,2026-09-01 11:14:00,0.22,arrived_customer,operational
+664,83,Downtown Hub,SC015,2026-09-01 11:15:00,0.0,delivery_complete,operational
+665,84,Downtown Hub,SC009,2026-09-03 09:29:00,0.0,order_received,operational
+666,84,Downtown Hub,SC009,2026-09-03 09:33:00,0.29,arrived_restaurant,operational
+667,84,Downtown Hub,SC009,2026-09-03 09:39:00,0.0,pickup_complete,operational
+668,84,Downtown Hub,SC009,2026-09-03 09:40:00,1.25,in_transit,operational
+669,84,Downtown Hub,SC009,2026-09-03 09:51:00,0.0,waiting_traffic,operational
+670,84,Downtown Hub,SC009,2026-09-03 09:53:00,2.44,in_transit,operational
+671,84,Downtown Hub,SC009,2026-09-03 10:00:00,0.18,arrived_customer,operational
+672,84,Downtown Hub,SC009,2026-09-03 10:04:00,0.0,delivery_complete,operational
+673,85,Eastgate Food Court,SC020,2026-09-01 18:04:00,0.0,order_received,operational
+674,85,Eastgate Food Court,SC020,2026-09-01 18:09:00,0.11,arrived_restaurant,operational
+675,85,Eastgate Food Court,SC020,2026-09-01 18:12:00,0.0,pickup_complete,operational
+676,85,Eastgate Food Court,SC020,2026-09-01 18:13:00,1.75,in_transit,operational
+677,85,Eastgate Food Court,SC020,2026-09-01 18:17:00,0.0,waiting_traffic,operational
+678,85,Eastgate Food Court,SC020,2026-09-01 18:21:00,2.68,in_transit,operational
+679,85,Eastgate Food Court,SC020,2026-09-01 18:26:00,0.11,arrived_customer,operational
+680,85,Eastgate Food Court,SC020,2026-09-01 18:30:00,0.0,delivery_complete,minor_delay
+681,86,Downtown Hub,SC004,2026-09-01 22:34:00,0.0,order_received,operational
+682,86,Downtown Hub,SC004,2026-09-01 22:40:00,0.2,arrived_restaurant,operational
+683,86,Downtown Hub,SC004,2026-09-01 22:45:00,0.0,pickup_complete,operational
+684,86,Downtown Hub,SC004,2026-09-01 22:46:00,3.17,in_transit,operational
+685,86,Downtown Hub,SC004,2026-09-01 22:49:00,0.0,waiting_traffic,operational
+686,86,Downtown Hub,SC004,2026-09-01 22:52:00,3.2,in_transit,operational
+687,86,Downtown Hub,SC004,2026-09-01 22:57:00,0.29,arrived_customer,operational
+688,86,Downtown Hub,SC004,2026-09-01 23:00:00,0.0,delivery_complete,operational
+689,87,North Plaza,SC004,2026-09-02 17:26:00,0.0,order_received,operational
+690,87,North Plaza,SC004,2026-09-02 17:34:00,0.21,arrived_restaurant,operational
+691,87,North Plaza,SC004,2026-09-02 17:39:00,0.0,pickup_complete,operational
+692,87,North Plaza,SC004,2026-09-02 17:40:00,1.9,in_transit,operational
+693,87,North Plaza,SC004,2026-09-02 17:46:00,0.0,waiting_traffic,operational
+694,87,North Plaza,SC004,2026-09-02 17:47:00,2.75,in_transit,operational
+695,87,North Plaza,SC004,2026-09-02 17:51:00,0.11,arrived_customer,operational
+696,87,North Plaza,SC004,2026-09-02 17:53:00,0.0,delivery_complete,minor_delay
+697,88,Eastgate Food Court,SC018,2026-09-03 13:03:00,0.0,order_received,operational
+698,88,Eastgate Food Court,SC018,2026-09-03 13:10:00,0.26,arrived_restaurant,operational
+699,88,Eastgate Food Court,SC018,2026-09-03 13:13:00,0.0,pickup_complete,operational
+700,88,Eastgate Food Court,SC018,2026-09-03 13:14:00,2.4,in_transit,operational
+701,88,Eastgate Food Court,SC018,2026-09-03 13:15:00,0.0,waiting_traffic,operational
+702,88,Eastgate Food Court,SC018,2026-09-03 13:16:00,2.63,in_transit,operational
+703,88,Eastgate Food Court,SC018,2026-09-03 13:21:00,0.19,arrived_customer,operational
+704,88,Eastgate Food Court,SC018,2026-09-03 13:26:00,0.0,delivery_complete,operational
+705,89,Downtown Hub,SC002,2026-09-02 11:08:00,0.0,order_received,operational
+706,89,Downtown Hub,SC002,2026-09-02 11:17:00,0.25,arrived_restaurant,operational
+707,89,Downtown Hub,SC002,2026-09-02 11:21:00,0.0,pickup_complete,operational
+708,89,Downtown Hub,SC002,2026-09-02 11:22:00,3.14,in_transit,operational
+709,89,Downtown Hub,SC002,2026-09-02 11:29:00,0.0,waiting_traffic,operational
+710,89,Downtown Hub,SC002,2026-09-02 11:32:00,2.68,in_transit,operational
+711,89,Downtown Hub,SC002,2026-09-02 11:40:00,0.24,arrived_customer,operational
+712,89,Downtown Hub,SC002,2026-09-02 11:45:00,0.0,delivery_complete,operational
+713,90,Downtown Hub,SC009,2026-09-01 10:34:00,0.0,order_received,operational
+714,90,Downtown Hub,SC009,2026-09-01 10:46:00,0.13,arrived_restaurant,operational
+715,90,Downtown Hub,SC009,2026-09-01 10:50:00,0.0,pickup_complete,operational
+716,90,Downtown Hub,SC009,2026-09-01 10:51:00,3.01,in_transit,operational
+717,90,Downtown Hub,SC009,2026-09-01 10:55:00,0.0,waiting_traffic,operational
+718,90,Downtown Hub,SC009,2026-09-01 10:58:00,0.82,in_transit,operational
+719,90,Downtown Hub,SC009,2026-09-01 11:05:00,0.12,arrived_customer,operational
+720,90,Downtown Hub,SC009,2026-09-01 11:11:00,0.0,delivery_complete,operational
+721,91,Westside Kitchen,SC009,2026-09-01 10:47:00,0.0,order_received,operational
+722,91,Westside Kitchen,SC009,2026-09-01 10:55:00,0.21,arrived_restaurant,operational
+723,91,Westside Kitchen,SC009,2026-09-01 11:00:00,0.0,pickup_complete,operational
+724,91,Westside Kitchen,SC009,2026-09-01 11:01:00,2.26,in_transit,operational
+725,91,Westside Kitchen,SC009,2026-09-01 11:03:00,0.0,waiting_traffic,operational
+726,91,Westside Kitchen,SC009,2026-09-01 11:05:00,2.85,in_transit,operational
+727,91,Westside Kitchen,SC009,2026-09-01 11:12:00,0.14,arrived_customer,operational
+728,91,Westside Kitchen,SC009,2026-09-01 11:16:00,0.0,delivery_complete,operational
+729,92,Downtown Hub,SC017,2026-09-02 15:41:00,0.0,order_received,minor_delay
+730,92,Downtown Hub,SC017,2026-09-02 15:49:00,0.08,arrived_restaurant,operational
+731,92,Downtown Hub,SC017,2026-09-02 15:55:00,0.0,pickup_complete,operational
+732,92,Downtown Hub,SC017,2026-09-02 15:56:00,0.98,in_transit,operational
+733,92,Downtown Hub,SC017,2026-09-02 16:02:00,0.0,waiting_traffic,operational
+734,92,Downtown Hub,SC017,2026-09-02 16:05:00,0.98,in_transit,operational
+735,92,Downtown Hub,SC017,2026-09-02 16:15:00,0.2,arrived_customer,operational
+736,92,Downtown Hub,SC017,2026-09-02 16:17:00,0.0,delivery_complete,operational
+737,93,Downtown Hub,SC011,2026-09-03 10:04:00,0.0,order_received,operational
+738,93,Downtown Hub,SC011,2026-09-03 10:15:00,0.06,arrived_restaurant,operational
+739,93,Downtown Hub,SC011,2026-09-03 10:16:00,0.0,pickup_complete,operational
+740,93,Downtown Hub,SC011,2026-09-03 10:17:00,0.87,in_transit,operational
+741,93,Downtown Hub,SC011,2026-09-03 10:21:00,0.0,waiting_traffic,operational
+742,93,Downtown Hub,SC011,2026-09-03 10:25:00,2.64,in_transit,operational
+743,93,Downtown Hub,SC011,2026-09-03 10:31:00,0.3,arrived_customer,operational
+744,93,Downtown Hub,SC011,2026-09-03 10:32:00,0.0,delivery_complete,operational
+745,94,North Plaza,SC004,2026-09-03 09:54:00,0.0,order_received,operational
+746,94,North Plaza,SC004,2026-09-03 10:00:00,0.09,arrived_restaurant,operational
+747,94,North Plaza,SC004,2026-09-03 10:02:00,0.0,pickup_complete,operational
+748,94,North Plaza,SC004,2026-09-03 10:03:00,1.4,in_transit,operational
+749,94,North Plaza,SC004,2026-09-03 10:10:00,0.0,waiting_traffic,operational
+750,94,North Plaza,SC004,2026-09-03 10:14:00,2.57,in_transit,operational
+751,94,North Plaza,SC004,2026-09-03 10:21:00,0.12,arrived_customer,operational
+752,94,North Plaza,SC004,2026-09-03 10:24:00,0.0,delivery_complete,operational
+753,95,North Plaza,SC014,2026-09-03 09:20:00,0.0,order_received,operational
+754,95,North Plaza,SC014,2026-09-03 09:30:00,0.15,arrived_restaurant,operational
+755,95,North Plaza,SC014,2026-09-03 09:34:00,0.0,pickup_complete,operational
+756,95,North Plaza,SC014,2026-09-03 09:35:00,1.54,in_transit,operational
+757,95,North Plaza,SC014,2026-09-03 09:44:00,0.0,waiting_traffic,operational
+758,95,North Plaza,SC014,2026-09-03 09:46:00,3.21,in_transit,operational
+759,95,North Plaza,SC014,2026-09-03 09:53:00,0.06,arrived_customer,operational
+760,95,North Plaza,SC014,2026-09-03 09:55:00,0.0,delivery_complete,operational
+761,96,Downtown Hub,SC012,2026-09-01 16:03:00,0.0,order_received,operational
+762,96,Downtown Hub,SC012,2026-09-01 16:08:00,0.27,arrived_restaurant,operational
+763,96,Downtown Hub,SC012,2026-09-01 16:10:00,0.0,pickup_complete,operational
+764,96,Downtown Hub,SC012,2026-09-01 16:11:00,1.3,in_transit,operational
+765,96,Downtown Hub,SC012,2026-09-01 16:18:00,0.0,waiting_traffic,operational
+766,96,Downtown Hub,SC012,2026-09-01 16:20:00,2.88,in_transit,operational
+767,96,Downtown Hub,SC012,2026-09-01 16:27:00,0.26,arrived_customer,operational
+768,96,Downtown Hub,SC012,2026-09-01 16:31:00,0.0,delivery_complete,operational
+769,97,Downtown Hub,SC010,2026-09-03 12:22:00,0.0,order_received,operational
+770,97,Downtown Hub,SC010,2026-09-03 12:32:00,0.08,arrived_restaurant,operational
+771,97,Downtown Hub,SC010,2026-09-03 12:39:00,0.0,pickup_complete,operational
+772,97,Downtown Hub,SC010,2026-09-03 12:40:00,2.1,in_transit,operational
+773,97,Downtown Hub,SC010,2026-09-03 12:47:00,0.0,waiting_traffic,operational
+774,97,Downtown Hub,SC010,2026-09-03 12:49:00,1.34,in_transit,operational
+775,97,Downtown Hub,SC010,2026-09-03 13:01:00,0.2,arrived_customer,operational
+776,97,Downtown Hub,SC010,2026-09-03 13:03:00,0.0,delivery_complete,operational
+777,98,Eastgate Food Court,SC019,2026-09-01 20:27:00,0.0,order_received,operational
+778,98,Eastgate Food Court,SC019,2026-09-01 20:34:00,0.13,arrived_restaurant,minor_delay
+779,98,Eastgate Food Court,SC019,2026-09-01 20:40:00,0.0,pickup_complete,operational
+780,98,Eastgate Food Court,SC019,2026-09-01 20:41:00,1.0,in_transit,operational
+781,98,Eastgate Food Court,SC019,2026-09-01 20:46:00,0.0,waiting_traffic,operational
+782,98,Eastgate Food Court,SC019,2026-09-01 20:48:00,2.42,in_transit,operational
+783,98,Eastgate Food Court,SC019,2026-09-01 20:53:00,0.12,arrived_customer,operational
+784,98,Eastgate Food Court,SC019,2026-09-01 20:54:00,0.0,delivery_complete,operational
+785,99,Eastgate Food Court,SC001,2026-09-01 12:44:00,0.0,order_received,operational
+786,99,Eastgate Food Court,SC001,2026-09-01 12:54:00,0.24,arrived_restaurant,operational
+787,99,Eastgate Food Court,SC001,2026-09-01 12:59:00,0.0,pickup_complete,operational
+788,99,Eastgate Food Court,SC001,2026-09-01 13:00:00,1.08,in_transit,operational
+789,99,Eastgate Food Court,SC001,2026-09-01 13:04:00,0.0,waiting_traffic,operational
+790,99,Eastgate Food Court,SC001,2026-09-01 13:06:00,2.47,in_transit,operational
+791,99,Eastgate Food Court,SC001,2026-09-01 13:09:00,0.05,arrived_customer,operational
+792,99,Eastgate Food Court,SC001,2026-09-01 13:13:00,0.0,delivery_complete,operational
+793,100,Downtown Hub,SC003,2026-09-03 16:13:00,0.0,order_received,operational
+794,100,Downtown Hub,SC003,2026-09-03 16:26:00,0.07,arrived_restaurant,operational
+795,100,Downtown Hub,SC003,2026-09-03 16:31:00,0.0,pickup_complete,operational
+796,100,Downtown Hub,SC003,2026-09-03 16:32:00,1.01,in_transit,operational
+797,100,Downtown Hub,SC003,2026-09-03 16:37:00,0.0,waiting_traffic,operational
+798,100,Downtown Hub,SC003,2026-09-03 16:39:00,2.33,in_transit,operational
+799,100,Downtown Hub,SC003,2026-09-03 16:43:00,0.22,arrived_customer,operational
+800,100,Downtown Hub,SC003,2026-09-03 16:46:00,0.0,delivery_complete,operational
+801,101,Westside Kitchen,SC006,2026-09-03 08:43:00,0.0,order_received,operational
+802,101,Westside Kitchen,SC006,2026-09-03 08:49:00,0.09,arrived_restaurant,operational
+803,101,Westside Kitchen,SC006,2026-09-03 08:55:00,0.0,pickup_complete,operational
+804,101,Westside Kitchen,SC006,2026-09-03 08:56:00,2.71,in_transit,operational
+805,101,Westside Kitchen,SC006,2026-09-03 09:00:00,0.0,waiting_traffic,operational
+806,101,Westside Kitchen,SC006,2026-09-03 09:03:00,2.71,in_transit,operational
+807,101,Westside Kitchen,SC006,2026-09-03 09:08:00,0.25,arrived_customer,operational
+808,101,Westside Kitchen,SC006,2026-09-03 09:12:00,0.0,delivery_complete,operational
+809,102,Downtown Hub,SC010,2026-09-03 18:37:00,0.0,order_received,operational
+810,102,Downtown Hub,SC010,2026-09-03 18:47:00,0.07,arrived_restaurant,operational
+811,102,Downtown Hub,SC010,2026-09-03 18:54:00,0.0,pickup_complete,operational
+812,102,Downtown Hub,SC010,2026-09-03 18:55:00,3.01,in_transit,operational
+813,102,Downtown Hub,SC010,2026-09-03 19:01:00,0.0,waiting_traffic,operational
+814,102,Downtown Hub,SC010,2026-09-03 19:05:00,2.22,in_transit,operational
+815,102,Downtown Hub,SC010,2026-09-03 19:17:00,0.23,arrived_customer,operational
+816,102,Downtown Hub,SC010,2026-09-03 19:19:00,0.0,delivery_complete,operational
+817,103,Westside Kitchen,SC009,2026-09-02 13:07:00,0.0,order_received,operational
+818,103,Westside Kitchen,SC009,2026-09-02 13:12:00,0.27,arrived_restaurant,operational
+819,103,Westside Kitchen,SC009,2026-09-02 13:16:00,0.0,pickup_complete,operational
+820,103,Westside Kitchen,SC009,2026-09-02 13:17:00,2.93,in_transit,operational
+821,103,Westside Kitchen,SC009,2026-09-02 13:21:00,0.0,waiting_traffic,operational
+822,103,Westside Kitchen,SC009,2026-09-02 13:23:00,2.3,in_transit,operational
+823,103,Westside Kitchen,SC009,2026-09-02 13:35:00,0.3,arrived_customer,operational
+824,103,Westside Kitchen,SC009,2026-09-02 13:37:00,0.0,delivery_complete,operational
+825,104,Downtown Hub,SC013,2026-09-03 08:27:00,0.0,order_received,operational
+826,104,Downtown Hub,SC013,2026-09-03 08:37:00,0.1,arrived_restaurant,operational
+827,104,Downtown Hub,SC013,2026-09-03 08:42:00,0.0,pickup_complete,operational
+828,104,Downtown Hub,SC013,2026-09-03 08:43:00,0.88,in_transit,operational
+829,104,Downtown Hub,SC013,2026-09-03 08:47:00,0.0,waiting_traffic,operational
+830,104,Downtown Hub,SC013,2026-09-03 08:50:00,3.14,in_transit,operational
+831,104,Downtown Hub,SC013,2026-09-03 08:56:00,0.23,arrived_customer,operational
+832,104,Downtown Hub,SC013,2026-09-03 08:57:00,0.0,delivery_complete,operational
+833,105,Downtown Hub,SC011,2026-09-01 20:39:00,0.0,order_received,operational
+834,105,Downtown Hub,SC011,2026-09-01 20:45:00,0.14,arrived_restaurant,operational
+835,105,Downtown Hub,SC011,2026-09-01 20:53:00,0.0,pickup_complete,operational
+836,105,Downtown Hub,SC011,2026-09-01 20:54:00,2.76,in_transit,operational
+837,105,Downtown Hub,SC011,2026-09-01 21:04:00,0.0,waiting_traffic,operational
+838,105,Downtown Hub,SC011,2026-09-01 21:08:00,3.23,in_transit,operational
+839,105,Downtown Hub,SC011,2026-09-01 21:14:00,0.2,arrived_customer,operational
+840,105,Downtown Hub,SC011,2026-09-01 21:15:00,0.0,delivery_complete,operational
+841,106,Eastgate Food Court,SC011,2026-09-01 13:49:00,0.0,order_received,operational
+842,106,Eastgate Food Court,SC011,2026-09-01 13:55:00,0.23,arrived_restaurant,operational
+843,106,Eastgate Food Court,SC011,2026-09-01 14:02:00,0.0,pickup_complete,operational
+844,106,Eastgate Food Court,SC011,2026-09-01 14:03:00,3.25,in_transit,operational
+845,106,Eastgate Food Court,SC011,2026-09-01 14:09:00,0.0,waiting_traffic,operational
+846,106,Eastgate Food Court,SC011,2026-09-01 14:11:00,3.42,in_transit,operational
+847,106,Eastgate Food Court,SC011,2026-09-01 14:16:00,0.1,arrived_customer,operational
+848,106,Eastgate Food Court,SC011,2026-09-01 14:18:00,0.0,delivery_complete,operational
+849,107,Westside Kitchen,SC008,2026-09-01 10:16:00,0.0,order_received,operational
+850,107,Westside Kitchen,SC008,2026-09-01 10:23:00,0.11,arrived_restaurant,operational
+851,107,Westside Kitchen,SC008,2026-09-01 10:30:00,0.0,pickup_complete,operational
+852,107,Westside Kitchen,SC008,2026-09-01 10:31:00,2.19,in_transit,operational
+853,107,Westside Kitchen,SC008,2026-09-01 10:39:00,0.0,waiting_traffic,operational
+854,107,Westside Kitchen,SC008,2026-09-01 10:43:00,1.24,in_transit,operational
+855,107,Westside Kitchen,SC008,2026-09-01 10:45:00,0.11,arrived_customer,operational
+856,107,Westside Kitchen,SC008,2026-09-01 10:49:00,0.0,delivery_complete,operational
+857,108,North Plaza,SC019,2026-09-03 18:39:00,0.0,order_received,operational
+858,108,North Plaza,SC019,2026-09-03 18:46:00,0.24,arrived_restaurant,minor_delay
+859,108,North Plaza,SC019,2026-09-03 18:48:00,0.0,pickup_complete,operational
+860,108,North Plaza,SC019,2026-09-03 18:49:00,1.0,in_transit,operational
+861,108,North Plaza,SC019,2026-09-03 18:51:00,0.0,waiting_traffic,operational
+862,108,North Plaza,SC019,2026-09-03 18:53:00,1.71,in_transit,operational
+863,108,North Plaza,SC019,2026-09-03 19:00:00,0.26,arrived_customer,operational
+864,108,North Plaza,SC019,2026-09-03 19:01:00,0.0,delivery_complete,operational
+865,109,Eastgate Food Court,SC017,2026-09-01 12:29:00,0.0,order_received,operational
+866,109,Eastgate Food Court,SC017,2026-09-01 12:32:00,0.2,arrived_restaurant,operational
+867,109,Eastgate Food Court,SC017,2026-09-01 12:36:00,0.0,pickup_complete,operational
+868,109,Eastgate Food Court,SC017,2026-09-01 12:37:00,1.25,in_transit,operational
+869,109,Eastgate Food Court,SC017,2026-09-01 12:44:00,0.0,waiting_traffic,operational
+870,109,Eastgate Food Court,SC017,2026-09-01 12:46:00,3.08,in_transit,operational
+871,109,Eastgate Food Court,SC017,2026-09-01 12:58:00,0.27,arrived_customer,operational
+872,109,Eastgate Food Court,SC017,2026-09-01 13:02:00,0.0,delivery_complete,operational
+873,110,North Plaza,SC019,2026-09-03 20:47:00,0.0,order_received,operational
+874,110,North Plaza,SC019,2026-09-03 20:59:00,0.12,arrived_restaurant,operational
+875,110,North Plaza,SC019,2026-09-03 21:03:00,0.0,pickup_complete,operational
+876,110,North Plaza,SC019,2026-09-03 21:04:00,3.33,in_transit,operational
+877,110,North Plaza,SC019,2026-09-03 21:10:00,0.0,waiting_traffic,operational
+878,110,North Plaza,SC019,2026-09-03 21:12:00,1.65,in_transit,operational
+879,110,North Plaza,SC019,2026-09-03 21:21:00,0.18,arrived_customer,operational
+880,110,North Plaza,SC019,2026-09-03 21:24:00,0.0,delivery_complete,operational
+881,111,Downtown Hub,SC011,2026-09-03 09:32:00,0.0,order_received,operational
+882,111,Downtown Hub,SC011,2026-09-03 09:42:00,0.16,arrived_restaurant,operational
+883,111,Downtown Hub,SC011,2026-09-03 09:47:00,0.0,pickup_complete,operational
+884,111,Downtown Hub,SC011,2026-09-03 09:48:00,2.6,in_transit,minor_delay
+885,111,Downtown Hub,SC011,2026-09-03 10:01:00,0.0,waiting_traffic,operational
+886,111,Downtown Hub,SC011,2026-09-03 10:05:00,1.35,in_transit,operational
+887,111,Downtown Hub,SC011,2026-09-03 10:09:00,0.16,arrived_customer,operational
+888,111,Downtown Hub,SC011,2026-09-03 10:13:00,0.0,delivery_complete,operational
+889,112,North Plaza,SC014,2026-09-02 18:38:00,0.0,order_received,operational
+890,112,North Plaza,SC014,2026-09-02 18:43:00,0.22,arrived_restaurant,operational
+891,112,North Plaza,SC014,2026-09-02 18:47:00,0.0,pickup_complete,operational
+892,112,North Plaza,SC014,2026-09-02 18:48:00,2.47,in_transit,operational
+893,112,North Plaza,SC014,2026-09-02 18:53:00,0.0,waiting_traffic,operational
+894,112,North Plaza,SC014,2026-09-02 18:58:00,0.88,in_transit,operational
+895,112,North Plaza,SC014,2026-09-02 19:05:00,0.28,arrived_customer,operational
+896,112,North Plaza,SC014,2026-09-02 19:10:00,0.0,delivery_complete,operational
+897,113,Westside Kitchen,SC011,2026-09-01 17:42:00,0.0,order_received,operational
+898,113,Westside Kitchen,SC011,2026-09-01 17:53:00,0.1,arrived_restaurant,operational
+899,113,Westside Kitchen,SC011,2026-09-01 18:00:00,0.0,pickup_complete,minor_delay
+900,113,Westside Kitchen,SC011,2026-09-01 18:01:00,2.56,in_transit,operational
+901,113,Westside Kitchen,SC011,2026-09-01 18:10:00,0.0,waiting_traffic,operational
+902,113,Westside Kitchen,SC011,2026-09-01 18:13:00,3.5,in_transit,operational
+903,113,Westside Kitchen,SC011,2026-09-01 18:17:00,0.25,arrived_customer,operational
+904,113,Westside Kitchen,SC011,2026-09-01 18:22:00,0.0,delivery_complete,operational
+905,114,North Plaza,SC011,2026-09-01 18:44:00,0.0,order_received,operational
+906,114,North Plaza,SC011,2026-09-01 18:51:00,0.27,arrived_restaurant,operational
+907,114,North Plaza,SC011,2026-09-01 18:59:00,0.0,pickup_complete,operational
+908,114,North Plaza,SC011,2026-09-01 19:00:00,2.6,in_transit,operational
+909,114,North Plaza,SC011,2026-09-01 19:01:00,0.0,waiting_traffic,operational
+910,114,North Plaza,SC011,2026-09-01 19:02:00,2.95,in_transit,operational
+911,114,North Plaza,SC011,2026-09-01 19:10:00,0.16,arrived_customer,operational
+912,114,North Plaza,SC011,2026-09-01 19:15:00,0.0,delivery_complete,operational
+913,115,Westside Kitchen,SC007,2026-09-02 20:31:00,0.0,order_received,operational
+914,115,Westside Kitchen,SC007,2026-09-02 20:38:00,0.19,arrived_restaurant,minor_delay
+915,115,Westside Kitchen,SC007,2026-09-02 20:43:00,0.0,pickup_complete,operational
+916,115,Westside Kitchen,SC007,2026-09-02 20:44:00,2.68,in_transit,operational
+917,115,Westside Kitchen,SC007,2026-09-02 20:46:00,0.0,waiting_traffic,operational
+918,115,Westside Kitchen,SC007,2026-09-02 20:47:00,1.44,in_transit,operational
+919,115,Westside Kitchen,SC007,2026-09-02 20:48:00,0.07,arrived_customer,operational
+920,115,Westside Kitchen,SC007,2026-09-02 20:49:00,0.0,delivery_complete,operational
+921,116,Downtown Hub,SC011,2026-09-03 10:38:00,0.0,order_received,operational
+922,116,Downtown Hub,SC011,2026-09-03 10:44:00,0.2,arrived_restaurant,operational
+923,116,Downtown Hub,SC011,2026-09-03 10:52:00,0.0,pickup_complete,operational
+924,116,Downtown Hub,SC011,2026-09-03 10:53:00,3.13,in_transit,operational
+925,116,Downtown Hub,SC011,2026-09-03 10:54:00,0.0,waiting_traffic,operational
+926,116,Downtown Hub,SC011,2026-09-03 10:56:00,0.87,in_transit,operational
+927,116,Downtown Hub,SC011,2026-09-03 10:57:00,0.14,arrived_customer,operational
+928,116,Downtown Hub,SC011,2026-09-03 11:04:00,0.0,delivery_complete,operational
+929,117,Westside Kitchen,SC015,2026-09-03 12:48:00,0.0,order_received,operational
+930,117,Westside Kitchen,SC015,2026-09-03 12:51:00,0.2,arrived_restaurant,operational
+931,117,Westside Kitchen,SC015,2026-09-03 12:52:00,0.0,pickup_complete,operational
+932,117,Westside Kitchen,SC015,2026-09-03 12:53:00,2.87,in_transit,operational
+933,117,Westside Kitchen,SC015,2026-09-03 13:00:00,0.0,waiting_traffic,operational
+934,117,Westside Kitchen,SC015,2026-09-03 13:03:00,3.38,in_transit,operational
+935,117,Westside Kitchen,SC015,2026-09-03 13:12:00,0.28,arrived_customer,operational
+936,117,Westside Kitchen,SC015,2026-09-03 13:15:00,0.0,delivery_complete,operational
+937,118,North Plaza,SC015,2026-09-02 20:24:00,0.0,order_received,operational
+938,118,North Plaza,SC015,2026-09-02 20:33:00,0.17,arrived_restaurant,operational
+939,118,North Plaza,SC015,2026-09-02 20:36:00,0.0,pickup_complete,operational
+940,118,North Plaza,SC015,2026-09-02 20:37:00,1.63,in_transit,operational
+941,118,North Plaza,SC015,2026-09-02 20:40:00,0.0,waiting_traffic,operational
+942,118,North Plaza,SC015,2026-09-02 20:41:00,1.64,in_transit,operational
+943,118,North Plaza,SC015,2026-09-02 20:48:00,0.2,arrived_customer,operational
+944,118,North Plaza,SC015,2026-09-02 20:54:00,0.0,delivery_complete,operational
+945,119,Eastgate Food Court,SC018,2026-09-01 19:54:00,0.0,order_received,operational
+946,119,Eastgate Food Court,SC018,2026-09-01 19:58:00,0.15,arrived_restaurant,operational
+947,119,Eastgate Food Court,SC018,2026-09-01 20:04:00,0.0,pickup_complete,operational
+948,119,Eastgate Food Court,SC018,2026-09-01 20:05:00,2.64,in_transit,operational
+949,119,Eastgate Food Court,SC018,2026-09-01 20:10:00,0.0,waiting_traffic,operational
+950,119,Eastgate Food Court,SC018,2026-09-01 20:13:00,2.71,in_transit,operational
+951,119,Eastgate Food Court,SC018,2026-09-01 20:16:00,0.11,arrived_customer,operational
+952,119,Eastgate Food Court,SC018,2026-09-01 20:20:00,0.0,delivery_complete,operational
+953,120,Westside Kitchen,SC015,2026-09-02 22:01:00,0.0,order_received,operational
+954,120,Westside Kitchen,SC015,2026-09-02 22:06:00,0.25,arrived_restaurant,operational
+955,120,Westside Kitchen,SC015,2026-09-02 22:10:00,0.0,pickup_complete,operational
+956,120,Westside Kitchen,SC015,2026-09-02 22:11:00,2.51,in_transit,operational
+957,120,Westside Kitchen,SC015,2026-09-02 22:15:00,0.0,waiting_traffic,operational
+958,120,Westside Kitchen,SC015,2026-09-02 22:18:00,3.01,in_transit,operational
+959,120,Westside Kitchen,SC015,2026-09-02 22:25:00,0.27,arrived_customer,operational
+960,120,Westside Kitchen,SC015,2026-09-02 22:29:00,0.0,delivery_complete,operational
+961,121,Eastgate Food Court,SC005,2026-09-01 08:18:00,0.0,order_received,operational
+962,121,Eastgate Food Court,SC005,2026-09-01 08:23:00,0.2,arrived_restaurant,operational
+963,121,Eastgate Food Court,SC005,2026-09-01 08:26:00,0.0,pickup_complete,operational
+964,121,Eastgate Food Court,SC005,2026-09-01 08:27:00,3.23,in_transit,operational
+965,121,Eastgate Food Court,SC005,2026-09-01 08:32:00,0.0,waiting_traffic,operational
+966,121,Eastgate Food Court,SC005,2026-09-01 08:33:00,2.91,in_transit,operational
+967,121,Eastgate Food Court,SC005,2026-09-01 08:38:00,0.16,arrived_customer,operational
+968,121,Eastgate Food Court,SC005,2026-09-01 08:43:00,0.0,delivery_complete,operational
+969,122,Westside Kitchen,SC005,2026-09-03 19:38:00,0.0,order_received,operational
+970,122,Westside Kitchen,SC005,2026-09-03 19:44:00,0.21,arrived_restaurant,operational
+971,122,Westside Kitchen,SC005,2026-09-03 19:47:00,0.0,pickup_complete,operational
+972,122,Westside Kitchen,SC005,2026-09-03 19:48:00,1.25,in_transit,operational
+973,122,Westside Kitchen,SC005,2026-09-03 19:59:00,0.0,waiting_traffic,operational
+974,122,Westside Kitchen,SC005,2026-09-03 20:00:00,1.39,in_transit,operational
+975,122,Westside Kitchen,SC005,2026-09-03 20:08:00,0.07,arrived_customer,operational
+976,122,Westside Kitchen,SC005,2026-09-03 20:12:00,0.0,delivery_complete,operational
+977,123,Downtown Hub,SC016,2026-09-03 16:01:00,0.0,order_received,operational
+978,123,Downtown Hub,SC016,2026-09-03 16:09:00,0.2,arrived_restaurant,operational
+979,123,Downtown Hub,SC016,2026-09-03 16:13:00,0.0,pickup_complete,operational
+980,123,Downtown Hub,SC016,2026-09-03 16:14:00,1.86,in_transit,operational
+981,123,Downtown Hub,SC016,2026-09-03 16:20:00,0.0,waiting_traffic,operational
+982,123,Downtown Hub,SC016,2026-09-03 16:22:00,3.47,in_transit,operational
+983,123,Downtown Hub,SC016,2026-09-03 16:36:00,0.15,arrived_customer,operational
+984,123,Downtown Hub,SC016,2026-09-03 16:40:00,0.0,delivery_complete,operational
+985,124,Downtown Hub,SC017,2026-09-02 09:33:00,0.0,order_received,operational
+986,124,Downtown Hub,SC017,2026-09-02 09:38:00,0.22,arrived_restaurant,operational
+987,124,Downtown Hub,SC017,2026-09-02 09:46:00,0.0,pickup_complete,operational
+988,124,Downtown Hub,SC017,2026-09-02 09:47:00,2.36,in_transit,operational
+989,124,Downtown Hub,SC017,2026-09-02 09:53:00,0.0,waiting_traffic,operational
+990,124,Downtown Hub,SC017,2026-09-02 09:55:00,1.03,in_transit,operational
+991,124,Downtown Hub,SC017,2026-09-02 10:00:00,0.27,arrived_customer,operational
+992,124,Downtown Hub,SC017,2026-09-02 10:03:00,0.0,delivery_complete,operational
+993,125,Downtown Hub,SC012,2026-09-01 13:15:00,0.0,order_received,operational
+994,125,Downtown Hub,SC012,2026-09-01 13:21:00,0.11,arrived_restaurant,operational
+995,125,Downtown Hub,SC012,2026-09-01 13:23:00,0.0,pickup_complete,operational
+996,125,Downtown Hub,SC012,2026-09-01 13:24:00,2.2,in_transit,operational
+997,125,Downtown Hub,SC012,2026-09-01 13:29:00,0.0,waiting_traffic,operational
+998,125,Downtown Hub,SC012,2026-09-01 13:32:00,3.18,in_transit,operational
+999,125,Downtown Hub,SC012,2026-09-01 13:34:00,0.13,arrived_customer,operational
+1000,125,Downtown Hub,SC012,2026-09-01 13:38:00,0.0,delivery_complete,operational
+1001,126,Westside Kitchen,SC015,2026-09-03 15:40:00,0.0,order_received,operational
+1002,126,Westside Kitchen,SC015,2026-09-03 15:54:00,0.3,arrived_restaurant,operational
+1003,126,Westside Kitchen,SC015,2026-09-03 16:01:00,0.0,pickup_complete,operational
+1004,126,Westside Kitchen,SC015,2026-09-03 16:02:00,2.77,in_transit,operational
+1005,126,Westside Kitchen,SC015,2026-09-03 16:09:00,0.0,waiting_traffic,operational
+1006,126,Westside Kitchen,SC015,2026-09-03 16:14:00,2.32,in_transit,operational
+1007,126,Westside Kitchen,SC015,2026-09-03 16:19:00,0.29,arrived_customer,operational
+1008,126,Westside Kitchen,SC015,2026-09-03 16:22:00,0.0,delivery_complete,operational
+1009,127,Eastgate Food Court,SC010,2026-09-03 14:52:00,0.0,order_received,operational
+1010,127,Eastgate Food Court,SC010,2026-09-03 15:01:00,0.1,arrived_restaurant,operational
+1011,127,Eastgate Food Court,SC010,2026-09-03 15:04:00,0.0,pickup_complete,operational
+1012,127,Eastgate Food Court,SC010,2026-09-03 15:05:00,2.02,in_transit,operational
+1013,127,Eastgate Food Court,SC010,2026-09-03 15:11:00,0.0,waiting_traffic,operational
+1014,127,Eastgate Food Court,SC010,2026-09-03 15:13:00,2.6,in_transit,operational
+1015,127,Eastgate Food Court,SC010,2026-09-03 15:23:00,0.09,arrived_customer,operational
+1016,127,Eastgate Food Court,SC010,2026-09-03 15:26:00,0.0,delivery_complete,operational
+1017,128,Downtown Hub,SC012,2026-09-02 22:25:00,0.0,order_received,operational
+1018,128,Downtown Hub,SC012,2026-09-02 22:28:00,0.18,arrived_restaurant,operational
+1019,128,Downtown Hub,SC012,2026-09-02 22:35:00,0.0,pickup_complete,operational
+1020,128,Downtown Hub,SC012,2026-09-02 22:36:00,2.84,in_transit,minor_delay
+1021,128,Downtown Hub,SC012,2026-09-02 22:40:00,0.0,waiting_traffic,operational
+1022,128,Downtown Hub,SC012,2026-09-02 22:43:00,2.91,in_transit,operational
+1023,128,Downtown Hub,SC012,2026-09-02 22:50:00,0.23,arrived_customer,operational
+1024,128,Downtown Hub,SC012,2026-09-02 22:53:00,0.0,delivery_complete,operational
+1025,129,Downtown Hub,SC014,2026-09-01 14:38:00,0.0,order_received,minor_delay
+1026,129,Downtown Hub,SC014,2026-09-01 14:43:00,0.07,arrived_restaurant,operational
+1027,129,Downtown Hub,SC014,2026-09-01 14:45:00,0.0,pickup_complete,operational
+1028,129,Downtown Hub,SC014,2026-09-01 14:46:00,1.62,in_transit,operational
+1029,129,Downtown Hub,SC014,2026-09-01 14:53:00,0.0,waiting_traffic,operational
+1030,129,Downtown Hub,SC014,2026-09-01 14:54:00,2.42,in_transit,operational
+1031,129,Downtown Hub,SC014,2026-09-01 14:55:00,0.17,arrived_customer,operational
+1032,129,Downtown Hub,SC014,2026-09-01 15:00:00,0.0,delivery_complete,operational
+1033,130,Westside Kitchen,SC015,2026-09-02 15:02:00,0.0,order_received,operational
+1034,130,Westside Kitchen,SC015,2026-09-02 15:10:00,0.15,arrived_restaurant,operational
+1035,130,Westside Kitchen,SC015,2026-09-02 15:15:00,0.0,pickup_complete,operational
+1036,130,Westside Kitchen,SC015,2026-09-02 15:16:00,1.62,in_transit,operational
+1037,130,Westside Kitchen,SC015,2026-09-02 15:23:00,0.0,waiting_traffic,operational
+1038,130,Westside Kitchen,SC015,2026-09-02 15:26:00,1.27,in_transit,operational
+1039,130,Westside Kitchen,SC015,2026-09-02 15:32:00,0.22,arrived_customer,operational
+1040,130,Westside Kitchen,SC015,2026-09-02 15:34:00,0.0,delivery_complete,operational
+1041,131,North Plaza,SC012,2026-09-03 20:47:00,0.0,order_received,operational
+1042,131,North Plaza,SC012,2026-09-03 20:55:00,0.21,arrived_restaurant,minor_delay
+1043,131,North Plaza,SC012,2026-09-03 20:59:00,0.0,pickup_complete,operational
+1044,131,North Plaza,SC012,2026-09-03 21:00:00,3.13,in_transit,operational
+1045,131,North Plaza,SC012,2026-09-03 21:06:00,0.0,waiting_traffic,operational
+1046,131,North Plaza,SC012,2026-09-03 21:08:00,2.44,in_transit,operational
+1047,131,North Plaza,SC012,2026-09-03 21:17:00,0.18,arrived_customer,operational
+1048,131,North Plaza,SC012,2026-09-03 21:19:00,0.0,delivery_complete,operational
+1049,132,Eastgate Food Court,SC012,2026-09-02 17:02:00,0.0,order_received,operational
+1050,132,Eastgate Food Court,SC012,2026-09-02 17:11:00,0.14,arrived_restaurant,operational
+1051,132,Eastgate Food Court,SC012,2026-09-02 17:13:00,0.0,pickup_complete,operational
+1052,132,Eastgate Food Court,SC012,2026-09-02 17:14:00,1.97,in_transit,operational
+1053,132,Eastgate Food Court,SC012,2026-09-02 17:21:00,0.0,waiting_traffic,operational
+1054,132,Eastgate Food Court,SC012,2026-09-02 17:24:00,1.99,in_transit,operational
+1055,132,Eastgate Food Court,SC012,2026-09-02 17:31:00,0.08,arrived_customer,operational
+1056,132,Eastgate Food Court,SC012,2026-09-02 17:32:00,0.0,delivery_complete,operational
+1057,133,Eastgate Food Court,SC008,2026-09-01 08:47:00,0.0,order_received,operational
+1058,133,Eastgate Food Court,SC008,2026-09-01 08:51:00,0.2,arrived_restaurant,operational
+1059,133,Eastgate Food Court,SC008,2026-09-01 08:57:00,0.0,pickup_complete,operational
+1060,133,Eastgate Food Court,SC008,2026-09-01 08:58:00,0.97,in_transit,operational
+1061,133,Eastgate Food Court,SC008,2026-09-01 09:05:00,0.0,waiting_traffic,operational
+1062,133,Eastgate Food Court,SC008,2026-09-01 09:07:00,0.96,in_transit,operational
+1063,133,Eastgate Food Court,SC008,2026-09-01 09:18:00,0.08,arrived_customer,operational
+1064,133,Eastgate Food Court,SC008,2026-09-01 09:21:00,0.0,delivery_complete,operational
+1065,134,North Plaza,SC007,2026-09-01 10:54:00,0.0,order_received,operational
+1066,134,North Plaza,SC007,2026-09-01 11:00:00,0.22,arrived_restaurant,operational
+1067,134,North Plaza,SC007,2026-09-01 11:03:00,0.0,pickup_complete,operational
+1068,134,North Plaza,SC007,2026-09-01 11:04:00,3.49,in_transit,minor_delay
+1069,134,North Plaza,SC007,2026-09-01 11:10:00,0.0,waiting_traffic,operational
+1070,134,North Plaza,SC007,2026-09-01 11:12:00,1.63,in_transit,minor_delay
+1071,134,North Plaza,SC007,2026-09-01 11:20:00,0.21,arrived_customer,minor_delay
+1072,134,North Plaza,SC007,2026-09-01 11:25:00,0.0,delivery_complete,operational
+1073,135,Downtown Hub,SC018,2026-09-03 12:57:00,0.0,order_received,operational
+1074,135,Downtown Hub,SC018,2026-09-03 12:58:00,0.08,arrived_restaurant,operational
+1075,135,Downtown Hub,SC018,2026-09-03 13:04:00,0.0,pickup_complete,operational
+1076,135,Downtown Hub,SC018,2026-09-03 13:05:00,1.33,in_transit,operational
+1077,135,Downtown Hub,SC018,2026-09-03 13:13:00,0.0,waiting_traffic,operational
+1078,135,Downtown Hub,SC018,2026-09-03 13:14:00,3.03,in_transit,operational
+1079,135,Downtown Hub,SC018,2026-09-03 13:15:00,0.05,arrived_customer,operational
+1080,135,Downtown Hub,SC018,2026-09-03 13:20:00,0.0,delivery_complete,minor_delay
+1081,136,Westside Kitchen,SC008,2026-09-02 08:23:00,0.0,order_received,operational
+1082,136,Westside Kitchen,SC008,2026-09-02 08:33:00,0.05,arrived_restaurant,operational
+1083,136,Westside Kitchen,SC008,2026-09-02 08:36:00,0.0,pickup_complete,operational
+1084,136,Westside Kitchen,SC008,2026-09-02 08:37:00,1.17,in_transit,operational
+1085,136,Westside Kitchen,SC008,2026-09-02 08:45:00,0.0,waiting_traffic,operational
+1086,136,Westside Kitchen,SC008,2026-09-02 08:47:00,0.83,in_transit,operational
+1087,136,Westside Kitchen,SC008,2026-09-02 08:49:00,0.11,arrived_customer,operational
+1088,136,Westside Kitchen,SC008,2026-09-02 08:53:00,0.0,delivery_complete,minor_delay
+1089,137,North Plaza,SC017,2026-09-02 20:26:00,0.0,order_received,operational
+1090,137,North Plaza,SC017,2026-09-02 20:33:00,0.08,arrived_restaurant,operational
+1091,137,North Plaza,SC017,2026-09-02 20:39:00,0.0,pickup_complete,minor_delay
+1092,137,North Plaza,SC017,2026-09-02 20:40:00,3.08,in_transit,operational
+1093,137,North Plaza,SC017,2026-09-02 20:50:00,0.0,waiting_traffic,operational
+1094,137,North Plaza,SC017,2026-09-02 20:52:00,1.21,in_transit,operational
+1095,137,North Plaza,SC017,2026-09-02 20:56:00,0.17,arrived_customer,operational
+1096,137,North Plaza,SC017,2026-09-02 21:01:00,0.0,delivery_complete,operational
+1097,138,Westside Kitchen,SC005,2026-09-02 16:58:00,0.0,order_received,operational
+1098,138,Westside Kitchen,SC005,2026-09-02 17:03:00,0.16,arrived_restaurant,operational
+1099,138,Westside Kitchen,SC005,2026-09-02 17:05:00,0.0,pickup_complete,operational
+1100,138,Westside Kitchen,SC005,2026-09-02 17:06:00,3.38,in_transit,operational
+1101,138,Westside Kitchen,SC005,2026-09-02 17:12:00,0.0,waiting_traffic,operational
+1102,138,Westside Kitchen,SC005,2026-09-02 17:15:00,2.66,in_transit,operational
+1103,138,Westside Kitchen,SC005,2026-09-02 17:20:00,0.16,arrived_customer,operational
+1104,138,Westside Kitchen,SC005,2026-09-02 17:25:00,0.0,delivery_complete,operational
+1105,139,Eastgate Food Court,SC003,2026-09-02 11:40:00,0.0,order_received,minor_delay
+1106,139,Eastgate Food Court,SC003,2026-09-02 11:50:00,0.06,arrived_restaurant,operational
+1107,139,Eastgate Food Court,SC003,2026-09-02 11:54:00,0.0,pickup_complete,operational
+1108,139,Eastgate Food Court,SC003,2026-09-02 11:55:00,2.52,in_transit,operational
+1109,139,Eastgate Food Court,SC003,2026-09-02 12:03:00,0.0,waiting_traffic,operational
+1110,139,Eastgate Food Court,SC003,2026-09-02 12:06:00,2.52,in_transit,operational
+1111,139,Eastgate Food Court,SC003,2026-09-02 12:13:00,0.18,arrived_customer,operational
+1112,139,Eastgate Food Court,SC003,2026-09-02 12:15:00,0.0,delivery_complete,operational
+1113,140,Westside Kitchen,SC020,2026-09-03 22:38:00,0.0,order_received,operational
+1114,140,Westside Kitchen,SC020,2026-09-03 22:46:00,0.18,arrived_restaurant,operational
+1115,140,Westside Kitchen,SC020,2026-09-03 22:51:00,0.0,pickup_complete,operational
+1116,140,Westside Kitchen,SC020,2026-09-03 22:52:00,1.03,in_transit,operational
+1117,140,Westside Kitchen,SC020,2026-09-03 22:57:00,0.0,waiting_traffic,operational
+1118,140,Westside Kitchen,SC020,2026-09-03 23:00:00,0.99,in_transit,operational
+1119,140,Westside Kitchen,SC020,2026-09-03 23:05:00,0.05,arrived_customer,operational
+1120,140,Westside Kitchen,SC020,2026-09-03 23:09:00,0.0,delivery_complete,operational
+1121,141,Westside Kitchen,SC019,2026-09-02 17:40:00,0.0,order_received,operational
+1122,141,Westside Kitchen,SC019,2026-09-02 17:43:00,0.14,arrived_restaurant,operational
+1123,141,Westside Kitchen,SC019,2026-09-02 17:46:00,0.0,pickup_complete,operational
+1124,141,Westside Kitchen,SC019,2026-09-02 17:47:00,1.3,in_transit,operational
+1125,141,Westside Kitchen,SC019,2026-09-02 17:55:00,0.0,waiting_traffic,operational
+1126,141,Westside Kitchen,SC019,2026-09-02 17:59:00,1.52,in_transit,operational
+1127,141,Westside Kitchen,SC019,2026-09-02 18:08:00,0.15,arrived_customer,operational
+1128,141,Westside Kitchen,SC019,2026-09-02 18:12:00,0.0,delivery_complete,operational
+1129,142,North Plaza,SC003,2026-09-03 08:10:00,0.0,order_received,operational
+1130,142,North Plaza,SC003,2026-09-03 08:22:00,0.2,arrived_restaurant,operational
+1131,142,North Plaza,SC003,2026-09-03 08:26:00,0.0,pickup_complete,operational
+1132,142,North Plaza,SC003,2026-09-03 08:27:00,2.23,in_transit,operational
+1133,142,North Plaza,SC003,2026-09-03 08:34:00,0.0,waiting_traffic,operational
+1134,142,North Plaza,SC003,2026-09-03 08:38:00,3.45,in_transit,operational
+1135,142,North Plaza,SC003,2026-09-03 08:43:00,0.2,arrived_customer,operational
+1136,142,North Plaza,SC003,2026-09-03 08:48:00,0.0,delivery_complete,operational
+1137,143,North Plaza,SC005,2026-09-02 16:35:00,0.0,order_received,operational
+1138,143,North Plaza,SC005,2026-09-02 16:47:00,0.25,arrived_restaurant,operational
+1139,143,North Plaza,SC005,2026-09-02 16:53:00,0.0,pickup_complete,operational
+1140,143,North Plaza,SC005,2026-09-02 16:54:00,1.71,in_transit,operational
+1141,143,North Plaza,SC005,2026-09-02 17:00:00,0.0,waiting_traffic,operational
+1142,143,North Plaza,SC005,2026-09-02 17:01:00,1.99,in_transit,operational
+1143,143,North Plaza,SC005,2026-09-02 17:02:00,0.11,arrived_customer,operational
+1144,143,North Plaza,SC005,2026-09-02 17:06:00,0.0,delivery_complete,operational
+1145,144,North Plaza,SC008,2026-09-01 21:20:00,0.0,order_received,operational
+1146,144,North Plaza,SC008,2026-09-01 21:28:00,0.27,arrived_restaurant,operational
+1147,144,North Plaza,SC008,2026-09-01 21:32:00,0.0,pickup_complete,operational
+1148,144,North Plaza,SC008,2026-09-01 21:33:00,3.0,in_transit,operational
+1149,144,North Plaza,SC008,2026-09-01 21:35:00,0.0,waiting_traffic,minor_delay
+1150,144,North Plaza,SC008,2026-09-01 21:39:00,2.84,in_transit,operational
+1151,144,North Plaza,SC008,2026-09-01 21:45:00,0.17,arrived_customer,operational
+1152,144,North Plaza,SC008,2026-09-01 21:49:00,0.0,delivery_complete,operational
+1153,145,Downtown Hub,SC013,2026-09-03 15:15:00,0.0,order_received,operational
+1154,145,Downtown Hub,SC013,2026-09-03 15:24:00,0.24,arrived_restaurant,operational
+1155,145,Downtown Hub,SC013,2026-09-03 15:30:00,0.0,pickup_complete,operational
+1156,145,Downtown Hub,SC013,2026-09-03 15:31:00,2.27,in_transit,operational
+1157,145,Downtown Hub,SC013,2026-09-03 15:38:00,0.0,waiting_traffic,operational
+1158,145,Downtown Hub,SC013,2026-09-03 15:41:00,3.01,in_transit,operational
+1159,145,Downtown Hub,SC013,2026-09-03 15:46:00,0.26,arrived_customer,operational
+1160,145,Downtown Hub,SC013,2026-09-03 15:50:00,0.0,delivery_complete,operational
+1161,146,Downtown Hub,SC014,2026-09-01 22:16:00,0.0,order_received,operational
+1162,146,Downtown Hub,SC014,2026-09-01 22:19:00,0.2,arrived_restaurant,operational
+1163,146,Downtown Hub,SC014,2026-09-01 22:24:00,0.0,pickup_complete,operational
+1164,146,Downtown Hub,SC014,2026-09-01 22:25:00,2.33,in_transit,operational
+1165,146,Downtown Hub,SC014,2026-09-01 22:26:00,0.0,waiting_traffic,operational
+1166,146,Downtown Hub,SC014,2026-09-01 22:29:00,2.52,in_transit,operational
+1167,146,Downtown Hub,SC014,2026-09-01 22:38:00,0.24,arrived_customer,operational
+1168,146,Downtown Hub,SC014,2026-09-01 22:42:00,0.0,delivery_complete,operational
+1169,147,North Plaza,SC018,2026-09-02 21:39:00,0.0,order_received,operational
+1170,147,North Plaza,SC018,2026-09-02 21:46:00,0.05,arrived_restaurant,operational
+1171,147,North Plaza,SC018,2026-09-02 21:48:00,0.0,pickup_complete,minor_delay
+1172,147,North Plaza,SC018,2026-09-02 21:49:00,3.48,in_transit,operational
+1173,147,North Plaza,SC018,2026-09-02 21:52:00,0.0,waiting_traffic,operational
+1174,147,North Plaza,SC018,2026-09-02 21:54:00,2.96,in_transit,operational
+1175,147,North Plaza,SC018,2026-09-02 21:58:00,0.23,arrived_customer,operational
+1176,147,North Plaza,SC018,2026-09-02 22:02:00,0.0,delivery_complete,operational
+1177,148,Westside Kitchen,SC020,2026-09-03 14:32:00,0.0,order_received,operational
+1178,148,Westside Kitchen,SC020,2026-09-03 14:35:00,0.14,arrived_restaurant,operational
+1179,148,Westside Kitchen,SC020,2026-09-03 14:37:00,0.0,pickup_complete,operational
+1180,148,Westside Kitchen,SC020,2026-09-03 14:38:00,0.81,in_transit,operational
+1181,148,Westside Kitchen,SC020,2026-09-03 14:44:00,0.0,waiting_traffic,operational
+1182,148,Westside Kitchen,SC020,2026-09-03 14:48:00,3.39,in_transit,operational
+1183,148,Westside Kitchen,SC020,2026-09-03 14:52:00,0.14,arrived_customer,operational
+1184,148,Westside Kitchen,SC020,2026-09-03 14:57:00,0.0,delivery_complete,operational
+1185,149,Eastgate Food Court,SC006,2026-09-02 17:47:00,0.0,order_received,operational
+1186,149,Eastgate Food Court,SC006,2026-09-02 17:52:00,0.13,arrived_restaurant,operational
+1187,149,Eastgate Food Court,SC006,2026-09-02 17:56:00,0.0,pickup_complete,operational
+1188,149,Eastgate Food Court,SC006,2026-09-02 17:57:00,2.75,in_transit,operational
+1189,149,Eastgate Food Court,SC006,2026-09-02 17:58:00,0.0,waiting_traffic,operational
+1190,149,Eastgate Food Court,SC006,2026-09-02 18:01:00,1.86,in_transit,operational
+1191,149,Eastgate Food Court,SC006,2026-09-02 18:10:00,0.05,arrived_customer,operational
+1192,149,Eastgate Food Court,SC006,2026-09-02 18:16:00,0.0,delivery_complete,operational
+1193,150,Eastgate Food Court,SC004,2026-09-02 17:19:00,0.0,order_received,operational
+1194,150,Eastgate Food Court,SC004,2026-09-02 17:24:00,0.25,arrived_restaurant,operational
+1195,150,Eastgate Food Court,SC004,2026-09-02 17:25:00,0.0,pickup_complete,operational
+1196,150,Eastgate Food Court,SC004,2026-09-02 17:26:00,2.1,in_transit,operational
+1197,150,Eastgate Food Court,SC004,2026-09-02 17:32:00,0.0,waiting_traffic,operational
+1198,150,Eastgate Food Court,SC004,2026-09-02 17:33:00,2.37,in_transit,minor_delay
+1199,150,Eastgate Food Court,SC004,2026-09-02 17:38:00,0.19,arrived_customer,operational
+1200,150,Eastgate Food Court,SC004,2026-09-02 17:42:00,0.0,delivery_complete,operational
