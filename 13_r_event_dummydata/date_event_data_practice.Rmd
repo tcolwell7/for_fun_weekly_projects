@@ -49,6 +49,10 @@ unique_vals <- lapply(data, unique)
 
 
 ```{r echo=FALSE}
+
+# "delivered" equals the time from the order being received to delivery being complete
+# need to filter data, find diff time between time stamps and simple group/summarise
+
 time_taken_df <- data %>%
   filter(event_type %in% c("order_received","delivery_complete")) %>%
   group_by(delivery_id) %>%
@@ -76,4 +80,96 @@ time_taken %>%
 - Time taken on average for all deliveries is `r round(time_taken_deliv_all,2)`. 
 - 
   
+### Question 2: How long does each stage of the delivery journey take, and which stage is the biggest contributor to total delivery time?
 
+
+```{r}
+# calculate time diff between each event type
+# then aggregate output to see event timings
+
+time_taken_all_stages <- data %>%
+  group_by(delivery_id) %>%
+  arrange(delivery_id, event_id) %>%
+  mutate(
+    prev_timestamp = lag(event_timestamp),
+    next_timestamp = lead(event_timestamp)
+    ) %>%
+  mutate(
+    stage_time_taken = lead(event_timestamp) - event_timestamp,
+    stage_time_taken2 = # diff method, formatted in mins
+      as.numeric(difftime(next_timestamp, event_timestamp, units = "mins")
+      )
+    ) %>%
+  ungroup()
+
+time_taken_all_stages2 <- time_taken_all_stages %>%
+  group_by(event_type) %>%
+  summarise(
+    stage_time_taken_all = sum(stage_time_taken, na.rm = TRUE),
+    stage_time_taken_avg = round(mean(stage_time_taken, na.rm = TRUE),2)
+  ) %>%
+  arrange(stage_time_taken_avg) %>%
+  filter(!is.na(stage_time_taken_avg))
+
+time_taken_all_stages2
+
+
+```
+
+- The longest stage for each delivery is the journey to the customer taking an estimated `r max(time_taken_all_stages2$stage_time_taken_avg` 
+
+
+### Question 3: Which delivery events or stages are most associated with minor delays, and how long does the next stage take after a delayed event?
+
+```{r}
+
+# calculate how long delayed events take,
+# compare how long delay vs normal operational
+# check how deliveries with delayed compare to non delayed deliveries times - is this significant?
+ 
+time_taken_all_stages <- data %>%
+  group_by(delivery_id) %>%
+  arrange(delivery_id, event_id) %>%
+  mutate(
+    prev_timestamp = lag(event_timestamp),
+    next_timestamp = lead(event_timestamp)
+    ) %>%
+  mutate(
+    stage_time_taken = lead(event_timestamp) - event_timestamp,
+    stage_time_taken2 = # diff method, formatted in mins
+      as.numeric(difftime(next_timestamp, event_timestamp, units = "mins")
+      )
+    ) %>%
+  ungroup()
+
+time_taken_delayed <- time_taken_all_stages %>%
+  group_by(event_type, status) %>%
+  summarise(
+    n = n(),
+    stage_time_taken_avg = round(mean(stage_time_taken, na.rm = TRUE),2)
+  ) %>%
+  arrange(event_type, desc(status))
+
+time_taken_delayed
+
+
+```
+
+Operationally per event, there isn't a meaingful distance across each event time stage timings where minor delays occur. 
+
+
+```{r}
+
+time_taken_all_stages %>%
+  group_by(delivery_id) %>%
+  mutate(
+    delay_flag = if_else(any(status == "minor_delay"), TRUE, FALSE)
+  ) %>%
+  ungroup() %>%
+  group_by(delay_flag) %>%
+  summarise(stage_time_taken_avg = round(mean(stage_time_taken, na.rm = TRUE),2))
+
+
+```
+
+Data on the surface is misleading and calculating this overall is misleading and skewed, as total distance is not taken into account which is one of if not the biggest factor at play in delivery times. 
