@@ -172,4 +172,17 @@ time_taken_all_stages %>%
 
 ```
 
-Data on the surface is misleading and calculating this overall is misleading and skewed, as total distance is not taken into account which is one of if not the biggest factor at play in delivery times. 
+Data on the surface is misleading and calculating this overall is misleading and skewed, as total distance is not taken into account which is one of if not the biggest factor at play in delivery times.
+
+
+# Question 4: After accounting for distance, are delayed deliveries actually slower per kilometre. 
+
+In order to analyse this, we need to calculate a metric which calculates the time spent travelling per km whcih can be then compared across journeys which were delayed or not. This is a simple equation:  min_per_km = distance_km / stage_time_taken_m (d = s*t, p = d / t ~ p = 1 / s)
+
+```{r}
+
+
+
+
+```
+
