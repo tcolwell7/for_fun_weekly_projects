@@ -43,13 +43,22 @@ Project to create a full ETL style pipeline and workflow for extracting and tran
 Useful web-scrape using Python to extract for fun football data and then basic wrangling and plots using pandas/seaborn/matplotlib
 
 9. Premier League Top Scorers R plotting
-tbc
+Messing aorund with the top scorer data, creating plots, creating a default style formatting and playing aorund with different styles and patchwork
 
 10. World Cup Results plotting in R
 Using ggflags package and some IMF data to combine making a ok-ish looking chart with some statistics
 
 11. World Cup Results Statistic plotting in R
-tbc
+Simple statistical exploration of economic factors and WC performance for fun 
+
+12. PUR Python data pipeline
+Practice writing data pipeline in Python utilising a more engineering approach (tbc)
+
+13. R event data practice
+Using dummy data, practicing SQL style questioning in R exploring questions, create code steps and answering
+
+14. R transactional data practice
+Using dummy data, practicing SQL style questioning in R with a focus on problem break down, exploraiton of steps to then be challenged improving thought process and SQL approaches
    
  
 
