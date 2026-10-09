@@ -1,0 +1,401 @@
+customer_id,signup_date,signup_channel,region,marketing_consent
+1,2025-04-13,organic,Midlands,True
+2,2026-03-12,app_store,Yorkshire,False
+3,2025-09-28,app_store,Wales,True
+4,2025-04-17,organic,Scotland,True
+5,2025-03-13,paid_social,North West,True
+6,2025-01-21,referral,Scotland,False
+7,2026-09-07,organic,South East,True
+8,2025-05-02,comparison_site,North West,True
+9,2026-04-12,app_store,Scotland,False
+10,2025-08-03,organic,London,True
+11,2025-11-27,organic,South East,True
+12,2026-04-04,comparison_site,Scotland,True
+13,2025-03-29,paid_social,North West,True
+14,2026-01-08,paid_social,South East,True
+15,2025-04-10,referral,Midlands,False
+16,2025-05-11,referral,Midlands,True
+17,2025-11-05,comparison_site,London,True
+18,2025-12-10,comparison_site,South West,True
+19,2026-05-07,app_store,Scotland,False
+20,2026-02-18,referral,Midlands,False
+21,2026-01-21,app_store,Scotland,True
+22,2025-07-11,referral,Yorkshire,False
+23,2025-10-04,referral,Midlands,True
+24,2025-06-10,organic,Midlands,False
+25,2026-04-05,app_store,Midlands,True
+26,2025-11-10,app_store,London,False
+27,2025-01-22,referral,London,True
+28,2025-09-10,app_store,Midlands,True
+29,2026-07-15,referral,Scotland,False
+30,2026-04-20,organic,Midlands,True
+31,2025-02-28,organic,London,True
+32,2026-05-26,organic,Scotland,True
+33,2026-04-21,paid_social,North West,True
+34,2025-07-09,organic,North West,True
+35,2026-07-17,referral,Wales,True
+36,2026-07-21,organic,Scotland,True
+37,2025-09-01,referral,Scotland,True
+38,2026-05-20,paid_social,North West,False
+39,2025-05-11,referral,North West,True
+40,2026-04-30,organic,Midlands,True
+41,2025-01-21,organic,London,True
+42,2025-06-16,paid_social,Wales,True
+43,2025-10-01,referral,Scotland,False
+44,2026-01-23,organic,Midlands,True
+45,2026-08-24,comparison_site,Wales,True
+46,2025-11-12,organic,South West,False
+47,2025-01-14,paid_social,Yorkshire,False
+48,2025-08-30,comparison_site,South East,True
+49,2025-12-12,paid_social,South East,False
+50,2026-07-19,paid_social,North West,False
+51,2025-12-06,paid_social,South East,True
+52,2025-04-02,referral,Wales,False
+53,2026-01-02,app_store,Yorkshire,True
+54,2026-03-31,organic,London,True
+55,2026-03-04,organic,London,True
+56,2026-05-24,referral,South East,True
+57,2025-02-04,app_store,Midlands,False
+58,2025-07-25,paid_social,Wales,False
+59,2025-03-22,organic,London,True
+60,2026-07-16,referral,Yorkshire,True
+61,2026-01-23,app_store,South West,True
+62,2025-01-02,organic,London,True
+63,2026-01-25,paid_social,Midlands,True
+64,2026-07-20,paid_social,Midlands,True
+65,2025-04-16,paid_social,North West,False
+66,2026-04-22,paid_social,London,True
+67,2026-02-06,organic,London,False
+68,2026-07-10,organic,London,True
+69,2025-06-11,organic,South West,True
+70,2025-07-21,comparison_site,Yorkshire,True
+71,2025-09-27,app_store,London,True
+72,2025-09-28,paid_social,South East,False
+73,2026-04-01,comparison_site,London,True
+74,2026-04-07,referral,London,False
+75,2025-09-09,paid_social,South West,True
+76,2025-10-23,paid_social,South East,False
+77,2025-12-04,organic,South East,True
+78,2025-02-22,organic,South East,False
+79,2025-08-05,referral,Wales,False
+80,2025-07-07,paid_social,North West,True
+81,2026-01-15,organic,Midlands,True
+82,2026-05-08,comparison_site,London,False
+83,2025-02-10,app_store,Midlands,False
+84,2025-06-06,organic,Wales,True
+85,2025-01-15,comparison_site,London,True
+86,2025-03-06,comparison_site,North West,False
+87,2026-06-05,comparison_site,South West,False
+88,2025-12-10,organic,Yorkshire,False
+89,2025-05-09,app_store,North West,False
+90,2026-04-17,paid_social,North West,True
+91,2025-03-04,referral,Yorkshire,True
+92,2025-05-19,comparison_site,Wales,True
+93,2026-05-14,referral,London,True
+94,2026-08-16,app_store,Yorkshire,True
+95,2026-01-27,app_store,South East,True
+96,2026-02-23,app_store,Scotland,False
+97,2025-10-16,paid_social,London,True
+98,2026-01-14,organic,London,True
+99,2026-05-05,paid_social,South East,True
+100,2025-08-19,app_store,Midlands,True
+101,2025-02-10,organic,South East,True
+102,2025-01-28,paid_social,South East,True
+103,2025-05-15,organic,London,True
+104,2025-07-20,referral,Scotland,True
+105,2025-02-02,app_store,Yorkshire,True
+106,2025-02-17,app_store,North West,True
+107,2026-05-18,organic,Scotland,True
+108,2026-02-11,comparison_site,South West,False
+109,2026-07-28,referral,Scotland,True
+110,2025-04-09,paid_social,London,False
+111,2026-07-01,referral,South East,False
+112,2026-09-05,paid_social,South East,True
+113,2026-04-07,paid_social,North West,True
+114,2025-01-05,referral,North West,True
+115,2025-08-06,organic,South West,True
+116,2026-05-18,organic,South East,True
+117,2026-02-02,paid_social,North West,True
+118,2026-01-28,organic,Wales,True
+119,2025-07-26,paid_social,North West,True
+120,2025-01-15,referral,South West,True
+121,2026-07-08,app_store,Wales,True
+122,2026-04-06,app_store,South East,True
+123,2026-07-29,app_store,Midlands,True
+124,2025-08-29,app_store,Scotland,True
+125,2026-07-18,referral,Scotland,False
+126,2025-04-06,organic,North West,True
+127,2026-04-30,paid_social,Scotland,True
+128,2026-02-11,paid_social,Midlands,True
+129,2025-08-19,organic,London,True
+130,2025-06-20,paid_social,South East,False
+131,2026-06-25,paid_social,London,True
+132,2025-02-05,app_store,Midlands,True
+133,2026-06-09,comparison_site,South East,False
+134,2025-06-09,paid_social,Yorkshire,False
+135,2025-08-31,organic,Scotland,False
+136,2025-03-27,organic,South West,True
+137,2026-08-01,comparison_site,Yorkshire,True
+138,2026-07-11,comparison_site,South West,True
+139,2026-07-28,organic,South West,True
+140,2025-01-28,referral,North West,True
+141,2026-09-12,organic,Scotland,True
+142,2026-07-10,organic,South East,True
+143,2025-12-06,organic,London,True
+144,2025-11-27,organic,Scotland,True
+145,2026-05-21,comparison_site,Wales,False
+146,2025-12-14,referral,South East,False
+147,2026-04-18,paid_social,Scotland,True
+148,2025-08-19,app_store,South West,True
+149,2025-07-09,comparison_site,Scotland,False
+150,2025-08-13,comparison_site,Midlands,True
+151,2026-01-20,organic,South West,False
+152,2026-01-12,paid_social,Yorkshire,True
+153,2025-10-10,organic,Wales,True
+154,2026-09-25,organic,South West,False
+155,2026-09-20,organic,Yorkshire,True
+156,2025-09-16,referral,Yorkshire,True
+157,2025-12-25,paid_social,London,False
+158,2026-04-01,organic,North West,True
+159,2026-02-15,organic,South East,True
+160,2025-11-14,paid_social,London,False
+161,2025-08-13,organic,Wales,True
+162,2025-08-22,paid_social,Midlands,False
+163,2026-01-09,organic,South West,True
+164,2026-08-31,organic,London,True
+165,2026-04-17,paid_social,South West,True
+166,2025-08-21,referral,Wales,True
+167,2025-04-23,organic,Midlands,False
+168,2026-05-12,organic,Yorkshire,False
+169,2026-03-18,organic,Wales,True
+170,2026-07-18,comparison_site,South East,False
+171,2025-09-25,paid_social,South West,True
+172,2026-05-25,referral,South East,True
+173,2026-01-21,comparison_site,London,True
+174,2026-01-22,organic,South West,True
+175,2025-04-23,app_store,South East,True
+176,2026-09-05,paid_social,Midlands,False
+177,2026-09-17,organic,South East,True
+178,2025-03-22,paid_social,South West,True
+179,2025-04-23,app_store,London,True
+180,2025-01-02,paid_social,Yorkshire,True
+181,2025-08-08,comparison_site,Midlands,True
+182,2026-07-20,paid_social,London,True
+183,2025-08-13,app_store,Scotland,True
+184,2026-01-20,paid_social,Yorkshire,True
+185,2026-02-07,app_store,North West,True
+186,2026-09-30,paid_social,London,True
+187,2025-05-10,organic,North West,True
+188,2025-02-22,organic,Scotland,True
+189,2026-02-20,organic,Midlands,False
+190,2025-09-04,organic,Midlands,True
+191,2026-03-15,organic,North West,True
+192,2025-07-22,referral,London,True
+193,2025-07-03,paid_social,Wales,True
+194,2025-05-03,app_store,North West,True
+195,2026-02-05,comparison_site,London,True
+196,2025-10-21,referral,Yorkshire,True
+197,2025-10-07,app_store,Midlands,True
+198,2026-09-02,app_store,Midlands,True
+199,2025-07-17,paid_social,South West,True
+200,2026-05-26,organic,Scotland,True
+201,2025-05-24,organic,South West,True
+202,2026-09-01,organic,Scotland,True
+203,2025-07-20,organic,London,False
+204,2025-05-04,organic,North West,True
+205,2025-07-06,app_store,Scotland,False
+206,2025-11-22,app_store,Midlands,True
+207,2026-04-09,organic,London,False
+208,2025-12-15,organic,London,True
+209,2026-02-07,organic,South East,True
+210,2025-12-12,paid_social,South East,False
+211,2026-05-26,paid_social,Midlands,True
+212,2025-05-27,app_store,South East,True
+213,2025-05-28,organic,Wales,True
+214,2026-05-04,app_store,Scotland,True
+215,2026-07-05,comparison_site,Scotland,True
+216,2025-12-04,organic,South West,True
+217,2026-04-18,app_store,North West,True
+218,2025-05-31,referral,Midlands,True
+219,2026-02-19,paid_social,North West,False
+220,2025-10-25,paid_social,South East,True
+221,2026-09-03,app_store,Yorkshire,False
+222,2025-09-20,referral,London,True
+223,2025-05-24,app_store,London,True
+224,2025-12-12,comparison_site,Midlands,True
+225,2026-09-16,referral,London,True
+226,2026-07-26,comparison_site,South West,False
+227,2025-01-02,referral,North West,True
+228,2025-10-31,referral,Yorkshire,False
+229,2025-09-11,paid_social,Midlands,True
+230,2026-03-29,organic,Wales,True
+231,2025-02-06,app_store,Yorkshire,True
+232,2025-06-09,paid_social,North West,True
+233,2025-01-09,paid_social,Yorkshire,True
+234,2025-08-21,comparison_site,London,True
+235,2025-04-09,organic,North West,True
+236,2025-07-27,paid_social,South East,True
+237,2025-05-11,referral,Scotland,True
+238,2026-02-08,app_store,London,True
+239,2025-06-01,paid_social,South West,True
+240,2025-02-23,app_store,South West,True
+241,2025-04-30,app_store,Yorkshire,True
+242,2026-09-20,organic,London,True
+243,2026-08-10,organic,Wales,True
+244,2026-09-17,referral,North West,True
+245,2026-02-24,organic,South East,True
+246,2026-02-26,organic,South East,False
+247,2025-04-14,referral,North West,True
+248,2025-09-11,organic,Midlands,True
+249,2025-08-15,paid_social,Wales,True
+250,2025-04-22,paid_social,North West,True
+251,2026-05-25,referral,London,True
+252,2026-04-18,paid_social,London,True
+253,2025-04-09,referral,London,False
+254,2025-06-02,organic,Yorkshire,True
+255,2025-12-04,referral,London,True
+256,2025-06-12,paid_social,London,True
+257,2025-06-10,app_store,South East,True
+258,2026-08-03,paid_social,South West,True
+259,2026-02-02,comparison_site,Yorkshire,True
+260,2025-10-04,referral,South West,True
+261,2026-05-19,organic,Midlands,False
+262,2026-01-27,app_store,Scotland,True
+263,2025-05-15,organic,London,True
+264,2025-07-14,organic,Yorkshire,True
+265,2026-02-05,organic,Midlands,True
+266,2025-02-02,paid_social,Wales,True
+267,2026-04-05,paid_social,Midlands,True
+268,2026-04-15,paid_social,Midlands,False
+269,2026-01-10,app_store,Wales,True
+270,2025-01-22,organic,Yorkshire,True
+271,2025-02-07,organic,Yorkshire,False
+272,2025-08-18,organic,Wales,True
+273,2025-12-31,organic,Midlands,True
+274,2026-07-17,paid_social,London,True
+275,2026-03-14,referral,Midlands,False
+276,2025-10-10,paid_social,London,True
+277,2025-01-27,organic,Wales,True
+278,2025-08-14,paid_social,Yorkshire,True
+279,2025-10-04,organic,Scotland,True
+280,2026-09-01,app_store,North West,True
+281,2025-10-11,organic,South East,True
+282,2026-04-26,referral,London,True
+283,2026-03-29,comparison_site,Midlands,True
+284,2026-05-31,paid_social,London,True
+285,2026-07-01,comparison_site,London,True
+286,2025-07-11,organic,North West,True
+287,2025-02-18,app_store,South West,True
+288,2026-05-27,paid_social,Midlands,True
+289,2025-01-17,app_store,London,True
+290,2025-06-21,organic,North West,True
+291,2025-08-08,organic,Scotland,False
+292,2025-06-07,organic,Wales,True
+293,2026-04-22,referral,Midlands,True
+294,2025-02-15,app_store,South East,True
+295,2026-01-08,app_store,Scotland,True
+296,2026-06-02,organic,North West,True
+297,2025-04-09,app_store,South West,True
+298,2025-02-06,paid_social,Scotland,True
+299,2025-10-07,paid_social,North West,True
+300,2025-12-15,organic,North West,False
+301,2026-05-12,app_store,Scotland,True
+302,2025-10-29,organic,South West,True
+303,2025-06-30,paid_social,Scotland,True
+304,2026-08-30,app_store,Midlands,True
+305,2025-04-09,organic,Midlands,True
+306,2025-04-26,paid_social,Scotland,True
+307,2025-07-10,organic,North West,False
+308,2025-09-10,organic,South West,True
+309,2025-06-10,paid_social,North West,True
+310,2025-09-13,paid_social,North West,False
+311,2025-11-19,referral,Yorkshire,True
+312,2025-05-08,paid_social,London,True
+313,2025-01-18,referral,London,True
+314,2026-07-20,app_store,North West,False
+315,2026-07-24,paid_social,Yorkshire,False
+316,2025-11-19,referral,London,False
+317,2026-09-18,paid_social,London,True
+318,2025-10-15,paid_social,London,False
+319,2026-10-01,organic,London,False
+320,2025-06-04,app_store,London,True
+321,2026-05-05,referral,North West,False
+322,2026-01-21,organic,Wales,False
+323,2025-04-14,paid_social,South East,True
+324,2026-01-28,organic,North West,True
+325,2025-09-03,comparison_site,London,True
+326,2025-06-25,organic,South East,True
+327,2025-02-08,organic,Scotland,True
+328,2026-04-22,paid_social,Midlands,True
+329,2026-06-22,paid_social,London,False
+330,2026-02-12,app_store,North West,False
+331,2026-06-09,organic,South East,False
+332,2026-05-21,app_store,South West,True
+333,2025-02-05,organic,Midlands,True
+334,2025-01-20,app_store,Wales,True
+335,2025-11-17,organic,South East,True
+336,2026-05-27,organic,Yorkshire,False
+337,2026-02-04,referral,London,False
+338,2026-04-16,comparison_site,London,True
+339,2025-05-23,app_store,North West,False
+340,2025-04-02,referral,London,False
+341,2025-12-20,comparison_site,Yorkshire,True
+342,2025-02-20,organic,South West,False
+343,2026-07-29,comparison_site,South East,True
+344,2025-07-09,paid_social,Wales,True
+345,2025-05-05,app_store,Yorkshire,True
+346,2025-05-30,app_store,South West,True
+347,2025-11-10,referral,Wales,True
+348,2026-07-24,paid_social,Yorkshire,True
+349,2025-12-08,paid_social,Yorkshire,True
+350,2025-11-01,app_store,Midlands,True
+351,2025-02-23,organic,London,True
+352,2026-03-20,comparison_site,North West,True
+353,2026-09-05,referral,South West,True
+354,2025-09-21,organic,South East,True
+355,2025-02-22,app_store,South West,True
+356,2026-07-26,paid_social,London,True
+357,2026-09-12,referral,London,True
+358,2025-01-05,app_store,North West,True
+359,2025-04-13,organic,London,False
+360,2025-07-15,paid_social,Yorkshire,True
+361,2025-12-16,comparison_site,South West,True
+362,2025-02-16,organic,South West,False
+363,2025-09-26,referral,Wales,False
+364,2026-01-05,paid_social,London,False
+365,2026-09-28,paid_social,Scotland,False
+366,2025-04-16,paid_social,Wales,True
+367,2025-04-30,paid_social,Scotland,True
+368,2026-08-27,organic,South East,True
+369,2025-02-27,referral,Scotland,True
+370,2025-12-12,organic,Scotland,True
+371,2026-04-19,organic,Yorkshire,True
+372,2025-04-27,organic,Yorkshire,True
+373,2025-05-07,organic,North West,True
+374,2026-01-28,paid_social,Wales,True
+375,2025-02-27,referral,Midlands,True
+376,2026-09-26,app_store,London,False
+377,2026-05-28,organic,Yorkshire,True
+378,2025-04-06,app_store,South West,False
+379,2026-09-30,app_store,North West,True
+380,2025-04-28,paid_social,North West,False
+381,2026-07-14,comparison_site,South East,True
+382,2026-08-24,comparison_site,North West,True
+383,2026-05-03,organic,London,True
+384,2025-08-25,paid_social,South West,True
+385,2025-09-29,comparison_site,London,True
+386,2025-07-08,app_store,South East,True
+387,2026-03-23,organic,Yorkshire,True
+388,2026-08-04,app_store,Midlands,True
+389,2025-09-04,app_store,South East,True
+390,2025-03-17,app_store,South East,False
+391,2025-06-03,app_store,London,True
+392,2026-03-11,app_store,Midlands,True
+393,2025-03-27,organic,London,True
+394,2025-10-12,organic,Scotland,True
+395,2025-08-08,referral,Yorkshire,True
+396,2025-03-10,comparison_site,London,False
+397,2025-02-16,organic,Yorkshire,False
+398,2025-04-04,referral,Yorkshire,True
+399,2026-03-29,referral,London,True
+400,2025-07-23,paid_social,South West,False
